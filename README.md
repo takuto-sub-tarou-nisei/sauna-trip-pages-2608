@@ -1,0 +1,31 @@
+# サウナ温泉 1泊2日 6プラン比較
+
+GitHub Pages でそのまま公開できる静的サイトです。ビルド作業は不要です。
+
+## GitHub Pages で公開する
+
+1. GitHub で新しいリポジトリを作成します（例: `sauna-trip-plans`）。
+2. このフォルダ内の `index.html` と `.nojekyll` をリポジトリのルートにアップロードして `main` ブランチへ commit します。
+3. Repository の **Settings → Pages** を開きます。
+4. **Build and deployment → Source** を `Deploy from a branch` にします。
+5. Branch を `main`、Folder を `/(root)` にして Save します。
+6. 数分後、`https://<GitHubユーザー名>.github.io/sauna-trip-plans/` のようなURLで公開されます。
+
+## 構成
+
+- `index.html`: サイト本体（CSS/JSも1ファイル内）
+- `.nojekyll`: Jekyll処理を避けるための空ファイル
+
+## 地図
+
+各プラン詳細に Google Maps の埋め込みルートと、「Google Mapsで開く」リンクを配置しています。
+地図は主要スポットを比較用にまとめたものです。
+
+## 写真
+
+Wikimedia Commons や公開Webページの写真を外部参照しています。各写真の下に出典リンクを表示しています。
+公開範囲や用途によっては、写真のライセンス・各出典サイトの利用条件を確認し、必要に応じて自分で撮影した写真や利用許諾済み写真へ差し替えてください。
+
+## 注意
+
+旅行料金・営業時間・工事・宿泊価格等は変更される可能性があります。予約前に各施設の公式情報を確認してください。
