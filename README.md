@@ -1,16 +1,5 @@
 # サウナ温泉 1泊2日 6プラン比較
 
-GitHub Pages でそのまま公開できる静的サイトです。ビルド作業は不要です。
-
-## GitHub Pages で公開する
-
-1. GitHub で新しいリポジトリを作成します（例: `sauna-trip-plans`）。
-2. このフォルダ内の `index.html` と `.nojekyll` をリポジトリのルートにアップロードして `main` ブランチへ commit します。
-3. Repository の **Settings → Pages** を開きます。
-4. **Build and deployment → Source** を `Deploy from a branch` にします。
-5. Branch を `main`、Folder を `/(root)` にして Save します。
-6. 数分後、`https://<GitHubユーザー名>.github.io/sauna-trip-plans/` のようなURLで公開されます。
-
 ## 構成
 
 - `index.html`: サイト本体（CSS/JSも1ファイル内）
