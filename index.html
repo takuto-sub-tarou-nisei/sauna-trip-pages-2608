@@ -1,152 +1,958 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f4f1ea">
-<title>どこ行く？ サウナ温泉 1泊2日｜6プラン比較</title>
-<meta name="description" content="川崎発・1泊2日・1人2万円以内。サウナ重視の温泉旅行6案を写真・地図・ルートで比較。">
-<style>
-:root{--bg:#f4f1ea;--paper:#fffdfa;--ink:#19211d;--sub:#657169;--line:#dde4de;--accent:#1d684f;--accent2:#b9643f;--shadow:0 18px 44px rgba(21,32,26,.09)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 8% 0%,rgba(137,188,161,.16),transparent 27rem),radial-gradient(circle at 98% 7%,rgba(228,174,132,.15),transparent 24rem),var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.65}
-img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}button{font:inherit}.shell{width:min(1200px,calc(100% - 30px));margin:auto}
-.hero{padding:52px 0 28px}.kicker{font-size:12px;font-weight:850;letter-spacing:.17em;color:var(--accent);text-transform:uppercase}h1{font-size:clamp(43px,7vw,86px);line-height:.95;letter-spacing:-.055em;margin:12px 0 18px;max-width:900px}.hero>p{font-size:clamp(16px,1.8vw,20px);color:var(--sub);max-width:820px}
-.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.pill{padding:8px 12px;border:1px solid var(--line);background:rgba(255,255,255,.78);border-radius:999px;font-size:13px;font-weight:800}
-.masthead{display:grid;grid-template-columns:repeat(6,1fr);height:280px;gap:7px;margin-top:28px;border-radius:28px;overflow:hidden}.mast-tile{position:relative;cursor:pointer;overflow:hidden}.mast-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.03),rgba(0,0,0,.58))}.mast-tile img{transition:.35s ease}.mast-tile:hover img{transform:scale(1.04)}.mast-label{position:absolute;z-index:2;left:8px;right:8px;bottom:8px;padding:6px 8px;border-radius:10px;background:rgba(11,22,16,.58);color:white;font-weight:850;font-size:14px;line-height:1.35;overflow-wrap:anywhere;text-shadow:0 2px 8px rgba(0,0,0,.25)}
-.section-title{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:44px 0 16px}.section-title h2{font-size:30px;margin:0;letter-spacing:-.03em}.section-title p{margin:0;color:var(--sub);font-size:14px}
-.note-box{padding:18px 20px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.7);color:var(--sub);font-size:14px;margin-top:18px}
-.priority{display:flex;gap:8px;overflow:auto;padding:3px 0 10px;scrollbar-width:none}.priority button{white-space:nowrap;border:1px solid var(--line);background:var(--paper);padding:10px 14px;border-radius:999px;cursor:pointer;color:var(--sub);font-weight:800}.priority button.active{background:var(--ink);color:white;border-color:var(--ink)}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:28px;overflow:hidden;cursor:pointer;box-shadow:0 8px 24px rgba(22,34,28,.04);transition:.22s ease}.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.photo-grid{height:250px;display:grid;grid-template-columns:1.55fr .8fr;grid-template-rows:1fr 1fr;gap:4px;background:#e4e8e4}.photo-grid .main{grid-row:1/3;position:relative}.photo-grid .thumb{position:relative}.photo-grid img{transition:.35s ease}.card:hover .photo-grid img{transform:scale(1.015)}.badge{position:absolute;left:14px;top:14px;z-index:2;background:rgba(255,255,255,.92);padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}
-.card-copy{padding:19px}.card h3{font-size:29px;letter-spacing:-.03em;line-height:1.2;margin:0;padding-block:2px;text-wrap:balance}.short{font-size:13px;color:var(--accent);font-weight:850;margin-top:4px}.summary{font-size:14px;color:var(--sub);margin:12px 0 16px;min-height:46px}.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.mini{border-top:1px solid var(--line);padding-top:9px}.mini span{display:block;color:var(--sub);font-size:10px;font-weight:850;letter-spacing:.08em}.mini b{font-size:13px}.score-row{display:flex;gap:5px;align-items:center;margin-top:14px}.score-label{font-size:10px;color:var(--sub);font-weight:800;margin-right:3px}.dot{width:8px;height:8px;border-radius:50%;background:#d7ddd8}.dot.on{background:var(--accent)}
-.compare{background:var(--paper);border:1px solid var(--line);border-radius:24px;overflow:hidden}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:930px}th,td{padding:14px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:middle}th{font-size:11px;color:var(--sub);letter-spacing:.05em;background:#fbfbf8}td:first-child{font-weight:850;font-size:14px}.bar{display:flex;gap:3px}.bar i{display:block;width:14px;height:6px;border-radius:999px;background:#dbe0dc}.bar i.on{background:var(--accent)}.compare-note{padding:13px 17px;color:var(--sub);font-size:12px}
-.shell>section:last-of-type{padding-bottom:64px}
-.modal-back{position:fixed;inset:0;background:rgba(12,19,15,.50);backdrop-filter:blur(8px);display:none;z-index:50;padding:18px;overflow:auto}.modal-back.open{display:block}.modal{max-width:1040px;margin:14px auto;background:var(--paper);border-radius:30px;box-shadow:0 34px 100px rgba(0,0,0,.25);overflow:hidden}.modal-cover{height:360px;position:relative}.modal-cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.6))}.close{position:absolute;z-index:4;right:18px;top:18px;width:42px;height:42px;border:0;border-radius:50%;background:rgba(255,255,255,.92);font-size:22px;cursor:pointer}.modal-title{position:absolute;z-index:3;left:28px;right:28px;bottom:24px;color:white}.modal-title .eyeb{display:inline-block;background:rgba(255,255,255,.16);backdrop-filter:blur(4px);border-radius:999px;padding:6px 9px;font-size:11px;font-weight:850}.modal-title h2{font-size:44px;margin:8px 0 0;line-height:1.2;padding-block:2px;letter-spacing:-.04em;text-wrap:balance}.modal-title p{margin:5px 0 0;color:rgba(255,255,255,.86);font-weight:750}.modal-body{padding:26px 30px 34px}.lead{font-size:17px;margin-top:0}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:20px 0}.panel{border:1px solid var(--line);border-radius:20px;padding:16px}.panel h4{margin:0 0 9px;font-size:13px;letter-spacing:.05em}.list{margin:0;padding-left:18px;color:var(--sub);font-size:14px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tag{border:1px solid var(--line);background:#f8f8f4;border-radius:999px;padding:6px 9px;font-size:12px}
-.gallery{display:grid;grid-template-columns:1.3fr .85fr .85fr;gap:8px;height:310px;margin-top:12px}.gallery-item{position:relative;overflow:hidden;border-radius:18px;background:#e5e8e5}.gallery-item img{transition:.3s ease}.gallery-item:hover img{transform:scale(1.025)}.gallery-caption{position:absolute;left:10px;right:10px;bottom:9px;background:rgba(12,20,16,.62);backdrop-filter:blur(4px);border-radius:10px;padding:7px 9px;color:white;font-size:11px;line-height:1.35}.gallery-caption a{color:#e7f4ec}
-.route-img{width:100%;height:auto;border:1px solid var(--line);border-radius:21px;background:white}.map-wrap{margin-top:10px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:white}.map-wrap iframe{display:block;width:100%;height:430px;border:0}.map-tools{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);font-size:12px;color:var(--sub)}.map-link{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 11px;text-decoration:none;font-weight:850;color:var(--ink)}
-.timeline{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}.day h3{margin:0 0 8px;font-size:17px}.event{display:grid;grid-template-columns:88px 1fr;gap:8px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13px}.event time{font-weight:850;color:var(--accent)}.modal-note{margin-top:20px;padding:14px 16px;border-radius:16px;background:#fff1e8;color:#75472f;font-size:13px}.share-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.action{border:0;border-radius:999px;padding:11px 15px;background:var(--ink);color:white;font-weight:850;cursor:pointer}.action.secondary{border:1px solid var(--line);background:white;color:var(--ink)}.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(18px);opacity:0;pointer-events:none;background:#16251e;color:white;padding:10px 14px;border-radius:999px;font-size:13px;z-index:80;transition:.2s}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-.route-flow{border:1px solid var(--line);border-radius:21px;background:#f8faf7;padding:18px}.route-flow ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;list-style:none;margin:0;padding:0;counter-reset:route}.route-flow li{position:relative;display:flex;align-items:flex-start;gap:9px;min-width:0;padding:11px 12px;border:1px solid var(--line);border-radius:14px;background:white;counter-increment:route}.route-flow li::before{content:counter(route);display:grid;place-items:center;flex:0 0 24px;height:24px;border-radius:50%;background:var(--accent);color:white;font-size:11px;font-weight:900}.route-flow strong{min-width:0;font-size:12px;line-height:1.5;overflow-wrap:anywhere}.route-caption{margin:10px 2px 0;color:var(--sub);font-size:11px}.card h3,.modal-title h2,.mini b,.map-tools span,.event div{overflow-wrap:anywhere}.panel,.mini,.section-title>div{min-width:0}
-@media(max-width:1100px){.masthead{grid-template-columns:repeat(3,1fr);height:420px}}
-@media(max-width:900px){.grid{grid-template-columns:1fr}.detail-grid,.timeline{grid-template-columns:1fr}.gallery{grid-template-columns:1.2fr 1fr;height:430px}.gallery-item:nth-child(3){grid-column:1/3}}
-@media(max-width:620px){.shell{width:min(100% - 18px,1200px)}.hero{padding-top:38px}.masthead{grid-template-columns:repeat(2,1fr);height:540px}.section-title{display:block}.section-title>p{margin-top:5px}.photo-grid{height:220px}.modal-cover{height:260px}.modal-title h2{font-size:34px;line-height:1.2}.modal-body{padding:21px 17px 28px}.gallery{grid-template-columns:1fr;height:auto}.gallery-item{height:210px}.gallery-item:nth-child(3){grid-column:auto}.route-flow{padding:12px}.route-flow ol{grid-template-columns:1fr}.map-wrap iframe{height:360px}.map-tools{align-items:flex-start;flex-direction:column}.action{width:100%}}
-@media(max-width:360px){h1{font-size:40px;line-height:1}.mini-stats{grid-template-columns:1fr}.summary{min-height:0}.card-copy{padding:17px}.card h3{font-size:27px}.modal-back{padding:10px}.modal{margin:8px auto}.modal-cover{height:280px}.modal-title{left:20px;right:20px}.modal-body{padding-inline:15px}.event{grid-template-columns:72px 1fr}.route-flow li{padding:10px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>御殿場サウナ旅行 1泊2日｜富士山 × サウナ × サファリ</title>
+  <meta name="description" content="川崎発1泊2日。御殿場プレミアム・アウトレット、木の花の湯、富士の心湯、富士サファリパークを巡るサウナ旅行プラン。">
+  <meta name="theme-color" content="#173d36">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="㊗️ 御殿場プランに決定！">
+  <meta property="og:description" content="富士山に整いに行きます。1泊2日の御殿場サウナ旅。">
+  <meta property="og:image" content="https://www.gotemba-konohananoyu.jp/files/ogp.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      --forest: #173d36;
+      --forest-2: #24584d;
+      --forest-3: #dce9e3;
+      --fuji: #2d6593;
+      --fuji-soft: #dfeaf3;
+      --ink: #1c2925;
+      --muted: #64736e;
+      --paper: #f8f4eb;
+      --sand: #e9deca;
+      --white: #fffef9;
+      --vermilion: #b95138;
+      --amber: #c58424;
+      --amber-soft: #fff0d2;
+      --line: rgba(28, 41, 37, .13);
+      --shadow: 0 18px 50px rgba(21, 47, 41, .12);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body {
+      margin: 0;
+      min-width: 280px;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      line-height: 1.75;
+      overflow-wrap: anywhere;
+    }
+    body.overlay-open { overflow: hidden; }
+    img { display: block; width: 100%; max-width: 100%; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    [hidden] { display: none !important; }
+    :focus-visible { outline: 3px solid #f3ad4e; outline-offset: 4px; }
+
+    .skip-link {
+      position: fixed;
+      left: 12px;
+      top: 12px;
+      z-index: 2000;
+      padding: 10px 15px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--forest);
+      transform: translateY(-160%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .container { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .section { padding: 96px 0; }
+    .section--white { background: var(--white); }
+    .section--forest { color: #fff; background: var(--forest); }
+    .section--blue { background: var(--fuji-soft); }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--vermilion);
+      font-size: .76rem;
+      font-weight: 900;
+      letter-spacing: .18em;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+    .section--forest .eyebrow { color: #e7b583; }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .section-head h2 {
+      max-width: 800px;
+      margin: 0;
+      font-family: Georgia, "Yu Mincho", serif;
+      font-size: clamp(2rem, 5vw, 4.2rem);
+      font-weight: 700;
+      letter-spacing: -.045em;
+      line-height: 1.08;
+    }
+    .section-head p:last-child { max-width: 430px; margin: 0; color: var(--muted); }
+    .section--forest .section-head p:last-child { color: rgba(255,255,255,.72); }
+    .mini-note { color: var(--muted); font-size: .82rem; line-height: 1.55; }
+    .source-link { color: inherit; text-decoration: underline; text-decoration-color: currentColor; text-underline-offset: 3px; }
+
+    .btn {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 21px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-weight: 800;
+      line-height: 1.3;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease, color .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn--forest { color: #fff; background: var(--forest); }
+    .btn--light { color: var(--forest); background: var(--white); }
+    .btn--outline { color: var(--forest); border-color: rgba(23,61,54,.35); background: transparent; }
+    .btn--small { min-height: 40px; padding: 8px 15px; font-size: .82rem; }
+
+    /* Celebration */
+    .celebration {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #fff;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(107,163,190,.45), transparent 30%),
+        radial-gradient(circle at 82% 78%, rgba(185,81,56,.28), transparent 32%),
+        rgba(13, 45, 40, .96);
+      opacity: 1;
+      visibility: visible;
+      transition: opacity .55s ease, visibility .55s ease;
+    }
+    .celebration.is-closing { opacity: 0; visibility: hidden; pointer-events: none; }
+    .celebration__panel {
+      position: relative;
+      z-index: 2;
+      width: min(760px, 100%);
+      padding: clamp(32px, 7vw, 72px) clamp(22px, 6vw, 68px);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 34px;
+      background: rgba(255,255,255,.08);
+      box-shadow: 0 30px 100px rgba(0,0,0,.28);
+      text-align: center;
+      backdrop-filter: blur(12px);
+    }
+    .celebration__mark { margin: 0 0 12px; color: #ffd49b; font-size: .8rem; font-weight: 900; letter-spacing: .18em; }
+    .celebration__date { margin: 0 0 13px; color: #b8d7e9; font-size: .78rem; font-weight: 900; letter-spacing: .14em; }
+    .celebration h1 {
+      margin: 0;
+      font-family: Georgia, "Yu Mincho", serif;
+      font-size: clamp(2.15rem, 7vw, 5.1rem);
+      letter-spacing: -.05em;
+      line-height: 1.12;
+    }
+    .celebration__route { margin: 22px 0 6px; font-weight: 800; letter-spacing: .04em; }
+    .celebration__icons { margin: 15px 0; font-size: clamp(1.35rem, 4vw, 2rem); letter-spacing: .12em; }
+    .celebration__copy { margin: 0 0 26px; color: rgba(255,255,255,.82); font-family: Georgia, "Yu Mincho", serif; font-size: 1.05rem; }
+    .confetti { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .confetti-piece {
+      position: absolute;
+      top: -10vh;
+      left: var(--x);
+      width: var(--w);
+      height: calc(var(--w) * 1.7);
+      border-radius: 2px;
+      background: var(--color);
+      opacity: .9;
+      animation: confettiFall var(--duration) var(--delay) cubic-bezier(.18,.75,.4,1) forwards;
+    }
+    @keyframes confettiFall {
+      to { transform: translate3d(var(--drift), 118vh, 0) rotate(720deg); }
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 760px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      color: #fff;
+      background: var(--forest);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, rgba(10,35,31,.96) 0%, rgba(10,35,31,.83) 41%, rgba(10,35,31,.28) 74%, rgba(10,35,31,.16) 100%);
+      pointer-events: none;
+    }
+    .hero__media { position: absolute; inset: 0; display: grid; grid-template-columns: 58% 42%; }
+    .hero__media figure { position: relative; margin: 0; overflow: hidden; }
+    .hero__media figure:first-child { grid-row: span 2; }
+    .hero__media img { height: 100%; object-fit: cover; }
+    .hero__media figure:nth-child(2), .hero__media figure:nth-child(3) { border-left: 3px solid var(--forest); }
+    .hero__media figure:nth-child(3) { border-top: 3px solid var(--forest); }
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
+      padding: 120px 0 100px;
+    }
+    .hero__inner { max-width: 720px; }
+    .hero__overline { margin: 0 0 14px; color: #d8ede7; font-size: .82rem; font-weight: 900; letter-spacing: .2em; }
+    .hero h1 { margin: 0; }
+    .hero__en {
+      display: block;
+      margin-bottom: 16px;
+      color: #b8d7e9;
+      font-size: clamp(1.1rem, 2vw, 1.55rem);
+      font-weight: 800;
+      letter-spacing: .16em;
+      line-height: 1.2;
+    }
+    .hero__jp {
+      display: block;
+      font-family: Georgia, "Yu Mincho", serif;
+      font-size: clamp(3rem, 7.5vw, 7rem);
+      font-weight: 700;
+      letter-spacing: -.065em;
+      line-height: 1.03;
+      text-wrap: balance;
+    }
+    .hero__sub { max-width: 660px; margin: 28px 0 34px; color: rgba(255,255,255,.82); font-size: clamp(1rem, 2vw, 1.22rem); font-weight: 700; }
+    .hero__stamp {
+      position: absolute;
+      top: 94px;
+      right: max(20px, calc((100vw - var(--max)) / 2));
+      z-index: 3;
+      padding: 15px 22px;
+      border: 3px double rgba(255,224,188,.95);
+      color: #ffe0bc;
+      background: rgba(23,61,54,.45);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .12em;
+      line-height: 1.45;
+      text-align: center;
+      transform: rotate(4deg);
+      backdrop-filter: blur(8px);
+    }
+    .hero__credit {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      z-index: 3;
+      margin: 0;
+      padding: 5px 9px;
+      border-radius: 8px;
+      color: rgba(255,255,255,.85);
+      background: rgba(0,0,0,.5);
+      font-size: .67rem;
+      line-height: 1.35;
+    }
+
+    .trip-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,254,249,.94);
+      backdrop-filter: blur(16px);
+    }
+    .trip-nav__inner {
+      display: flex;
+      gap: 9px;
+      width: min(calc(100% - 28px), var(--max));
+      margin-inline: auto;
+      padding: 12px 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .trip-nav__inner::-webkit-scrollbar { display: none; }
+    .trip-nav a {
+      flex: 0 0 auto;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--forest);
+      background: #fff;
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-decoration: none;
+    }
+
+    /* Summary */
+    .summary-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    .summary-card {
+      min-width: 0;
+      padding: 23px 20px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255,255,255,.72);
+      box-shadow: 0 8px 28px rgba(28,41,37,.05);
+    }
+    .summary-card__top { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; color: var(--muted); font-size: .76rem; font-weight: 900; letter-spacing: .08em; }
+    .summary-card__emoji { font-size: 1.35rem; }
+    .summary-card strong { display: block; font-size: clamp(1.05rem, 2vw, 1.38rem); line-height: 1.35; }
+    .summary-card small { display: block; margin-top: 8px; color: var(--muted); font-size: .72rem; line-height: 1.5; }
+
+    /* Timeline */
+    .day-ticket {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      margin-bottom: 42px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--forest);
+      box-shadow: var(--shadow);
+    }
+    .day-ticket__label { display: grid; place-items: center; padding: 30px 20px; border-right: 1px dashed rgba(255,255,255,.35); }
+    .day-ticket__label strong { font-size: 2.2rem; line-height: 1; }
+    .day-ticket__label span { margin-top: 10px; color: #b9d9cf; font-size: .68rem; font-weight: 900; letter-spacing: .12em; }
+    .day-ticket__body { padding: 28px 34px; }
+    .day-ticket__body p { margin: 0 0 5px; color: #afd1c8; font-size: .72rem; font-weight: 900; letter-spacing: .14em; }
+    .day-ticket__body h3 { margin: 0; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(1.6rem, 4vw, 2.8rem); line-height: 1.2; }
+    .timeline { position: relative; max-width: 980px; margin: 0 auto; }
+    .timeline::before { content: ""; position: absolute; top: 8px; bottom: 8px; left: 86px; width: 2px; background: linear-gradient(var(--forest-2), var(--sand)); }
+    .timeline-item { position: relative; display: grid; grid-template-columns: 110px 1fr; gap: 25px; padding-bottom: 26px; }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-time { position: relative; z-index: 2; padding-top: 21px; color: var(--forest); font-size: .9rem; font-weight: 900; letter-spacing: -.02em; text-align: right; }
+    .timeline-time::after {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: 16px;
+      width: 11px;
+      height: 11px;
+      border: 4px solid var(--paper);
+      border-radius: 50%;
+      background: var(--vermilion);
+      box-shadow: 0 0 0 1px rgba(185,81,56,.35);
+      transform: translateX(50%);
+    }
+    .timeline-card {
+      min-width: 0;
+      padding: 27px 30px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--white);
+      box-shadow: 0 10px 35px rgba(28,41,37,.07);
+    }
+    .timeline-card--feature { padding: 0; overflow: hidden; }
+    .timeline-card__content { padding: 28px 30px; }
+    .timeline-card__title { display: flex; align-items: flex-start; gap: 12px; }
+    .timeline-card__icon { flex: 0 0 auto; font-size: 1.55rem; line-height: 1.25; }
+    .timeline-card h4 { margin: 0; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(1.3rem, 3vw, 2rem); line-height: 1.3; }
+    .timeline-card p { margin: 11px 0 0; }
+    .timeline-card ul { margin: 14px 0 0; padding-left: 1.2em; }
+    .timeline-card li + li { margin-top: 4px; }
+    .time-split { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 18px 0 0; }
+    .time-split div { padding: 14px; border-radius: 13px; background: var(--paper); }
+    .time-split b { display: block; color: var(--forest); font-size: .82rem; }
+    .branch-wrap { margin-top: 18px; }
+    .branch-panel { margin-top: 12px; padding: 17px; border-left: 4px solid var(--fuji); border-radius: 0 13px 13px 0; background: var(--fuji-soft); }
+    .tag { display: inline-flex; align-items: center; min-height: 28px; padding: 5px 10px; border-radius: 999px; color: var(--forest); background: var(--forest-3); font-size: .68rem; font-weight: 900; letter-spacing: .08em; line-height: 1.2; }
+    .tag--default { color: #fff; background: var(--forest); }
+    .tag--optional { color: #7c4314; background: var(--amber-soft); }
+    .price-facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin-top: 20px; }
+    .price-fact { padding: 15px; border-radius: 13px; color: var(--forest); background: var(--forest-3); text-align: center; }
+    .price-fact b { display: block; font-size: 1.03rem; }
+    .price-fact small { color: var(--muted); font-size: .66rem; }
+
+    .aufguss {
+      display: grid;
+      grid-template-columns: 1.3fr repeat(4, 1fr);
+      gap: 10px;
+      margin: 24px 0 0;
+      padding: 16px;
+      border-radius: 18px;
+      color: #fff;
+      background: var(--forest);
+    }
+    .aufguss__title { display: flex; flex-direction: column; justify-content: center; padding: 5px 8px; }
+    .aufguss__title small { color: #acd2c7; font-size: .64rem; font-weight: 900; letter-spacing: .15em; }
+    .aufguss__title strong { font-family: Georgia, serif; }
+    .aufguss__time { display: grid; place-items: center; min-height: 62px; border: 1px solid rgba(255,255,255,.18); border-radius: 12px; font-weight: 900; background: rgba(255,255,255,.06); }
+
+    .photo-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 15px; margin-top: 28px; }
+    .photo-card { grid-column: span 4; margin: 0; overflow: hidden; border-radius: 20px; background: #ddd; box-shadow: 0 12px 36px rgba(28,41,37,.1); }
+    .photo-card--wide { grid-column: span 8; }
+    .photo-card img { height: 250px; object-fit: cover; transition: transform .5s ease; }
+    .photo-card:hover img { transform: scale(1.025); }
+    .photo-card figcaption { min-height: 70px; padding: 13px 15px; color: var(--ink); background: var(--white); font-size: .76rem; line-height: 1.45; }
+    .photo-card figcaption strong { display: block; margin-bottom: 2px; }
+    .photo-card figcaption a { color: var(--muted); font-size: .65rem; }
+
+    .feature-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 11px; margin-top: 20px; }
+    .feature-list div { padding: 16px 13px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.62); font-size: .78rem; font-weight: 800; text-align: center; }
+    .feature-list span { display: block; margin-bottom: 5px; font-size: 1.25rem; }
+
+    .optional-card { margin-top: 16px; padding: 20px; border: 1px dashed var(--amber); border-radius: 17px; background: var(--amber-soft); }
+    .optional-card strong { display: block; color: #7d4819; font-family: Georgia, "Yu Mincho", serif; font-size: 1.15rem; }
+
+    .sauna-specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 13px; margin-top: 20px; }
+    .sauna-spec {
+      padding: 22px;
+      border-radius: 17px;
+      color: #fff;
+      background: linear-gradient(135deg, #163a34, #24584d);
+    }
+    .sauna-spec:nth-child(2) { background: linear-gradient(135deg, #214c71, #397daa); }
+    .sauna-spec span { display: block; color: rgba(255,255,255,.7); font-size: .67rem; font-weight: 900; letter-spacing: .14em; }
+    .sauna-spec strong { display: inline-block; margin: 6px 14px 0 0; font-family: Georgia, serif; font-size: 2.1rem; line-height: 1; }
+    .sauna-spec small { font-size: .75rem; }
+    .warning-card {
+      position: relative;
+      margin-top: 22px;
+      padding: 24px 24px 24px 68px;
+      border: 2px solid #d0902d;
+      border-radius: 18px;
+      background: var(--amber-soft);
+      box-shadow: 0 10px 30px rgba(197,132,36,.13);
+    }
+    .warning-card::before { content: "⚠️"; position: absolute; left: 22px; top: 21px; font-size: 1.7rem; }
+    .warning-card strong { display: block; color: #73400f; font-size: 1.12rem; line-height: 1.45; }
+    .warning-card p { margin: 7px 0 0; color: #654b2e; font-size: .86rem; }
+
+    /* Safari */
+    .safari-feature { display: grid; grid-template-columns: 1.15fr .85fr; overflow: hidden; border-radius: var(--radius); background: var(--forest); box-shadow: var(--shadow); }
+    .safari-feature__image { min-height: 500px; object-fit: cover; }
+    .safari-feature__body { display: flex; flex-direction: column; justify-content: center; padding: clamp(28px, 5vw, 56px); color: #fff; }
+    .safari-feature__body h3 { margin: 8px 0 16px; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(2rem, 4vw, 3.8rem); line-height: 1.08; }
+    .safari-price { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 20px 0; }
+    .safari-price div { padding: 16px; border: 1px solid rgba(255,255,255,.18); border-radius: 14px; background: rgba(255,255,255,.07); }
+    .safari-price span { display: block; color: #b8d7e9; font-size: .7rem; font-weight: 900; }
+    .safari-price strong { font-size: 1.55rem; }
+    .save-pill { display: inline-flex; align-self: flex-start; padding: 7px 12px; border-radius: 999px; color: var(--forest); background: #ffd59b; font-size: .75rem; font-weight: 900; }
+    .experience { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; margin-top: 26px; }
+    .experience-card { padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); }
+    .experience-card__time { color: var(--vermilion); font-size: .72rem; font-weight: 900; letter-spacing: .08em; }
+    .experience-card strong { display: block; margin: 7px 0; font-size: 1rem; line-height: 1.4; }
+    .experience-card p { margin: 0; color: var(--muted); font-size: .78rem; }
+    .check-card { margin-top: 18px; padding: 17px 20px; border-radius: 14px; color: #563710; background: var(--amber-soft); font-weight: 800; }
+
+    /* Sauna plan */
+    .three-sauna { position: relative; max-width: 930px; margin: 0 auto; }
+    .sauna-round { position: relative; display: grid; grid-template-columns: 120px 1fr auto; gap: 24px; align-items: center; padding: 28px; border: 1px solid rgba(255,255,255,.14); border-radius: 22px; background: rgba(255,255,255,.06); }
+    .sauna-round + .sauna-round { margin-top: 42px; }
+    .sauna-round + .sauna-round::before { content: "↓"; position: absolute; top: -39px; left: 50%; color: #a8d0c5; font-size: 1.55rem; transform: translateX(-50%); }
+    .round-label { color: #e7b583; font-size: .7rem; font-weight: 900; letter-spacing: .16em; }
+    .sauna-round h3 { margin: 0 0 5px; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(1.35rem, 3vw, 2rem); }
+    .sauna-round p { margin: 0; color: rgba(255,255,255,.7); }
+    .round-number { color: rgba(255,255,255,.16); font-family: Georgia, serif; font-size: 4rem; font-weight: 700; line-height: 1; }
+
+    /* Budget */
+    .budget-shell { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; }
+    .budget-main, .budget-options { padding: clamp(24px, 4vw, 42px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 0 10px 40px rgba(28,41,37,.07); }
+    .mission { display: inline-flex; padding: 8px 13px; border-radius: 999px; color: #fff; background: var(--vermilion); font-size: .74rem; font-weight: 900; letter-spacing: .09em; }
+    .budget-main h3 { margin: 17px 0 3px; font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -.05em; line-height: 1; }
+    .budget-main h3 small { font-family: inherit; font-size: .28em; }
+    .budget-range { margin: 9px 0 22px; color: var(--forest); font-size: 1.15rem; font-weight: 900; }
+    .budget-bar { position: relative; height: 22px; overflow: hidden; border-radius: 999px; background: #e8e2d7; }
+    .budget-bar__fill { width: 99.5%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--forest-2), #e5a84e); }
+    .budget-bar__line { position: absolute; right: 0; top: -4px; width: 3px; height: 30px; background: var(--ink); }
+    .budget-scale { display: flex; justify-content: space-between; margin-top: 8px; color: var(--muted); font-size: .68rem; font-weight: 800; }
+    .cost-list { margin: 26px 0 0; padding: 0; list-style: none; }
+    .cost-list li { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .cost-list li:last-child { border: 0; }
+    .cost-list span { color: var(--muted); }
+    .cost-list strong { text-align: right; }
+    .save-option { padding: 20px; border-radius: 18px; background: var(--forest-3); }
+    .save-option + .save-option { margin-top: 13px; }
+    .save-option--amber { background: var(--amber-soft); }
+    .save-option__label { color: var(--forest); font-size: .68rem; font-weight: 900; letter-spacing: .12em; }
+    .save-option h4 { margin: 6px 0; font-family: Georgia, "Yu Mincho", serif; font-size: 1.2rem; }
+    .save-option p { margin: 0; font-size: .82rem; }
+    .budget-warning { margin-top: 15px; padding: 17px; border-left: 4px solid var(--amber); border-radius: 0 14px 14px 0; background: #fff6e4; }
+    .budget-warning strong { color: #77450f; }
+
+    /* Map */
+    .route-layout { display: grid; grid-template-columns: 330px 1fr; gap: 18px; }
+    .route-list { margin: 0; padding: 28px; border-radius: var(--radius); color: #fff; background: var(--forest); list-style: none; }
+    .route-list li { position: relative; padding: 0 0 24px 34px; font-size: .82rem; font-weight: 800; }
+    .route-list li:last-child { padding-bottom: 0; }
+    .route-list li::before { content: attr(data-step); position: absolute; left: 0; top: 0; display: grid; width: 24px; height: 24px; place-items: center; border-radius: 50%; color: var(--forest); background: #fff; font-size: .65rem; }
+    .route-list li:not(:last-child)::after { content: ""; position: absolute; left: 11px; top: 27px; bottom: 3px; width: 2px; background: rgba(255,255,255,.27); }
+    .route-list .day2::before { background: #bdd9ed; }
+    .map-card { min-width: 0; overflow: hidden; border-radius: var(--radius); background: #ddd; box-shadow: var(--shadow); }
+    .map-card iframe { display: block; width: 100%; height: 500px; border: 0; }
+    .map-actions { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 18px; background: var(--white); }
+    .map-actions p { margin: 0; color: var(--muted); font-size: .76rem; }
+
+    /* Other routes */
+    .other-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    .other-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--white); }
+    .other-card figure { margin: 0; }
+    .other-card img { height: 170px; object-fit: cover; }
+    .other-card figcaption { padding: 14px 16px 0; }
+    .other-card .tag { transform: translateY(-30px); margin-bottom: -22px; box-shadow: 0 5px 15px rgba(0,0,0,.15); }
+    .other-card h3 { min-height: 2.7em; margin: 10px 16px 3px; font-family: Georgia, "Yu Mincho", serif; font-size: 1.05rem; line-height: 1.35; }
+    .other-card__concept { min-height: 3em; margin: 0 16px; color: var(--muted); font-size: .75rem; }
+    .other-card__budget { margin: 13px 16px 16px; color: var(--forest); font-weight: 900; }
+    .other-card details { border-top: 1px solid var(--line); }
+    .other-card summary { padding: 13px 16px; color: var(--forest); font-size: .72rem; font-weight: 900; cursor: pointer; }
+    .other-card details ul { margin: 0; padding: 0 22px 17px 34px; color: var(--muted); font-size: .72rem; }
+    .other-card__credit { display: block; padding: 0 16px 13px; color: var(--muted); font-size: .61rem; }
+
+    footer { padding: 42px 0; color: rgba(255,255,255,.72); background: #102d28; }
+    .footer-inner { display: flex; align-items: end; justify-content: space-between; gap: 30px; }
+    .footer-title { margin: 0; color: #fff; font-family: Georgia, serif; font-size: 1.3rem; }
+    .footer-inner p { margin: 5px 0 0; font-size: .75rem; }
+    .footer-inner a { color: #fff; }
+
+    @media (max-width: 1020px) {
+      .summary-grid { grid-template-columns: repeat(3, 1fr); }
+      .other-grid { grid-template-columns: repeat(3, 1fr); }
+      .price-facts { grid-template-columns: repeat(2, 1fr); }
+      .feature-list { grid-template-columns: repeat(3, 1fr); }
+      .experience { grid-template-columns: repeat(2, 1fr); }
+      .budget-shell { grid-template-columns: 1fr; }
+      .route-layout { grid-template-columns: 280px 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .container { width: min(calc(100% - 28px), var(--max)); }
+      .section { padding: 70px 0; }
+      .section-head { display: block; margin-bottom: 28px; }
+      .section-head p:last-child { margin-top: 14px; }
+      .hero { min-height: 720px; align-items: end; }
+      .hero::before { background: linear-gradient(180deg, rgba(10,35,31,.25), rgba(10,35,31,.7) 45%, rgba(10,35,31,.98) 100%); }
+      .hero__media { grid-template-columns: 1fr 1fr; grid-template-rows: 52% 48%; }
+      .hero__media figure:first-child { grid-column: span 2; grid-row: auto; }
+      .hero__media figure:nth-child(2), .hero__media figure:nth-child(3) { border-top: 3px solid var(--forest); }
+      .hero__content { width: min(calc(100% - 28px), var(--max)); padding: 280px 0 68px; }
+      .hero__stamp { top: 24px; right: 20px; font-size: .63rem; }
+      .hero__credit { right: 8px; bottom: 6px; max-width: 70%; font-size: .57rem; }
+      .summary-grid { grid-template-columns: repeat(2, 1fr); }
+      .summary-card:last-child { grid-column: span 2; }
+      .day-ticket { grid-template-columns: 90px 1fr; }
+      .day-ticket__label { padding: 22px 12px; }
+      .day-ticket__label strong { font-size: 1.5rem; }
+      .day-ticket__body { padding: 23px 20px; }
+      .timeline::before { left: 11px; }
+      .timeline-item { display: block; padding: 0 0 23px 31px; }
+      .timeline-time { padding: 0 0 8px; text-align: left; }
+      .timeline-time::after { top: 7px; right: auto; left: -20px; border-color: var(--paper); }
+      .timeline-card, .timeline-card__content { padding: 22px 19px; }
+      .timeline-card--feature { padding: 0; }
+      .time-split { grid-template-columns: 1fr; }
+      .aufguss { grid-template-columns: repeat(4, 1fr); }
+      .aufguss__title { grid-column: span 4; }
+      .photo-card, .photo-card--wide { grid-column: span 6; }
+      .photo-card img { height: 210px; }
+      .feature-list { grid-template-columns: repeat(2, 1fr); }
+      .safari-feature { grid-template-columns: 1fr; }
+      .safari-feature__image { min-height: 310px; }
+      .sauna-round { grid-template-columns: 82px 1fr; }
+      .round-number { display: none; }
+      .route-layout { grid-template-columns: 1fr; }
+      .route-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 20px; }
+      .route-list li { padding: 0 0 0 32px; }
+      .route-list li::after { display: none; }
+      .map-card iframe { height: 420px; }
+      .other-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-inner { display: block; }
+      .footer-inner > p { margin-top: 18px; }
+    }
+
+    @media (max-width: 480px) {
+      .section { padding: 58px 0; }
+      .celebration { padding: 12px; }
+      .celebration__panel { border-radius: 24px; }
+      .celebration__route { font-size: .82rem; }
+      .hero { min-height: 680px; }
+      .hero__jp { font-size: clamp(2.5rem, 14vw, 4rem); }
+      .hero__sub { margin-top: 20px; font-size: .9rem; }
+      .hero__stamp { padding: 10px 13px; }
+      .summary-grid { grid-template-columns: 1fr; }
+      .summary-card:last-child { grid-column: auto; }
+      .day-ticket { grid-template-columns: 1fr; }
+      .day-ticket__label { display: block; border-right: 0; border-bottom: 1px dashed rgba(255,255,255,.35); }
+      .day-ticket__label span { display: block; }
+      .timeline-card__title { gap: 8px; }
+      .price-facts { grid-template-columns: 1fr 1fr; }
+      .aufguss { grid-template-columns: repeat(2, 1fr); }
+      .aufguss__title { grid-column: span 2; }
+      .photo-grid { grid-template-columns: 1fr; }
+      .photo-card, .photo-card--wide { grid-column: auto; }
+      .photo-card img { height: 220px; }
+      .feature-list { grid-template-columns: 1fr; }
+      .sauna-specs, .safari-price { grid-template-columns: 1fr; }
+      .warning-card { padding: 62px 18px 20px; }
+      .warning-card::before { left: 18px; top: 15px; }
+      .experience { grid-template-columns: 1fr; }
+      .sauna-round { display: block; padding: 22px; }
+      .round-label { display: block; margin-bottom: 10px; }
+      .cost-list li { display: block; }
+      .cost-list strong { display: block; margin-top: 3px; text-align: left; }
+      .route-list { grid-template-columns: 1fr; }
+      .map-actions { display: block; }
+      .map-actions .btn { width: 100%; margin-top: 12px; }
+      .other-grid { grid-template-columns: 1fr; }
+      .other-card h3, .other-card__concept { min-height: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .confetti-piece { display: none; }
+    }
+  </style>
 </head>
-<body>
-<div class="shell">
-<header class="hero">
-  <div class="kicker">Kawasaki → Sauna & Onsen / 1 night 2 days</div>
-  <h1>どこ行く？<br>サウナ温泉、6択。</h1>
-  <p>6案を最初から順位づけせず、実際の施設・観光地・地域の写真、2日間の行程、ルート図、地図を見ながら比べるための共有ページです。</p>
-  <div class="pills"><span class="pill">🚗 車移動</span><span class="pill">🧖 サウナ重視</span><span class="pill">♨️ 温泉あり</span><span class="pill">💴 1人2万円以内</span><span class="pill">🗓 1泊2日</span></div>
-  <div class="masthead" id="masthead"></div>
-  <div class="note-box">写真は各施設・地域の公開写真を外部参照しています。各案を開くと写真の出典リンクを確認できます。地図には比較しやすいよう主要立ち寄り地点を表示し、Google Mapsでルートを開くリンクも付けています。</div>
-</header>
+<body class="overlay-open">
+  <a class="skip-link" href="#trip">旅程へスキップ</a>
 
-<section>
-  <div class="section-title"><div><div class="kicker">VIEWPOINT</div><h2>見る観点を切り替える</h2></div><p>並び順は変えず、選んだ観点の評価だけを表示します。</p></div>
-  <div class="priority" id="priority"></div>
-</section>
+  <div class="celebration" id="celebration" role="dialog" aria-modal="true" aria-labelledby="celebration-title" aria-describedby="celebration-copy">
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <div class="celebration__panel">
+      <p class="celebration__mark">DESTINATION ANNOUNCEMENT</p>
+      <p class="celebration__date">2026.08.12 WED → 08.13 THU</p>
+      <h1 id="celebration-title">㊗️ 御殿場プランに決定！</h1>
+      <p class="celebration__route">富士山 × サウナ × アウトレット × サファリ</p>
+      <p class="celebration__icons" aria-hidden="true">🗻 🧖 ♨️ 🛍️ 🦁 🚗</p>
+      <p class="celebration__copy" id="celebration-copy">「富士山に整いに行きます。」</p>
+      <button class="btn btn--light" id="close-celebration" type="button">旅程を見る →</button>
+    </div>
+  </div>
 
-<section>
-  <div class="section-title"><div><div class="kicker">SIX PLANS</div><h2>写真から6案を見る</h2></div><p>各カードは実際の施設・地域写真を複数掲載。</p></div>
-  <div class="grid" id="cards"></div>
-</section>
+  <header class="hero" id="top">
+    <div class="hero__media" aria-hidden="true">
+      <figure><img src="https://www.gotemba-konohananoyu.jp/spa/images/img_main.jpg" alt="" fetchpriority="high"></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotemba%20premium%20outlets1.jpg?width=1400" alt=""></figure>
+      <figure><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/01/rsg_mv01-1.jpg" alt=""></figure>
+    </div>
+    <div class="hero__stamp">DESTINATION LOCKED ✓<br>GOTEMBA</div>
+    <div class="hero__content">
+      <div class="hero__inner">
+        <p class="hero__overline">2026.08.12 WED → 08.13 THU / KAWASAKI → GOTEMBA</p>
+        <h1>
+          <span class="hero__en">GOTEMBA WEEKEND</span>
+          <span class="hero__jp">富士山のふもとで、<br>サウナを3回。</span>
+        </h1>
+        <p class="hero__sub">御殿場に決定。<br>買って、蒸されて、寝て、動物を見る1泊2日。</p>
+        <a class="btn btn--light" href="#schedule">08:30から旅程を見る ↓</a>
+      </div>
+    </div>
+    <p class="hero__credit">写真出典：<a class="source-link" href="https://www.gotemba-konohananoyu.jp/" target="_blank" rel="noopener">木の花の湯 公式</a> / <a class="source-link" href="https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets1.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> / <a class="source-link" href="https://rembrandt-style.com/gotemba-komakado" target="_blank" rel="noopener">ホテル公式</a></p>
+  </header>
 
-<section>
-  <div class="section-title"><div><div class="kicker">SIDE BY SIDE</div><h2>条件を一気に比較</h2></div><p>評価値は添付された旅行案を比較しやすくするための相対表示です。</p></div>
-  <div class="compare"><div class="table-wrap"><table><thead><tr><th>候補</th><th>予算</th><th>移動負担</th><th>サウナ</th><th>温泉</th><th>アクティビティ</th><th>睡眠</th><th>向いている人</th></tr></thead><tbody id="compareBody"></tbody></table></div><div class="compare-note">料金・営業時間・工事・宿泊価格は訪問日によって変わる可能性があります。予約直前に各施設の公式情報を再確認してください。</div></div>
-</section>
+  <nav class="trip-nav" aria-label="ページ内ナビゲーション">
+    <div class="trip-nav__inner">
+      <a href="#trip">TRIP</a>
+      <a href="#schedule">SCHEDULE</a>
+      <a href="#sauna">SAUNA</a>
+      <a href="#budget">BUDGET</a>
+      <a href="#map">MAP</a>
+      <a href="#other-plans">OTHER PLANS</a>
+    </div>
+  </nav>
 
-</div>
+  <main>
+    <section class="section" id="trip">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">TRIP AT A GLANCE</p>
+            <h2>今回の旅。</h2>
+          </div>
+          <p>買い物は短く、サウナはしっかり。2日目はライオン。</p>
+        </div>
+        <div class="summary-grid">
+          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🚗</span>川崎から</div><strong>約1.5時間</strong><small>東名高速で御殿場へ</small></article>
+          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">💴</span>予算</div><strong>約17,400〜<br>19,900円 / 人</strong><small>車関連費を除く</small></article>
+          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🧖</span>サウナ</div><strong>最大3回</strong><small>木の花 → 夜 → 朝ウナ</small></article>
+          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🛏️</span>宿</div><strong>レンブラントスタイル<br>御殿場駒門</strong><small>宿泊目安 7,500〜9,000円</small></article>
+          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🦁</span>DAY 2</div><strong>富士サファリパーク</strong><small>MySAFARIなら500円節約</small></article>
+        </div>
+      </div>
+    </section>
 
-<div class="modal-back" id="modalBack" aria-hidden="true"><div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalHeading" tabindex="-1"></div></div>
-<div class="toast" id="toast"></div>
+    <section class="section section--white" id="schedule">
+      <div class="container">
+        <div class="day-ticket">
+          <div class="day-ticket__label"><strong>DAY 1</strong><span>8/12 WED</span></div>
+          <div class="day-ticket__body"><p>WEDNESDAY / GOTEMBA</p><h3>買う → 蒸す → 食べる → また蒸す</h3></div>
+        </div>
 
-<script>
-const plans = [{"id": "shizuoka-shikiji-simple", "name": "静岡・サウナしきじ", "short": "聖地巡礼 × 美肌湯", "badge": "コスパ", "budget": "約13,000〜14,000円", "budget_num": 13500, "drive": "約2〜2.5時間", "drive_score": 3.5, "stay": "しきじ館内で仮眠", "sleep": 2.0, "sauna": 5.0, "onsen": 4.0, "activity": 4.0, "value": 5.0, "balance": 4.2, "concept": "日本屈指の有名サウナ「しきじ」に泊まり、2日目に2源泉の温泉で“温泉旅行”も回収する欲張り構成。", "summary": "有名サウナを最優先しつつ、日本平・久能山東照宮・三保の松原まで効率よく回る。宿泊費を極端に抑えられるのが強い。", "fit": "寝具より“しきじに泊まる体験”と費用対効果を重視したい", "highlights": ["サウナしきじ", "天然水の水風呂", "日本平・久能山東照宮", "三保の松原", "おふろcafé bijinyu"], "pros": ["6案の中でも低予算", "夜＋朝のしきじを狙える", "観光・温泉・サウナの密度が高い"], "cons": ["仮眠環境なので睡眠品質は低め", "土日夜は混雑しやすい", "男女別行動の時間が長くなりやすい"], "day1": [["07:30", "川崎発"], ["10:00", "河岸の市で海鮮ランチ"], ["11:30", "三保の松原"], ["13:30", "日本平・夢テラス"], ["14:30", "久能山東照宮"], ["17:00", "サウナしきじ IN"], ["深夜", "館内で仮眠"]], "day2": [["06:00", "朝しきじ"], ["09:30", "しきじ OUT"], ["10:15", "おふろcafé bijinyu"], ["13:30", "さわやか or 静岡おでん"], ["15:00", "帰路"], ["17:30〜18:00", "川崎着"]], "note": "「宿泊＝客室」ではなく館内仮眠。しっかり寝たい場合はカプセルホテルへの変更余地あり。", "theme": "mint", "routeImage": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzM0MCcgdmlld0JveD0nMCAwIDEyMDAgMzQwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB4Mj0nMSc+PHN0b3Agb2Zmc2V0PScwJyBzdG9wLWNvbG9yPScjMWQ2ODRmJy8+PHN0b3Agb2Zmc2V0PScxJyBzdG9wLWNvbG9yPScjZDk4YzVmJy8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSdzJz48ZmVEcm9wU2hhZG93IGR4PScwJyBkeT0nNicgc3RkRGV2aWF0aW9uPSc4JyBmbG9vZC1jb2xvcj0ncmdiYSgwLDAsMCwuMTIpJy8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHJ4PScyOCcgZmlsbD0nI2ZmZmVmYicvPjxyZWN0IHg9JzEyJyB5PScxMicgd2lkdGg9JzExNzYnIGhlaWdodD0nMzE2JyByeD0nMjQnIGZpbGw9JyNmOGZhZjcnIHN0cm9rZT0nI2UwZThkZicvPjx0ZXh0IHg9JzM2JyB5PSc0MicgZm9udC1zaXplPScyMicgZm9udC1mYW1pbHk9J0FyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyMxYzI0MWYnPumdmeWyoeODu+OCteOCpuODiuOBl+OBjeOBmCDjg6vjg7zjg4jmpoLopoE8L3RleHQ+PHRleHQgeD0nMzYnIHk9JzY4JyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZicgZmlsbD0nIzYxNzA2OCc+REFZMSDihpIgREFZMiDjga7kuLvopoHnq4vjgaHlr4Tjgorjgrnjg53jg4Pjg4jjgpLjgbLjgajnm67jgafnorroqo08L3RleHQ+PHBhdGggZD0nTSAxMDAgMTcwIEwgMjQwIDkwIEwgMzkwIDE3MCBMIDU0MCA5MCBMIDY5MCAxNzAgTCA4NDAgOTAgTCA5OTAgMTcwIEwgMTExMCA5MCBMIDk5MCAyNjAgTCA4NDAgMTgwIEwgNjkwIDI2MCBMIDU0MCAxODAgTCAzOTAgMjYwJyBmaWxsPSdub25lJyBzdHJva2U9J3VybCgjZyknIHN0cm9rZS13aWR0aD0nOCcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBvcGFjaXR5PScwLjknLz48cmVjdCB4PSc5MzAnIHk9JzI0JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzI2JyByeD0nMTMnIGZpbGw9JyNlZGY1ZjAnIHN0cm9rZT0nI2NmZTBkNicvPjx0ZXh0IHg9Jzk4NScgeT0nNDEnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzFkNjg0Zic+REFZIDE8L3RleHQ+PHJlY3QgeD0nMTA1MCcgeT0nMjQnIHdpZHRoPScxMTAnIGhlaWdodD0nMjYnIHJ4PScxMycgZmlsbD0nI2ZmZjJlYScgc3Ryb2tlPScjZjBkMWJlJy8+PHRleHQgeD0nMTEwNScgeT0nNDEnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2I4NWIzNic+REFZIDI8L3RleHQ+PGNpcmNsZSBjeD0nMTAwJyBjeT0nMTcwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMTAwJyBjeT0nMTcwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nMTAwJyB5PScxNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjE8L3RleHQ+PHJlY3QgeD0nNDUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMTAwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5bed5bSOPC90ZXh0PjxjaXJjbGUgY3g9JzI0MCcgY3k9JzkwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMjQwJyBjeT0nOTAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PScyNDAnIHk9Jzk2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4yPC90ZXh0PjxyZWN0IHg9JzE4NScgeT0nMTE4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PScyNDAnIHk9JzEzMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7msrPlsrjjga7luILjgafmtbfprq7jg6njg7Pjg4E8L3RleHQ+PHJlY3QgeD0nMTQyLjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzE3MC4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMDowMDwvdGV4dD48Y2lyY2xlIGN4PSczOTAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSczOTAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSczOTAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MzwvdGV4dD48cmVjdCB4PSczMzUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMzkwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5LiJ5L+d44Gu5p2+5Y6fPC90ZXh0PjxyZWN0IHg9JzI4Ny4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSczMTUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTE6MzA8L3RleHQ+PGNpcmNsZSBjeD0nNTQwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc1NDAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzU0MCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjQ8L3RleHQ+PHJlY3QgeD0nNDg1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzU0MCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuaXpeacrOW5s+ODu+WkouODhuODqeOCuTwvdGV4dD48cmVjdCB4PSc0MzcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNDY1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjEzOjMwPC90ZXh0PjxjaXJjbGUgY3g9JzY5MCcgY3k9JzE3MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzY5MCcgY3k9JzE3MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzY5MCcgeT0nMTc2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz41PC90ZXh0PjxyZWN0IHg9JzYzNScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc2OTAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7kuYXog73lsbHmnbHnhaflrq48L3RleHQ+PHJlY3QgeD0nNTg3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzYxNS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xNDozMDwvdGV4dD48Y2lyY2xlIGN4PSc4NDAnIGN5PSc5MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9Jzg0MCcgY3k9JzkwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nODQwJyB5PSc5NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+NjwvdGV4dD48cmVjdCB4PSc3ODUnIHk9JzExOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nODQwJyB5PScxMzMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+44K144Km44OK44GX44GN44GYIElOPC90ZXh0PjxyZWN0IHg9JzczNy4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc3NjUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTc6MDA8L3RleHQ+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMTcwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMTcwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nOTkwJyB5PScxNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjc8L3RleHQ+PHJlY3QgeD0nOTM1JyB5PScxOTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzk5MCcgeT0nMjEzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPumkqOWGheOBp+S7ruecoDwvdGV4dD48cmVjdCB4PSc4ODcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nOTE1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPua3seWknDwvdGV4dD48Y2lyY2xlIGN4PScxMTEwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PScxMTEwJyBjeT0nOTAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PScxMTEwJyB5PSc5NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+ODwvdGV4dD48cmVjdCB4PScxMDU1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzExMTAnIHk9JzEzMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7mnJ3jgZfjgY3jgZg8L3RleHQ+PHJlY3QgeD0nMTAyMi4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PScxMDUwLjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjA2OjAwPC90ZXh0PjxjaXJjbGUgY3g9Jzk5MCcgY3k9JzI2MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9Jzk5MCcgY3k9JzI2MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9Jzk5MCcgeT0nMjY2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz45PC90ZXh0PjxyZWN0IHg9JzkzNScgeT0nMjEyJyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc5OTAnIHk9JzIyNycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7jgZfjgY3jgZggT1VUPC90ZXh0PjxyZWN0IHg9JzEwMjIuMCcgeT0nMTYzLjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nMTA1MC4wJyB5PScxNzcuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4wOTozMDwvdGV4dD48Y2lyY2xlIGN4PSc4NDAnIGN5PScxODAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc4NDAnIGN5PScxODAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc4NDAnIHk9JzE4NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTA8L3RleHQ+PHJlY3QgeD0nNzg1JyB5PScyMDgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzg0MCcgeT0nMjIzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuOBiuOBteOCjWNhZsOpIGJpamnigKY8L3RleHQ+PHJlY3QgeD0nODg3LjAnIHk9JzIwOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzkxNS4wJyB5PScyMjIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMDoxNTwvdGV4dD48Y2lyY2xlIGN4PSc2OTAnIGN5PScyNjAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc2OTAnIGN5PScyNjAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc2OTAnIHk9JzI2NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTE8L3RleHQ+PHJlY3QgeD0nNjM1JyB5PScyMTInIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzY5MCcgeT0nMjI3JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuOBleOCj+OChOOBiyBvciDpnZnlsqHjgYrjgafjgpM8L3RleHQ+PHJlY3QgeD0nNzM3LjAnIHk9JzIwOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9Jzc2NS4wJyB5PScyMjIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMzozMDwvdGV4dD48Y2lyY2xlIGN4PSc1NDAnIGN5PScxODAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc1NDAnIGN5PScxODAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc1NDAnIHk9JzE4NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTI8L3RleHQ+PHJlY3QgeD0nNDg1JyB5PScyMDgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzU0MCcgeT0nMjIzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuW4sOi3rzwvdGV4dD48cmVjdCB4PSc1ODcuMCcgeT0nMjA4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNjE1LjAnIHk9JzIyMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjE1OjAwPC90ZXh0PjxjaXJjbGUgY3g9JzM5MCcgY3k9JzI2MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzM5MCcgY3k9JzI2MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzM5MCcgeT0nMjY2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4xMzwvdGV4dD48cmVjdCB4PSczMzUnIHk9JzIxMicgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMzkwJyB5PScyMjcnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5bed5bSOPC90ZXh0Pjx0ZXh0IHg9JzM2JyB5PSczMTAnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+5LqI566X55uu5a6JOiDntIQxMywwMDDjgJwxNCwwMDDlhoYgLyDlrr/ms4o6IOOBl+OBjeOBmOmkqOWGheOBp+S7ruecoDwvdGV4dD48L3N2Zz4=", "photos": [{"url": "https://high-set-hotel.com/data/202312/img658d1b7b4188e.jpg", "caption": "サウナしきじ", "source": "https://high-set-hotel.com/info", "credit": "ハイセットホテル静岡インター 周辺情報"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Miho%20no%20Matsubara%20and%20Mount%20Fuji.JPG?width=1400", "caption": "三保の松原と富士山", "source": "https://commons.wikimedia.org/wiki/File:Miho_no_Matsubara_and_Mount_Fuji.JPG", "credit": "Wikimedia Commons"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/231006%20Kunozan%20Tosho-gu%20Shizuoka%20Japan32s3.jpg?width=1400", "caption": "久能山東照宮", "source": "https://commons.wikimedia.org/wiki/File:231006_Kunozan_Tosho-gu_Shizuoka_Japan32s3.jpg", "credit": "Wikimedia Commons"}], "mapStops": ["川崎駅", "清水魚市場 河岸の市", "三保松原", "日本平夢テラス", "久能山東照宮", "サウナしきじ", "おふろcafé bijinyu", "川崎駅"], "mapEmbed": "https://maps.google.com/maps?output=embed&saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&daddr=%E6%B8%85%E6%B0%B4%E9%AD%9A%E5%B8%82%E5%A0%B4+%E6%B2%B3%E5%B2%B8%E3%81%AE%E5%B8%82+to%3A+%E4%B8%89%E4%BF%9D%E6%9D%BE%E5%8E%9F+to%3A+%E6%97%A5%E6%9C%AC%E5%B9%B3%E5%A4%A2%E3%83%86%E3%83%A9%E3%82%B9+to%3A+%E4%B9%85%E8%83%BD%E5%B1%B1%E6%9D%B1%E7%85%A7%E5%AE%AE+to%3A+%E3%82%B5%E3%82%A6%E3%83%8A%E3%81%97%E3%81%8D%E3%81%98+to%3A+%E3%81%8A%E3%81%B5%E3%82%8Dcaf%C3%A9+bijinyu+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&hl=ja", "mapOpen": "https://www.google.com/maps/dir/?api=1&origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&waypoints=%E6%B8%85%E6%B0%B4%E9%AD%9A%E5%B8%82%E5%A0%B4%20%E6%B2%B3%E5%B2%B8%E3%81%AE%E5%B8%82|%E4%B8%89%E4%BF%9D%E6%9D%BE%E5%8E%9F|%E6%97%A5%E6%9C%AC%E5%B9%B3%E5%A4%A2%E3%83%86%E3%83%A9%E3%82%B9|%E4%B9%85%E8%83%BD%E5%B1%B1%E6%9D%B1%E7%85%A7%E5%AE%AE|%E3%82%B5%E3%82%A6%E3%83%8A%E3%81%97%E3%81%8D%E3%81%98|%E3%81%8A%E3%81%B5%E3%82%8Dcaf%C3%A9%20bijinyu&travelmode=driving"}, {"id": "atami-fuua", "name": "熱海", "short": "オーシャンスパ × 温泉街", "badge": "王道旅行", "budget": "約18,000〜19,500円", "budget_num": 18750, "drive": "約1.5〜2時間", "drive_score": 4.5, "stay": "MARUYA カプセル型個室", "sleep": 4.0, "sauna": 4.0, "onsen": 5.0, "activity": 4.0, "value": 3.5, "balance": 4.5, "concept": "熱海の温泉街を食べ歩き、海と一体になるオーシャンスパFuuaで夕景〜夜景まで長く過ごす王道プラン。", "summary": "移動距離が短く、温泉街らしい散策・海・食事・スパが全部そろう。サウナ一本勝負より“旅行としてのわかりやすい楽しさ”が強い。", "fit": "サウナも欲しいが、街歩き・食べ歩き・海の景色も外したくない", "highlights": ["オーシャンスパ Fuua", "露天立ち湯", "熱海銀座", "來宮神社", "MOA美術館"], "pros": ["移動が短く体力を使いにくい", "宿が個室で仮眠案より快適", "温泉街・海・夜景の旅行感が強い"], "cons": ["6案では予算上限に近い", "Fuua自体には宿泊できない", "週末の熱海は渋滞・駐車待ちが起きやすい"], "day1": [["08:30", "川崎発"], ["10:30", "來宮神社"], ["12:00", "熱海銀座・仲見世で食べ歩き"], ["14:30", "Fuua IN"], ["18:30", "夕景〜夜景を見ながら露天"], ["20:00", "MARUYAチェックイン・温泉街で一杯"]], "day2": [["07:30", "熱海サンビーチ散歩"], ["08:30", "干物の朝ごはん"], ["10:00", "MOA美術館"], ["12:30", "アジフライ or 干物定食"], ["14:00", "熱海城 or ビーチ"], ["15:30", "帰路"], ["17:30〜18:00", "川崎着"]], "note": "“サウナ旅行”より“温泉旅行＋上質スパ”寄り。友人同士でも提案しやすい無難な強さ。", "theme": "sea", "routeImage": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzM0MCcgdmlld0JveD0nMCAwIDEyMDAgMzQwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB4Mj0nMSc+PHN0b3Agb2Zmc2V0PScwJyBzdG9wLWNvbG9yPScjMWQ2ODRmJy8+PHN0b3Agb2Zmc2V0PScxJyBzdG9wLWNvbG9yPScjZDk4YzVmJy8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSdzJz48ZmVEcm9wU2hhZG93IGR4PScwJyBkeT0nNicgc3RkRGV2aWF0aW9uPSc4JyBmbG9vZC1jb2xvcj0ncmdiYSgwLDAsMCwuMTIpJy8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHJ4PScyOCcgZmlsbD0nI2ZmZmVmYicvPjxyZWN0IHg9JzEyJyB5PScxMicgd2lkdGg9JzExNzYnIGhlaWdodD0nMzE2JyByeD0nMjQnIGZpbGw9JyNmOGZhZjcnIHN0cm9rZT0nI2UwZThkZicvPjx0ZXh0IHg9JzM2JyB5PSc0MicgZm9udC1zaXplPScyMicgZm9udC1mYW1pbHk9J0FyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyMxYzI0MWYnPueGsea1tyDjg6vjg7zjg4jmpoLopoE8L3RleHQ+PHRleHQgeD0nMzYnIHk9JzY4JyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZicgZmlsbD0nIzYxNzA2OCc+REFZMSDihpIgREFZMiDjga7kuLvopoHnq4vjgaHlr4Tjgorjgrnjg53jg4Pjg4jjgpLjgbLjgajnm67jgafnorroqo08L3RleHQ+PHBhdGggZD0nTSAxMDAgMTcwIEwgMjQwIDkwIEwgMzkwIDE3MCBMIDU0MCA5MCBMIDY5MCAxNzAgTCA4NDAgOTAgTCA5OTAgMTcwIEwgMTExMCA5MCBMIDk5MCAyNjAgTCA4NDAgMTgwIEwgNjkwIDI2MCBMIDU0MCAxODAnIGZpbGw9J25vbmUnIHN0cm9rZT0ndXJsKCNnKScgc3Ryb2tlLXdpZHRoPSc4JyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIG9wYWNpdHk9JzAuOScvPjxyZWN0IHg9JzkzMCcgeT0nMjQnIHdpZHRoPScxMTAnIGhlaWdodD0nMjYnIHJ4PScxMycgZmlsbD0nI2VkZjVmMCcgc3Ryb2tlPScjY2ZlMGQ2Jy8+PHRleHQgeD0nOTg1JyB5PSc0MScgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMicgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjMWQ2ODRmJz5EQVkgMTwvdGV4dD48cmVjdCB4PScxMDUwJyB5PScyNCcgd2lkdGg9JzExMCcgaGVpZ2h0PScyNicgcng9JzEzJyBmaWxsPScjZmZmMmVhJyBzdHJva2U9JyNmMGQxYmUnLz48dGV4dCB4PScxMTA1JyB5PSc0MScgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMicgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjYjg1YjM2Jz5EQVkgMjwvdGV4dD48Y2lyY2xlIGN4PScxMDAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PScxMDAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PScxMDAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTwvdGV4dD48cmVjdCB4PSc0NScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PScxMDAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7lt53ltI48L3RleHQ+PGNpcmNsZSBjeD0nMjQwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PScyNDAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzI0MCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjI8L3RleHQ+PHJlY3QgeD0nMTg1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzI0MCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuS+huWuruelnuekvjwvdGV4dD48cmVjdCB4PScxNDIuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nMTcwLjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjEwOjMwPC90ZXh0PjxjaXJjbGUgY3g9JzM5MCcgY3k9JzE3MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzM5MCcgY3k9JzE3MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzM5MCcgeT0nMTc2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4zPC90ZXh0PjxyZWN0IHg9JzMzNScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSczOTAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7nhrHmtbfpioDluqfjg7vku7LopovkuJbjgafpo5/jgbnmranjgY08L3RleHQ+PHJlY3QgeD0nMjg3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzMxNS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMjowMDwvdGV4dD48Y2lyY2xlIGN4PSc1NDAnIGN5PSc5MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzU0MCcgY3k9JzkwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nNTQwJyB5PSc5NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+NDwvdGV4dD48cmVjdCB4PSc0ODUnIHk9JzExOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nNTQwJyB5PScxMzMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+RnV1YSBJTjwvdGV4dD48cmVjdCB4PSc0MzcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNDY1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjE0OjMwPC90ZXh0PjxjaXJjbGUgY3g9JzY5MCcgY3k9JzE3MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzY5MCcgY3k9JzE3MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzY5MCcgeT0nMTc2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz41PC90ZXh0PjxyZWN0IHg9JzYzNScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc2OTAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7lpJXmma/jgJzlpJzmma/jgpLopovjgarjgYzjgonpnLLlpKk8L3RleHQ+PHJlY3QgeD0nNTg3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzYxNS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xODozMDwvdGV4dD48Y2lyY2xlIGN4PSc4NDAnIGN5PSc5MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9Jzg0MCcgY3k9JzkwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nODQwJyB5PSc5NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+NjwvdGV4dD48cmVjdCB4PSc3ODUnIHk9JzExOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nODQwJyB5PScxMzMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+TUFSVVlB44OB44Kn44OD44Kv44Kk44Oz4oCmPC90ZXh0PjxyZWN0IHg9JzczNy4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc3NjUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MjA6MDA8L3RleHQ+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMTcwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMTcwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nOTkwJyB5PScxNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjc8L3RleHQ+PHJlY3QgeD0nOTM1JyB5PScxOTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzk5MCcgeT0nMjEzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPueGsea1t+OCteODs+ODk+ODvOODgeaVo+atqTwvdGV4dD48cmVjdCB4PSc4ODcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nOTE1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjA3OjMwPC90ZXh0PjxjaXJjbGUgY3g9JzExMTAnIGN5PSc5MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzExMTAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzExMTAnIHk9Jzk2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz44PC90ZXh0PjxyZWN0IHg9JzEwNTUnIHk9JzExOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMTExMCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuW5sueJqeOBruacneOBlOOBr+OCkzwvdGV4dD48cmVjdCB4PScxMDIyLjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzEwNTAuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MDg6MzA8L3RleHQ+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMjYwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMjYwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nOTkwJyB5PScyNjYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjk8L3RleHQ+PHJlY3QgeD0nOTM1JyB5PScyMTInIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzk5MCcgeT0nMjI3JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPk1PQee+juihk+mkqDwvdGV4dD48cmVjdCB4PScxMDIyLjAnIHk9JzE2My4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzEwNTAuMCcgeT0nMTc3LjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTA6MDA8L3RleHQ+PGNpcmNsZSBjeD0nODQwJyBjeT0nMTgwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nODQwJyBjeT0nMTgwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nODQwJyB5PScxODYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjEwPC90ZXh0PjxyZWN0IHg9Jzc4NScgeT0nMjA4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc4NDAnIHk9JzIyMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7jgqLjgrjjg5Xjg6njgqQgb3Ig5bmy54mp5a6a6aOfPC90ZXh0PjxyZWN0IHg9Jzg4Ny4wJyB5PScyMDguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc5MTUuMCcgeT0nMjIyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTI6MzA8L3RleHQ+PGNpcmNsZSBjeD0nNjkwJyBjeT0nMjYwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nNjkwJyBjeT0nMjYwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nNjkwJyB5PScyNjYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjExPC90ZXh0PjxyZWN0IHg9JzYzNScgeT0nMjEyJyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc2OTAnIHk9JzIyNycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7nhrHmtbfln44gb3Ig44OT44O844OBPC90ZXh0PjxyZWN0IHg9JzczNy4wJyB5PScyMDguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc3NjUuMCcgeT0nMjIyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTQ6MDA8L3RleHQ+PGNpcmNsZSBjeD0nNTQwJyBjeT0nMTgwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nNTQwJyBjeT0nMTgwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nNTQwJyB5PScxODYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjEyPC90ZXh0PjxyZWN0IHg9JzQ4NScgeT0nMjA4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc1NDAnIHk9JzIyMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7lt53ltI48L3RleHQ+PHRleHQgeD0nMzYnIHk9JzMxMCcgZm9udC1zaXplPScxMicgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz7kuojnrpfnm67lrok6IOe0hDE4LDAwMOOAnDE5LDUwMOWGhiAvIOWuv+azijogTUFSVVlBIOOCq+ODl+OCu+ODq+Wei+WAi+WupDwvdGV4dD48L3N2Zz4=", "photos": [{"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/View%20of%20Atami%20Sun%20Beach%20from%20northeast%20-%20Mar%2014%2C%202024.jpg?width=1400", "caption": "熱海サンビーチと市街地", "source": "https://commons.wikimedia.org/wiki/File:View_of_Atami_Sun_Beach_from_northeast_-_Mar_14,_2024.jpg", "credit": "Wikimedia Commons"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atami%20Sun%20Beach%20at%20night%20-%20Jan%2027%2C%202026.jpg?width=1400", "caption": "夜の熱海サンビーチ", "source": "https://commons.wikimedia.org/wiki/File:Atami_Sun_Beach_at_night_-_Jan_27,_2026.jpg", "credit": "Wikimedia Commons"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atami%2C%20Japan.jpg?width=1400", "caption": "熱海の海岸風景", "source": "https://commons.wikimedia.org/wiki/File:Atami,_Japan.jpg", "credit": "Wikimedia Commons"}], "mapStops": ["川崎駅", "來宮神社 熱海", "熱海銀座商店街", "オーシャンスパ Fuua", "ゲストハウス MARUYA 熱海", "MOA美術館", "熱海サンビーチ", "川崎駅"], "mapEmbed": "https://maps.google.com/maps?output=embed&saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&daddr=%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE+%E7%86%B1%E6%B5%B7+to%3A+%E7%86%B1%E6%B5%B7%E9%8A%80%E5%BA%A7%E5%95%86%E5%BA%97%E8%A1%97+to%3A+%E3%82%AA%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%B3%E3%82%B9%E3%83%91+Fuua+to%3A+%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9+MARUYA+%E7%86%B1%E6%B5%B7+to%3A+MOA%E7%BE%8E%E8%A1%93%E9%A4%A8+to%3A+%E7%86%B1%E6%B5%B7%E3%82%B5%E3%83%B3%E3%83%93%E3%83%BC%E3%83%81+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&hl=ja", "mapOpen": "https://www.google.com/maps/dir/?api=1&origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&waypoints=%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE%20%E7%86%B1%E6%B5%B7|%E7%86%B1%E6%B5%B7%E9%8A%80%E5%BA%A7%E5%95%86%E5%BA%97%E8%A1%97|%E3%82%AA%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%B3%E3%82%B9%E3%83%91%20Fuua|%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9%20MARUYA%20%E7%86%B1%E6%B5%B7|MOA%E7%BE%8E%E8%A1%93%E9%A4%A8|%E7%86%B1%E6%B5%B7%E3%82%B5%E3%83%B3%E3%83%93%E3%83%BC%E3%83%81&travelmode=driving"}, {"id": "gotemba-fuji", "name": "御殿場", "short": "富士山絶景 × サウナ宿", "badge": "快適", "budget": "約17,500〜19,500円", "budget_num": 18500, "drive": "約1.5時間", "drive_score": 5.0, "stay": "レンブラントスタイル御殿場駒門", "sleep": 5.0, "sauna": 5.0, "onsen": 4.0, "activity": 3.5, "value": 3.8, "balance": 4.7, "concept": "昼は富士山ビューの温泉サウナ、宿でも溶岩石サウナ。夜サウナ→朝ウナまで“富士づくし”。", "summary": "ホテル泊で睡眠を確保しつつ、2施設でサウナを楽しめる。距離も短く、疲れにくさとサウナ密度のバランスが非常に良い。", "fit": "仮眠泊は避けたい。近場でしっかりサウナを楽しみたい", "highlights": ["木の花の湯", "富士山ビューサウナ", "溶岩石サウナ", "富士山伏流水", "御殿場アウトレット"], "pros": ["6案でトップ級の宿泊快適性", "川崎から近い", "昼・夜・朝でサウナを組みやすい"], "cons": ["富士山の眺望は天候依存", "予算は上限寄り", "観光アクティビティの個性は選択次第"], "day1": [["08:30", "川崎発"], ["10:00", "御殿場プレミアム・アウトレット"], ["14:30", "木の花の湯"], ["17:30", "ホテルチェックイン"], ["19:00", "御殿場市街で夕食"], ["21:00", "富士の心湯で夜サウナ"]], "day2": [["06:30", "朝ウナ"], ["09:30", "チェックアウト"], ["10:15", "富士サファリパーク / 山中湖・忍野八海"], ["13:00", "ほうとう or さわやか"], ["15:00", "帰路"], ["17:00〜18:00", "川崎着"]], "note": "“サウナの強さ”と“普通に寝られる安心感”を両立。総合点を取りやすいタイプ。", "theme": "mountain", "routeImage": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzM0MCcgdmlld0JveD0nMCAwIDEyMDAgMzQwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB4Mj0nMSc+PHN0b3Agb2Zmc2V0PScwJyBzdG9wLWNvbG9yPScjMWQ2ODRmJy8+PHN0b3Agb2Zmc2V0PScxJyBzdG9wLWNvbG9yPScjZDk4YzVmJy8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSdzJz48ZmVEcm9wU2hhZG93IGR4PScwJyBkeT0nNicgc3RkRGV2aWF0aW9uPSc4JyBmbG9vZC1jb2xvcj0ncmdiYSgwLDAsMCwuMTIpJy8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHJ4PScyOCcgZmlsbD0nI2ZmZmVmYicvPjxyZWN0IHg9JzEyJyB5PScxMicgd2lkdGg9JzExNzYnIGhlaWdodD0nMzE2JyByeD0nMjQnIGZpbGw9JyNmOGZhZjcnIHN0cm9rZT0nI2UwZThkZicvPjx0ZXh0IHg9JzM2JyB5PSc0MicgZm9udC1zaXplPScyMicgZm9udC1mYW1pbHk9J0FyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyMxYzI0MWYnPuW+oeauv+WgtCDjg6vjg7zjg4jmpoLopoE8L3RleHQ+PHRleHQgeD0nMzYnIHk9JzY4JyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZicgZmlsbD0nIzYxNzA2OCc+REFZMSDihpIgREFZMiDjga7kuLvopoHnq4vjgaHlr4Tjgorjgrnjg53jg4Pjg4jjgpLjgbLjgajnm67jgafnorroqo08L3RleHQ+PHBhdGggZD0nTSAxMDAgMTcwIEwgMjQwIDkwIEwgMzkwIDE3MCBMIDU0MCA5MCBMIDY5MCAxNzAgTCA4NDAgOTAgTCA5OTAgMTcwIEwgMTExMCA5MCBMIDk5MCAyNjAgTCA4NDAgMTgwIEwgNjkwIDI2MCBMIDU0MCAxODAnIGZpbGw9J25vbmUnIHN0cm9rZT0ndXJsKCNnKScgc3Ryb2tlLXdpZHRoPSc4JyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIG9wYWNpdHk9JzAuOScvPjxyZWN0IHg9JzkzMCcgeT0nMjQnIHdpZHRoPScxMTAnIGhlaWdodD0nMjYnIHJ4PScxMycgZmlsbD0nI2VkZjVmMCcgc3Ryb2tlPScjY2ZlMGQ2Jy8+PHRleHQgeD0nOTg1JyB5PSc0MScgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMicgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjMWQ2ODRmJz5EQVkgMTwvdGV4dD48cmVjdCB4PScxMDUwJyB5PScyNCcgd2lkdGg9JzExMCcgaGVpZ2h0PScyNicgcng9JzEzJyBmaWxsPScjZmZmMmVhJyBzdHJva2U9JyNmMGQxYmUnLz48dGV4dCB4PScxMTA1JyB5PSc0MScgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMicgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjYjg1YjM2Jz5EQVkgMjwvdGV4dD48Y2lyY2xlIGN4PScxMDAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PScxMDAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PScxMDAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTwvdGV4dD48cmVjdCB4PSc0NScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PScxMDAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7lt53ltI48L3RleHQ+PGNpcmNsZSBjeD0nMjQwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PScyNDAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzI0MCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjI8L3RleHQ+PHJlY3QgeD0nMTg1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzI0MCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuW+oeauv+WgtOODl+ODrOODn+OCouODoOODu+OCouOCpuODiOKApjwvdGV4dD48cmVjdCB4PScxNDIuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nMTcwLjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjEwOjAwPC90ZXh0PjxjaXJjbGUgY3g9JzM5MCcgY3k9JzE3MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzM5MCcgY3k9JzE3MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzM5MCcgeT0nMTc2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4zPC90ZXh0PjxyZWN0IHg9JzMzNScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSczOTAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7mnKjjga7oirHjga7mua88L3RleHQ+PHJlY3QgeD0nMjg3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzMxNS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xNDozMDwvdGV4dD48Y2lyY2xlIGN4PSc1NDAnIGN5PSc5MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzU0MCcgY3k9JzkwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nNTQwJyB5PSc5NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+NDwvdGV4dD48cmVjdCB4PSc0ODUnIHk9JzExOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nNTQwJyB5PScxMzMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+44Ob44OG44Or44OB44Kn44OD44Kv44Kk44OzPC90ZXh0PjxyZWN0IHg9JzQzNy4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc0NjUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTc6MzA8L3RleHQ+PGNpcmNsZSBjeD0nNjkwJyBjeT0nMTcwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nNjkwJyBjeT0nMTcwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nNjkwJyB5PScxNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjU8L3RleHQ+PHJlY3QgeD0nNjM1JyB5PScxOTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzY5MCcgeT0nMjEzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuW+oeauv+WgtOW4guihl+OBp+WklemjnzwvdGV4dD48cmVjdCB4PSc1ODcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNjE1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjE5OjAwPC90ZXh0PjxjaXJjbGUgY3g9Jzg0MCcgY3k9JzkwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nODQwJyBjeT0nOTAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc4NDAnIHk9Jzk2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz42PC90ZXh0PjxyZWN0IHg9Jzc4NScgeT0nMTE4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc4NDAnIHk9JzEzMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7lr4zlo6vjga7lv4Pmua/jgaflpJzjgrXjgqbjg4o8L3RleHQ+PHJlY3QgeD0nNzM3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9Jzc2NS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4yMTowMDwvdGV4dD48Y2lyY2xlIGN4PSc5OTAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc5OTAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc5OTAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+NzwvdGV4dD48cmVjdCB4PSc5MzUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nOTkwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5pyd44Km44OKPC90ZXh0PjxyZWN0IHg9Jzg4Ny4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc5MTUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MDY6MzA8L3RleHQ+PGNpcmNsZSBjeD0nMTExMCcgY3k9JzkwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMTExMCcgY3k9JzkwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nMTExMCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjg8L3RleHQ+PHJlY3QgeD0nMTA1NScgeT0nMTE4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PScxMTEwJyB5PScxMzMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+44OB44Kn44OD44Kv44Ki44Km44OIPC90ZXh0PjxyZWN0IHg9JzEwMjIuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nMTA1MC4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4wOTozMDwvdGV4dD48Y2lyY2xlIGN4PSc5OTAnIGN5PScyNjAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc5OTAnIGN5PScyNjAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc5OTAnIHk9JzI2NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+OTwvdGV4dD48cmVjdCB4PSc5MzUnIHk9JzIxMicgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nOTkwJyB5PScyMjcnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5a+M5aOr44K144OV44Kh44Oq44OR44O844KvIC8g4oCmPC90ZXh0PjxyZWN0IHg9JzEwMjIuMCcgeT0nMTYzLjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nMTA1MC4wJyB5PScxNzcuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMDoxNTwvdGV4dD48Y2lyY2xlIGN4PSc4NDAnIGN5PScxODAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc4NDAnIGN5PScxODAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc4NDAnIHk9JzE4NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTA8L3RleHQ+PHJlY3QgeD0nNzg1JyB5PScyMDgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzg0MCcgeT0nMjIzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuOBu+OBhuOBqOOBhiBvciDjgZXjgo/jgoTjgYs8L3RleHQ+PHJlY3QgeD0nODg3LjAnIHk9JzIwOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzkxNS4wJyB5PScyMjIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMzowMDwvdGV4dD48Y2lyY2xlIGN4PSc2OTAnIGN5PScyNjAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc2OTAnIGN5PScyNjAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc2OTAnIHk9JzI2NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTE8L3RleHQ+PHJlY3QgeD0nNjM1JyB5PScyMTInIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzY5MCcgeT0nMjI3JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuW4sOi3rzwvdGV4dD48cmVjdCB4PSc3MzcuMCcgeT0nMjA4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNzY1LjAnIHk9JzIyMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjE1OjAwPC90ZXh0PjxjaXJjbGUgY3g9JzU0MCcgY3k9JzE4MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzU0MCcgY3k9JzE4MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzU0MCcgeT0nMTg2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4xMjwvdGV4dD48cmVjdCB4PSc0ODUnIHk9JzIwOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nNTQwJyB5PScyMjMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5bed5bSOPC90ZXh0Pjx0ZXh0IHg9JzM2JyB5PSczMTAnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+5LqI566X55uu5a6JOiDntIQxNyw1MDDjgJwxOSw1MDDlhoYgLyDlrr/ms4o6IOODrOODs+ODluODqeODs+ODiOOCueOCv+OCpOODq+W+oeauv+WgtOmnkumWgDwvdGV4dD48L3N2Zz4=", "photos": [{"url": "https://sp.jorudan.co.jp/onsen/images/spot/640/168192_1.jpg", "caption": "木の花の湯・富士山ビュー", "source": "https://sp.jorudan.co.jp/onsen/details/2166/", "credit": "ジョルダン 温泉特集"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotemba%20premium%20outlets1.jpg?width=1400", "caption": "御殿場プレミアム・アウトレット", "source": "https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets1.jpg", "credit": "Wikimedia Commons"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotemba%20premium%20outlets2.jpg?width=1400", "caption": "御殿場プレミアム・アウトレット周辺", "source": "https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets2.jpg", "credit": "Wikimedia Commons"}], "mapStops": ["川崎駅", "御殿場プレミアム・アウトレット", "木の花の湯", "レンブラントスタイル御殿場駒門", "富士サファリパーク", "川崎駅"], "mapEmbed": "https://maps.google.com/maps?output=embed&saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&daddr=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88+to%3A+%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF+to%3A+%E3%83%AC%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B4%E9%A7%92%E9%96%80+to%3A+%E5%AF%8C%E5%A3%AB%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&hl=ja", "mapOpen": "https://www.google.com/maps/dir/?api=1&origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&waypoints=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88|%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF|%E3%83%AC%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B4%E9%A7%92%E9%96%80|%E5%AF%8C%E5%A3%AB%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF&travelmode=driving"}, {"id": "yamanakako", "name": "山中湖", "short": "天空のサウナ × 湖アクティビティ", "badge": "総合推し", "budget": "約18,200〜18,400円", "budget_num": 18300, "drive": "中距離", "drive_score": 4.3, "stay": "湖畔のペンション", "sleep": 4.3, "sauna": 5.0, "onsen": 4.5, "activity": 5.0, "value": 4.0, "balance": 5.0, "concept": "ホテルマウント富士の有名サウナと富士山外気浴を軸に、水陸両用バスKABAと湖一周サイクリングまで詰め込む。", "summary": "サウナ・景色・屋外アクティビティ・温泉の全部が高水準。予算は上限内で、旅行としての体験密度がもっとも高い候補。", "fit": "せっかくの1泊2日なので、サウナ以外にも“やった感”のある体験が欲しい", "highlights": ["ホテルマウント富士", "富士山外気浴", "KABA", "湖一周サイクリング", "忍野八海"], "pros": ["サウナとアクティビティの両立が最強", "富士山・湖で景色が良い", "雨天時の代替案も組みやすい"], "cons": ["予算の余裕は小さめ", "天候で価値が変わりやすい", "サイクリング後の疲労は考慮が必要"], "day1": [["06:30", "川崎発"], ["09:00", "忍野八海"], ["11:15", "山中湖周辺で昼食"], ["13:30", "ホテルマウント富士到着"], ["14:00〜18:00", "満天星の湯・サウナ"], ["18:30", "夕食"], ["20:00", "ペンションチェックイン"]], "day2": [["07:30", "朝食・湖畔散歩"], ["09:15", "KABA"], ["10:15〜12:15", "湖一周サイクリング"], ["12:30", "湖畔ランチ"], ["14:00", "花の都公園"], ["15:30", "帰路"]], "note": "資料側でも“移動負担と体験密度のバランスが良い案”と整理されている。総合候補に置きやすい。", "theme": "lake", "routeImage": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzM0MCcgdmlld0JveD0nMCAwIDEyMDAgMzQwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB4Mj0nMSc+PHN0b3Agb2Zmc2V0PScwJyBzdG9wLWNvbG9yPScjMWQ2ODRmJy8+PHN0b3Agb2Zmc2V0PScxJyBzdG9wLWNvbG9yPScjZDk4YzVmJy8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSdzJz48ZmVEcm9wU2hhZG93IGR4PScwJyBkeT0nNicgc3RkRGV2aWF0aW9uPSc4JyBmbG9vZC1jb2xvcj0ncmdiYSgwLDAsMCwuMTIpJy8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHJ4PScyOCcgZmlsbD0nI2ZmZmVmYicvPjxyZWN0IHg9JzEyJyB5PScxMicgd2lkdGg9JzExNzYnIGhlaWdodD0nMzE2JyByeD0nMjQnIGZpbGw9JyNmOGZhZjcnIHN0cm9rZT0nI2UwZThkZicvPjx0ZXh0IHg9JzM2JyB5PSc0MicgZm9udC1zaXplPScyMicgZm9udC1mYW1pbHk9J0FyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyMxYzI0MWYnPuWxseS4rea5liDjg6vjg7zjg4jmpoLopoE8L3RleHQ+PHRleHQgeD0nMzYnIHk9JzY4JyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZicgZmlsbD0nIzYxNzA2OCc+REFZMSDihpIgREFZMiDjga7kuLvopoHnq4vjgaHlr4Tjgorjgrnjg53jg4Pjg4jjgpLjgbLjgajnm67jgafnorroqo08L3RleHQ+PHBhdGggZD0nTSAxMDAgMTcwIEwgMjQwIDkwIEwgMzkwIDE3MCBMIDU0MCA5MCBMIDY5MCAxNzAgTCA4NDAgOTAgTCA5OTAgMTcwIEwgMTExMCA5MCBMIDk5MCAyNjAgTCA4NDAgMTgwIEwgNjkwIDI2MCBMIDU0MCAxODAgTCAzOTAgMjYwJyBmaWxsPSdub25lJyBzdHJva2U9J3VybCgjZyknIHN0cm9rZS13aWR0aD0nOCcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBvcGFjaXR5PScwLjknLz48cmVjdCB4PSc5MzAnIHk9JzI0JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzI2JyByeD0nMTMnIGZpbGw9JyNlZGY1ZjAnIHN0cm9rZT0nI2NmZTBkNicvPjx0ZXh0IHg9Jzk4NScgeT0nNDEnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzFkNjg0Zic+REFZIDE8L3RleHQ+PHJlY3QgeD0nMTA1MCcgeT0nMjQnIHdpZHRoPScxMTAnIGhlaWdodD0nMjYnIHJ4PScxMycgZmlsbD0nI2ZmZjJlYScgc3Ryb2tlPScjZjBkMWJlJy8+PHRleHQgeD0nMTEwNScgeT0nNDEnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2I4NWIzNic+REFZIDI8L3RleHQ+PGNpcmNsZSBjeD0nMTAwJyBjeT0nMTcwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMTAwJyBjeT0nMTcwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nMTAwJyB5PScxNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjE8L3RleHQ+PHJlY3QgeD0nNDUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMTAwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5bed5bSOPC90ZXh0PjxjaXJjbGUgY3g9JzI0MCcgY3k9JzkwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMjQwJyBjeT0nOTAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PScyNDAnIHk9Jzk2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4yPC90ZXh0PjxyZWN0IHg9JzE4NScgeT0nMTE4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PScyNDAnIHk9JzEzMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7lv43ph47lhavmtbc8L3RleHQ+PHJlY3QgeD0nMTQyLjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzE3MC4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4wOTowMDwvdGV4dD48Y2lyY2xlIGN4PSczOTAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSczOTAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSczOTAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MzwvdGV4dD48cmVjdCB4PSczMzUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMzkwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5bGx5Lit5rmW5ZGo6L6644Gn5pi86aOfPC90ZXh0PjxyZWN0IHg9JzI4Ny4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSczMTUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTE6MTU8L3RleHQ+PGNpcmNsZSBjeD0nNTQwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc1NDAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzU0MCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjQ8L3RleHQ+PHJlY3QgeD0nNDg1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzU0MCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuODm+ODhuODq+ODnuOCpuODs+ODiOWvjOWjq+WIsOedgDwvdGV4dD48cmVjdCB4PSc0MzcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNDY1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjEzOjMwPC90ZXh0PjxjaXJjbGUgY3g9JzY5MCcgY3k9JzE3MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzY5MCcgY3k9JzE3MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzY5MCcgeT0nMTc2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz41PC90ZXh0PjxyZWN0IHg9JzYzNScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc2OTAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7muoDlpKnmmJ/jga7mua/jg7vjgrXjgqbjg4o8L3RleHQ+PHJlY3QgeD0nNTg3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzYxNS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xNDowMOOAnDE4OjAwPC90ZXh0PjxjaXJjbGUgY3g9Jzg0MCcgY3k9JzkwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nODQwJyBjeT0nOTAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc4NDAnIHk9Jzk2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz42PC90ZXh0PjxyZWN0IHg9Jzc4NScgeT0nMTE4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc4NDAnIHk9JzEzMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7lpJXpo588L3RleHQ+PHJlY3QgeD0nNzM3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9Jzc2NS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xODozMDwvdGV4dD48Y2lyY2xlIGN4PSc5OTAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc5OTAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc5OTAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+NzwvdGV4dD48cmVjdCB4PSc5MzUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nOTkwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+44Oa44Oz44K344On44Oz44OB44Kn44OD44Kv44Kk44OzPC90ZXh0PjxyZWN0IHg9Jzg4Ny4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc5MTUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MjA6MDA8L3RleHQ+PGNpcmNsZSBjeD0nMTExMCcgY3k9JzkwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMTExMCcgY3k9JzkwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nMTExMCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjg8L3RleHQ+PHJlY3QgeD0nMTA1NScgeT0nMTE4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PScxMTEwJyB5PScxMzMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5pyd6aOf44O75rmW55WU5pWj5q2pPC90ZXh0PjxyZWN0IHg9JzEwMjIuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nMTA1MC4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4wNzozMDwvdGV4dD48Y2lyY2xlIGN4PSc5OTAnIGN5PScyNjAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc5OTAnIGN5PScyNjAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc5OTAnIHk9JzI2NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+OTwvdGV4dD48cmVjdCB4PSc5MzUnIHk9JzIxMicgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nOTkwJyB5PScyMjcnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+S0FCQTwvdGV4dD48cmVjdCB4PScxMDIyLjAnIHk9JzE2My4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzEwNTAuMCcgeT0nMTc3LjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MDk6MTU8L3RleHQ+PGNpcmNsZSBjeD0nODQwJyBjeT0nMTgwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nODQwJyBjeT0nMTgwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nODQwJyB5PScxODYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjEwPC90ZXh0PjxyZWN0IHg9Jzc4NScgeT0nMjA4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc4NDAnIHk9JzIyMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7muZbkuIDlkajjgrXjgqTjgq/jg6rjg7PjgrA8L3RleHQ+PHJlY3QgeD0nODg3LjAnIHk9JzIwOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzkxNS4wJyB5PScyMjIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMDoxNeOAnDEyOjE1PC90ZXh0PjxjaXJjbGUgY3g9JzY5MCcgY3k9JzI2MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzY5MCcgY3k9JzI2MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzY5MCcgeT0nMjY2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4xMTwvdGV4dD48cmVjdCB4PSc2MzUnIHk9JzIxMicgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nNjkwJyB5PScyMjcnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5rmW55WU44Op44Oz44OBPC90ZXh0PjxyZWN0IHg9JzczNy4wJyB5PScyMDguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc3NjUuMCcgeT0nMjIyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTI6MzA8L3RleHQ+PGNpcmNsZSBjeD0nNTQwJyBjeT0nMTgwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nNTQwJyBjeT0nMTgwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nNTQwJyB5PScxODYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjEyPC90ZXh0PjxyZWN0IHg9JzQ4NScgeT0nMjA4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc1NDAnIHk9JzIyMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7oirHjga7pg73lhazlnJI8L3RleHQ+PHJlY3QgeD0nNTg3LjAnIHk9JzIwOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzYxNS4wJyB5PScyMjIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xNDowMDwvdGV4dD48Y2lyY2xlIGN4PSczOTAnIGN5PScyNjAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSczOTAnIGN5PScyNjAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSczOTAnIHk9JzI2NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTM8L3RleHQ+PHJlY3QgeD0nMzM1JyB5PScyMTInIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzM5MCcgeT0nMjI3JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuW3neW0jjwvdGV4dD48dGV4dCB4PSczNicgeT0nMzEwJyBmb250LXNpemU9JzEyJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPuS6iOeul+ebruWuiTog57SEMTgsMjAw44CcMTgsNDAw5YaGIC8g5a6/5rOKOiDmuZbnlZTjga7jg5rjg7Pjgrfjg6fjg7M8L3RleHQ+PC9zdmc+", "photos": [{"url": "https://img.sauna-ikitai.com/sauna/8094_20200303_090610_zpB80yBI5A_large.jpg", "caption": "ホテルマウント富士・富士山を望む温浴エリア", "source": "https://sauna-ikitai.com/saunas/8094", "credit": "サウナイキタイ"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mount%20Fuji%20from%20Lake%20Yamanaka.JPG?width=1400", "caption": "山中湖から望む富士山", "source": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Yamanaka.JPG", "credit": "Wikimedia Commons"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Oshino%20Hakkai%2001.jpg?width=1400", "caption": "忍野八海", "source": "https://commons.wikimedia.org/wiki/File:Oshino_Hakkai_01.jpg", "credit": "Wikimedia Commons"}], "mapStops": ["川崎駅", "忍野八海", "ホテルマウント富士", "山中湖のカバ", "山中湖花の都公園", "川崎駅"], "mapEmbed": "https://maps.google.com/maps?output=embed&saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&daddr=%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7+to%3A+%E3%83%9B%E3%83%86%E3%83%AB%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E5%AF%8C%E5%A3%AB+to%3A+%E5%B1%B1%E4%B8%AD%E6%B9%96%E3%81%AE%E3%82%AB%E3%83%90+to%3A+%E5%B1%B1%E4%B8%AD%E6%B9%96%E8%8A%B1%E3%81%AE%E9%83%BD%E5%85%AC%E5%9C%92+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&hl=ja", "mapOpen": "https://www.google.com/maps/dir/?api=1&origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&waypoints=%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7|%E3%83%9B%E3%83%86%E3%83%AB%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E5%AF%8C%E5%A3%AB|%E5%B1%B1%E4%B8%AD%E6%B9%96%E3%81%AE%E3%82%AB%E3%83%90|%E5%B1%B1%E4%B8%AD%E6%B9%96%E8%8A%B1%E3%81%AE%E9%83%BD%E5%85%AC%E5%9C%92&travelmode=driving"}, {"id": "kusatsu", "name": "草津温泉", "short": "温泉街 × 大滝乃湯 × ジップライン", "badge": "温泉旅", "budget": "約16,700〜16,950円", "budget_num": 16825, "drive": "長め", "drive_score": 2.0, "stay": "ゲストハウスKOTODAMA", "sleep": 3.8, "sauna": 3.8, "onsen": 5.0, "activity": 5.0, "value": 4.5, "balance": 4.3, "concept": "強酸性の名湯・合わせ湯・湯畑の温泉街らしさに、BanZip TENGUと湯もみショーを加える“ちゃんと温泉旅行”プラン。", "summary": "温泉街の完成度は圧倒的。サウナ単体の尖りはしきじや山中湖に譲るが、夜の湯畑まで含めた旅情は6案でも最上位。", "fit": "“サウナ旅行”より一段広く、温泉街そのものを満喫したい", "highlights": ["草津温泉 大滝乃湯", "合わせ湯", "湯畑", "BanZip TENGU", "湯もみショー"], "pros": ["温泉旅行らしさは最強クラス", "予算に3,000円以上の余裕", "観光アクティビティがわかりやすい"], "cons": ["川崎からの運転負担が最大", "ロウリュなしの王道サウナ", "日程によって設備工事の影響あり"], "day1": [["06:00", "川崎発"], ["11:00", "草津着・昼食"], ["12:30", "BanZip TENGU"], ["14:30", "宿へ荷物預け"], ["15:30", "湯もみショー"], ["16:15", "湯畑・裏草津・西の河原"], ["18:00", "夕食・夜の湯畑"]], "day2": [["08:00", "朝食・チェックアウト準備"], ["09:00〜12:00", "大滝乃湯"], ["12:00", "昼食"], ["13:15", "西の河原・買い物"], ["14:30", "草津発"], ["19:00頃", "川崎着"]], "note": "男性同行者がいる場合、2026/8/17〜9/17は大滝乃湯の合わせ湯・男性露天が工事で利用不可という資料記載あり。", "theme": "onsen", "routeImage": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzM0MCcgdmlld0JveD0nMCAwIDEyMDAgMzQwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB4Mj0nMSc+PHN0b3Agb2Zmc2V0PScwJyBzdG9wLWNvbG9yPScjMWQ2ODRmJy8+PHN0b3Agb2Zmc2V0PScxJyBzdG9wLWNvbG9yPScjZDk4YzVmJy8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSdzJz48ZmVEcm9wU2hhZG93IGR4PScwJyBkeT0nNicgc3RkRGV2aWF0aW9uPSc4JyBmbG9vZC1jb2xvcj0ncmdiYSgwLDAsMCwuMTIpJy8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHJ4PScyOCcgZmlsbD0nI2ZmZmVmYicvPjxyZWN0IHg9JzEyJyB5PScxMicgd2lkdGg9JzExNzYnIGhlaWdodD0nMzE2JyByeD0nMjQnIGZpbGw9JyNmOGZhZjcnIHN0cm9rZT0nI2UwZThkZicvPjx0ZXh0IHg9JzM2JyB5PSc0MicgZm9udC1zaXplPScyMicgZm9udC1mYW1pbHk9J0FyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyMxYzI0MWYnPuiNiea0pea4qeaziSDjg6vjg7zjg4jmpoLopoE8L3RleHQ+PHRleHQgeD0nMzYnIHk9JzY4JyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZicgZmlsbD0nIzYxNzA2OCc+REFZMSDihpIgREFZMiDjga7kuLvopoHnq4vjgaHlr4Tjgorjgrnjg53jg4Pjg4jjgpLjgbLjgajnm67jgafnorroqo08L3RleHQ+PHBhdGggZD0nTSAxMDAgMTcwIEwgMjQwIDkwIEwgMzkwIDE3MCBMIDU0MCA5MCBMIDY5MCAxNzAgTCA4NDAgOTAgTCA5OTAgMTcwIEwgMTExMCA5MCBMIDk5MCAyNjAgTCA4NDAgMTgwIEwgNjkwIDI2MCBMIDU0MCAxODAgTCAzOTAgMjYwJyBmaWxsPSdub25lJyBzdHJva2U9J3VybCgjZyknIHN0cm9rZS13aWR0aD0nOCcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBvcGFjaXR5PScwLjknLz48cmVjdCB4PSc5MzAnIHk9JzI0JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzI2JyByeD0nMTMnIGZpbGw9JyNlZGY1ZjAnIHN0cm9rZT0nI2NmZTBkNicvPjx0ZXh0IHg9Jzk4NScgeT0nNDEnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzFkNjg0Zic+REFZIDE8L3RleHQ+PHJlY3QgeD0nMTA1MCcgeT0nMjQnIHdpZHRoPScxMTAnIGhlaWdodD0nMjYnIHJ4PScxMycgZmlsbD0nI2ZmZjJlYScgc3Ryb2tlPScjZjBkMWJlJy8+PHRleHQgeD0nMTEwNScgeT0nNDEnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2I4NWIzNic+REFZIDI8L3RleHQ+PGNpcmNsZSBjeD0nMTAwJyBjeT0nMTcwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMTAwJyBjeT0nMTcwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nMTAwJyB5PScxNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjE8L3RleHQ+PHJlY3QgeD0nNDUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMTAwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5bed5bSOPC90ZXh0PjxjaXJjbGUgY3g9JzI0MCcgY3k9JzkwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMjQwJyBjeT0nOTAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PScyNDAnIHk9Jzk2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4yPC90ZXh0PjxyZWN0IHg9JzE4NScgeT0nMTE4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PScyNDAnIHk9JzEzMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7ojYnmtKXnnYDjg7vmmLzpo588L3RleHQ+PHJlY3QgeD0nMTQyLjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzE3MC4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMTowMDwvdGV4dD48Y2lyY2xlIGN4PSczOTAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSczOTAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSczOTAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MzwvdGV4dD48cmVjdCB4PSczMzUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMzkwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+QmFuWmlwIFRFTkdVPC90ZXh0PjxyZWN0IHg9JzI4Ny4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSczMTUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTI6MzA8L3RleHQ+PGNpcmNsZSBjeD0nNTQwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc1NDAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzU0MCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjQ8L3RleHQ+PHJlY3QgeD0nNDg1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzU0MCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuWuv+OBuOiNt+eJqemgkOOBkTwvdGV4dD48cmVjdCB4PSc0MzcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNDY1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjE0OjMwPC90ZXh0PjxjaXJjbGUgY3g9JzY5MCcgY3k9JzE3MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzY5MCcgY3k9JzE3MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzY5MCcgeT0nMTc2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz41PC90ZXh0PjxyZWN0IHg9JzYzNScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc2OTAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7mua/jgoLjgb/jgrfjg6fjg7w8L3RleHQ+PHJlY3QgeD0nNTg3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzYxNS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xNTozMDwvdGV4dD48Y2lyY2xlIGN4PSc4NDAnIGN5PSc5MCcgcj0nMTknIGZpbGw9JyMxZDY4NGYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9Jzg0MCcgY3k9JzkwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nODQwJyB5PSc5NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+NjwvdGV4dD48cmVjdCB4PSc3ODUnIHk9JzExOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nODQwJyB5PScxMzMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5rmv55WR44O76KOP6I2J5rSl44O76KW/44Gu5rKz5Y6fPC90ZXh0PjxyZWN0IHg9JzczNy4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc3NjUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTY6MTU8L3RleHQ+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMTcwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMTcwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nOTkwJyB5PScxNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjc8L3RleHQ+PHJlY3QgeD0nOTM1JyB5PScxOTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzk5MCcgeT0nMjEzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuWklemjn+ODu+WknOOBrua5r+eVkTwvdGV4dD48cmVjdCB4PSc4ODcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nOTE1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjE4OjAwPC90ZXh0PjxjaXJjbGUgY3g9JzExMTAnIGN5PSc5MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzExMTAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzExMTAnIHk9Jzk2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz44PC90ZXh0PjxyZWN0IHg9JzEwNTUnIHk9JzExOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMTExMCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuacnemjn+ODu+ODgeOCp+ODg+OCr+OCouOCpuODiOa6luWCmTwvdGV4dD48cmVjdCB4PScxMDIyLjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzEwNTAuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MDg6MDA8L3RleHQ+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMjYwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nOTkwJyBjeT0nMjYwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nOTkwJyB5PScyNjYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjk8L3RleHQ+PHJlY3QgeD0nOTM1JyB5PScyMTInIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzk5MCcgeT0nMjI3JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuWkp+a7neS5g+a5rzwvdGV4dD48cmVjdCB4PScxMDIyLjAnIHk9JzE2My4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzEwNTAuMCcgeT0nMTc3LjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MDk6MDDjgJwxMjowMDwvdGV4dD48Y2lyY2xlIGN4PSc4NDAnIGN5PScxODAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc4NDAnIGN5PScxODAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc4NDAnIHk9JzE4NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTA8L3RleHQ+PHJlY3QgeD0nNzg1JyB5PScyMDgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzg0MCcgeT0nMjIzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuaYvOmjnzwvdGV4dD48cmVjdCB4PSc4ODcuMCcgeT0nMjA4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nOTE1LjAnIHk9JzIyMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjEyOjAwPC90ZXh0PjxjaXJjbGUgY3g9JzY5MCcgY3k9JzI2MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzY5MCcgY3k9JzI2MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzY5MCcgeT0nMjY2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4xMTwvdGV4dD48cmVjdCB4PSc2MzUnIHk9JzIxMicgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nNjkwJyB5PScyMjcnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+6KW/44Gu5rKz5Y6f44O76LK344GE54mpPC90ZXh0PjxyZWN0IHg9JzczNy4wJyB5PScyMDguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc3NjUuMCcgeT0nMjIyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTM6MTU8L3RleHQ+PGNpcmNsZSBjeD0nNTQwJyBjeT0nMTgwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nNTQwJyBjeT0nMTgwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nNTQwJyB5PScxODYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjEyPC90ZXh0PjxyZWN0IHg9JzQ4NScgeT0nMjA4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc1NDAnIHk9JzIyMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7ojYnmtKXnmbo8L3RleHQ+PHJlY3QgeD0nNTg3LjAnIHk9JzIwOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzYxNS4wJyB5PScyMjIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xNDozMDwvdGV4dD48Y2lyY2xlIGN4PSczOTAnIGN5PScyNjAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSczOTAnIGN5PScyNjAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSczOTAnIHk9JzI2NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTM8L3RleHQ+PHJlY3QgeD0nMzM1JyB5PScyMTInIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzM5MCcgeT0nMjI3JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuW3neW0jjwvdGV4dD48dGV4dCB4PSczNicgeT0nMzEwJyBmb250LXNpemU9JzEyJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPuS6iOeul+ebruWuiTog57SEMTYsNzAw44CcMTYsOTUw5YaGIC8g5a6/5rOKOiDjgrLjgrnjg4jjg4/jgqbjgrlLT1RPREFNQTwvdGV4dD48L3N2Zz4=", "photos": [{"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kusatsu%20Yubatake%2C%20Gunma%2001.jpg?width=1400", "caption": "草津温泉・湯畑", "source": "https://commons.wikimedia.org/wiki/File:Kusatsu_Yubatake,_Gunma_01.jpg", "credit": "Wikimedia Commons"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kusatsu%20Yubatake%20at%20night%2003.jpg?width=1400", "caption": "夜の湯畑", "source": "https://commons.wikimedia.org/wiki/File:Kusatsu_Yubatake_at_night_03.jpg", "credit": "Wikimedia Commons"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kusatsu%20yubatake%2020170324-5.jpg?width=1400", "caption": "草津温泉街の風景", "source": "https://commons.wikimedia.org/wiki/File:Kusatsu_yubatake_20170324-5.jpg", "credit": "Wikimedia Commons"}], "mapStops": ["川崎駅", "BanZip TENGU 草津", "草津ゲストハウス KOTODAMA", "草津温泉 熱乃湯", "草津温泉 湯畑", "草津温泉 大滝乃湯", "西の河原公園", "川崎駅"], "mapEmbed": "https://maps.google.com/maps?output=embed&saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&daddr=BanZip+TENGU+%E8%8D%89%E6%B4%A5+to%3A+%E8%8D%89%E6%B4%A5%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9+KOTODAMA+to%3A+%E8%8D%89%E6%B4%A5%E6%B8%A9%E6%B3%89+%E7%86%B1%E4%B9%83%E6%B9%AF+to%3A+%E8%8D%89%E6%B4%A5%E6%B8%A9%E6%B3%89+%E6%B9%AF%E7%95%91+to%3A+%E8%8D%89%E6%B4%A5%E6%B8%A9%E6%B3%89+%E5%A4%A7%E6%BB%9D%E4%B9%83%E6%B9%AF+to%3A+%E8%A5%BF%E3%81%AE%E6%B2%B3%E5%8E%9F%E5%85%AC%E5%9C%92+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&hl=ja", "mapOpen": "https://www.google.com/maps/dir/?api=1&origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&waypoints=BanZip%20TENGU%20%E8%8D%89%E6%B4%A5|%E8%8D%89%E6%B4%A5%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9%20KOTODAMA|%E8%8D%89%E6%B4%A5%E6%B8%A9%E6%B3%89%20%E7%86%B1%E4%B9%83%E6%B9%AF|%E8%8D%89%E6%B4%A5%E6%B8%A9%E6%B3%89%20%E6%B9%AF%E7%95%91|%E8%8D%89%E6%B4%A5%E6%B8%A9%E6%B3%89%20%E5%A4%A7%E6%BB%9D%E4%B9%83%E6%B9%AF|%E8%A5%BF%E3%81%AE%E6%B2%B3%E5%8E%9F%E5%85%AC%E5%9C%92&travelmode=driving"}, {"id": "shizuoka-yaizu", "name": "静岡・焼津", "short": "しきじ巡礼 × 工芸・歴史", "badge": "体験密度", "budget": "男性 約14,150円", "budget_num": 14150, "drive": "約3時間目安", "drive_score": 3.0, "stay": "しきじ休憩エリアで仮眠", "sleep": 1.8, "sauna": 5.0, "onsen": 4.5, "activity": 5.0, "value": 5.0, "balance": 4.4, "concept": "しきじ仮眠泊を核に、天然焼津温泉、工芸体験、久能山東照宮、三保松原まで盛り込む“サウナ巡礼・体験全部乗せ”。", "summary": "静岡のもう1案より観光が濃く、焼津温泉＋工芸まで入る。費用対効果は非常に高いが、仮眠泊と行程の密度は覚悟が必要。", "fit": "多少ハードでも、1泊2日にできるだけ多くの体験を詰め込みたい", "highlights": ["サウナしきじ", "天然焼津温泉くろしお", "駿府の工房 匠宿", "久能山東照宮", "焼津さかなセンター"], "pros": ["低予算なのに体験数が多い", "しきじ＋温泉の両立が明確", "海鮮・工芸・歴史で旅行感も強い"], "cons": ["仮眠場所が保証されない", "予定がかなり詰まっている", "睡眠不足時の翌日運転リスク"], "day1": [["06:30", "川崎発"], ["09:30", "焼津さかなセンター"], ["11:45", "エキチカ温泉・くろしお"], ["14:30", "駿府の工房 匠宿"], ["16:30", "サウナしきじ"], ["18:30", "館内で夕食・休憩"], ["22:30", "休憩エリアで仮眠"]], "day2": [["06:30", "朝サウナ・朝食"], ["09:00", "しきじ退館"], ["09:15", "登呂遺跡・博物館"], ["11:00", "日本平・久能山東照宮"], ["14:15", "三保松原"], ["16:00", "帰路"]], "note": "“仮眠泊でもOK”という条件を最大活用した案。睡眠品質だけは他案より明確に弱い。", "theme": "craft", "routeImage": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzM0MCcgdmlld0JveD0nMCAwIDEyMDAgMzQwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB4Mj0nMSc+PHN0b3Agb2Zmc2V0PScwJyBzdG9wLWNvbG9yPScjMWQ2ODRmJy8+PHN0b3Agb2Zmc2V0PScxJyBzdG9wLWNvbG9yPScjZDk4YzVmJy8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSdzJz48ZmVEcm9wU2hhZG93IGR4PScwJyBkeT0nNicgc3RkRGV2aWF0aW9uPSc4JyBmbG9vZC1jb2xvcj0ncmdiYSgwLDAsMCwuMTIpJy8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHJ4PScyOCcgZmlsbD0nI2ZmZmVmYicvPjxyZWN0IHg9JzEyJyB5PScxMicgd2lkdGg9JzExNzYnIGhlaWdodD0nMzE2JyByeD0nMjQnIGZpbGw9JyNmOGZhZjcnIHN0cm9rZT0nI2UwZThkZicvPjx0ZXh0IHg9JzM2JyB5PSc0MicgZm9udC1zaXplPScyMicgZm9udC1mYW1pbHk9J0FyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyMxYzI0MWYnPumdmeWyoeODu+eEvOa0pSDjg6vjg7zjg4jmpoLopoE8L3RleHQ+PHRleHQgeD0nMzYnIHk9JzY4JyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZicgZmlsbD0nIzYxNzA2OCc+REFZMSDihpIgREFZMiDjga7kuLvopoHnq4vjgaHlr4Tjgorjgrnjg53jg4Pjg4jjgpLjgbLjgajnm67jgafnorroqo08L3RleHQ+PHBhdGggZD0nTSAxMDAgMTcwIEwgMjQwIDkwIEwgMzkwIDE3MCBMIDU0MCA5MCBMIDY5MCAxNzAgTCA4NDAgOTAgTCA5OTAgMTcwIEwgMTExMCA5MCBMIDk5MCAyNjAgTCA4NDAgMTgwIEwgNjkwIDI2MCBMIDU0MCAxODAgTCAzOTAgMjYwJyBmaWxsPSdub25lJyBzdHJva2U9J3VybCgjZyknIHN0cm9rZS13aWR0aD0nOCcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBvcGFjaXR5PScwLjknLz48cmVjdCB4PSc5MzAnIHk9JzI0JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzI2JyByeD0nMTMnIGZpbGw9JyNlZGY1ZjAnIHN0cm9rZT0nI2NmZTBkNicvPjx0ZXh0IHg9Jzk4NScgeT0nNDEnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzFkNjg0Zic+REFZIDE8L3RleHQ+PHJlY3QgeD0nMTA1MCcgeT0nMjQnIHdpZHRoPScxMTAnIGhlaWdodD0nMjYnIHJ4PScxMycgZmlsbD0nI2ZmZjJlYScgc3Ryb2tlPScjZjBkMWJlJy8+PHRleHQgeD0nMTEwNScgeT0nNDEnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2I4NWIzNic+REFZIDI8L3RleHQ+PGNpcmNsZSBjeD0nMTAwJyBjeT0nMTcwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMTAwJyBjeT0nMTcwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nMTAwJyB5PScxNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjE8L3RleHQ+PHJlY3QgeD0nNDUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMTAwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5bed5bSOPC90ZXh0PjxjaXJjbGUgY3g9JzI0MCcgY3k9JzkwJyByPScxOScgZmlsbD0nIzFkNjg0ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nMjQwJyBjeT0nOTAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PScyNDAnIHk9Jzk2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4yPC90ZXh0PjxyZWN0IHg9JzE4NScgeT0nMTE4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PScyNDAnIHk9JzEzMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7nhLzmtKXjgZXjgYvjgarjgrvjg7Pjgr/jg7w8L3RleHQ+PHJlY3QgeD0nMTQyLjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzE3MC4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4wOTozMDwvdGV4dD48Y2lyY2xlIGN4PSczOTAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSczOTAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSczOTAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MzwvdGV4dD48cmVjdCB4PSczMzUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMzkwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+44Ko44Kt44OB44Kr5rip5rOJ44O744GP44KN44GX44GKPC90ZXh0PjxyZWN0IHg9JzI4Ny4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSczMTUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTE6NDU8L3RleHQ+PGNpcmNsZSBjeD0nNTQwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc1NDAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzU0MCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjQ8L3RleHQ+PHJlY3QgeD0nNDg1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzU0MCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPumnv+W6nOOBruW3peaIvyDljKDlrr88L3RleHQ+PHJlY3QgeD0nNDM3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzQ2NS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xNDozMDwvdGV4dD48Y2lyY2xlIGN4PSc2OTAnIGN5PScxNzAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc2OTAnIGN5PScxNzAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc2OTAnIHk9JzE3NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+NTwvdGV4dD48cmVjdCB4PSc2MzUnIHk9JzE5OCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nNjkwJyB5PScyMTMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+44K144Km44OK44GX44GN44GYPC90ZXh0PjxyZWN0IHg9JzU4Ny4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc2MTUuMCcgeT0nMTMyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MTY6MzA8L3RleHQ+PGNpcmNsZSBjeD0nODQwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjMWQ2ODRmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc4NDAnIGN5PSc5MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9Jzg0MCcgeT0nOTYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjY8L3RleHQ+PHJlY3QgeD0nNzg1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9Jzg0MCcgeT0nMTMzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPumkqOWGheOBp+Wklemjn+ODu+S8keaGqTwvdGV4dD48cmVjdCB4PSc3MzcuMCcgeT0nMTE4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNzY1LjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjE4OjMwPC90ZXh0PjxjaXJjbGUgY3g9Jzk5MCcgY3k9JzE3MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9Jzk5MCcgY3k9JzE3MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9Jzk5MCcgeT0nMTc2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz43PC90ZXh0PjxyZWN0IHg9JzkzNScgeT0nMTk4JyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc5OTAnIHk9JzIxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7kvJHmhqnjgqjjg6rjgqLjgafku67nnKA8L3RleHQ+PHJlY3QgeD0nODg3LjAnIHk9JzExOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9JzkxNS4wJyB5PScxMzIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4yMjozMDwvdGV4dD48Y2lyY2xlIGN4PScxMTEwJyBjeT0nOTAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PScxMTEwJyBjeT0nOTAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PScxMTEwJyB5PSc5NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+ODwvdGV4dD48cmVjdCB4PScxMDU1JyB5PScxMTgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzExMTAnIHk9JzEzMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7mnJ3jgrXjgqbjg4rjg7vmnJ3po588L3RleHQ+PHJlY3QgeD0nMTAyMi4wJyB5PScxMTguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PScxMDUwLjAnIHk9JzEzMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjA2OjMwPC90ZXh0PjxjaXJjbGUgY3g9Jzk5MCcgY3k9JzI2MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9Jzk5MCcgY3k9JzI2MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9Jzk5MCcgeT0nMjY2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz45PC90ZXh0PjxyZWN0IHg9JzkzNScgeT0nMjEyJyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc5OTAnIHk9JzIyNycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7jgZfjgY3jgZjpgIDppKg8L3RleHQ+PHJlY3QgeD0nMTAyMi4wJyB5PScxNjMuMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PScxMDUwLjAnIHk9JzE3Ny4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjA5OjAwPC90ZXh0PjxjaXJjbGUgY3g9Jzg0MCcgY3k9JzE4MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9Jzg0MCcgY3k9JzE4MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9Jzg0MCcgeT0nMTg2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4xMDwvdGV4dD48cmVjdCB4PSc3ODUnIHk9JzIwOCcgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nODQwJyB5PScyMjMnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+55m75ZGC6YG66Leh44O75Y2a54mp6aSoPC90ZXh0PjxyZWN0IHg9Jzg4Ny4wJyB5PScyMDguMCcgd2lkdGg9JzU2JyBoZWlnaHQ9JzIwJyByeD0nMTAnIGZpbGw9J3doaXRlJyBzdHJva2U9JyNlM2U4ZTInLz48dGV4dCB4PSc5MTUuMCcgeT0nMjIyLjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTAnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+MDk6MTU8L3RleHQ+PGNpcmNsZSBjeD0nNjkwJyBjeT0nMjYwJyByPScxOScgZmlsbD0nI2Q5OGM1ZicgZmlsdGVyPSd1cmwoI3MpJy8+PGNpcmNsZSBjeD0nNjkwJyBjeT0nMjYwJyByPScyMycgZmlsbD0nbm9uZScgc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LC41KScgc3Ryb2tlLXdpZHRoPScyJy8+PHRleHQgeD0nNjkwJyB5PScyNjYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTMnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nd2hpdGUnPjExPC90ZXh0PjxyZWN0IHg9JzYzNScgeT0nMjEyJyB3aWR0aD0nMTEwJyBoZWlnaHQ9JzM0JyByeD0nMTInIGZpbGw9J3doaXRlJyBzdHJva2U9JyNkZGU1ZGUnLz48dGV4dCB4PSc2OTAnIHk9JzIyNycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMScgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjMWMyNDFmJyBmb250LXdlaWdodD0nNzAwJz7ml6XmnKzlubPjg7vkuYXog73lsbHmnbHnhaflrq48L3RleHQ+PHJlY3QgeD0nNzM3LjAnIHk9JzIwOC4wJyB3aWR0aD0nNTYnIGhlaWdodD0nMjAnIHJ4PScxMCcgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2UzZThlMicvPjx0ZXh0IHg9Jzc2NS4wJyB5PScyMjIuMCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMCcgZm9udC1mYW1pbHk9J0FyaWFsJyBmaWxsPScjNjE3MDY4Jz4xMTowMDwvdGV4dD48Y2lyY2xlIGN4PSc1NDAnIGN5PScxODAnIHI9JzE5JyBmaWxsPScjZDk4YzVmJyBmaWx0ZXI9J3VybCgjcyknLz48Y2lyY2xlIGN4PSc1NDAnIGN5PScxODAnIHI9JzIzJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYmEoMjU1LDI1NSwyNTUsLjUpJyBzdHJva2Utd2lkdGg9JzInLz48dGV4dCB4PSc1NDAnIHk9JzE4NicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1zaXplPScxMycgZm9udC1mYW1pbHk9J0FyaWFsJyBmb250LXdlaWdodD0nNzAwJyBmaWxsPSd3aGl0ZSc+MTI8L3RleHQ+PHJlY3QgeD0nNDg1JyB5PScyMDgnIHdpZHRoPScxMTAnIGhlaWdodD0nMzQnIHJ4PScxMicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nI2RkZTVkZScvPjx0ZXh0IHg9JzU0MCcgeT0nMjIzJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzExJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyMxYzI0MWYnIGZvbnQtd2VpZ2h0PSc3MDAnPuS4ieS/neadvuWOnzwvdGV4dD48cmVjdCB4PSc1ODcuMCcgeT0nMjA4LjAnIHdpZHRoPSc1NicgaGVpZ2h0PScyMCcgcng9JzEwJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZTNlOGUyJy8+PHRleHQgeD0nNjE1LjAnIHk9JzIyMi4wJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEwJyBmb250LWZhbWlseT0nQXJpYWwnIGZpbGw9JyM2MTcwNjgnPjE0OjE1PC90ZXh0PjxjaXJjbGUgY3g9JzM5MCcgY3k9JzI2MCcgcj0nMTknIGZpbGw9JyNkOThjNWYnIGZpbHRlcj0ndXJsKCNzKScvPjxjaXJjbGUgY3g9JzM5MCcgY3k9JzI2MCcgcj0nMjMnIGZpbGw9J25vbmUnIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwuNSknIHN0cm9rZS13aWR0aD0nMicvPjx0ZXh0IHg9JzM5MCcgeT0nMjY2JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzEzJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9J3doaXRlJz4xMzwvdGV4dD48cmVjdCB4PSczMzUnIHk9JzIxMicgd2lkdGg9JzExMCcgaGVpZ2h0PSczNCcgcng9JzEyJyBmaWxsPSd3aGl0ZScgc3Ryb2tlPScjZGRlNWRlJy8+PHRleHQgeD0nMzkwJyB5PScyMjcnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nMTEnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzFjMjQxZicgZm9udC13ZWlnaHQ9JzcwMCc+5bed5bSOPC90ZXh0Pjx0ZXh0IHg9JzM2JyB5PSczMTAnIGZvbnQtc2l6ZT0nMTInIGZvbnQtZmFtaWx5PSdBcmlhbCcgZmlsbD0nIzYxNzA2OCc+5LqI566X55uu5a6JOiDnlLfmgKcg57SEMTQsMTUw5YaGIC8g5a6/5rOKOiDjgZfjgY3jgZjkvJHmhqnjgqjjg6rjgqLjgafku67nnKA8L3RleHQ+PC9zdmc+", "photos": [{"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yaizu%20fish%20center.jpg?width=1400", "caption": "焼津さかなセンター", "source": "https://commons.wikimedia.org/wiki/File:Yaizu_fish_center.jpg", "credit": "Wikimedia Commons"}, {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Port%20of%20Yaizu.jpg?width=1400", "caption": "焼津港", "source": "https://commons.wikimedia.org/wiki/File:Port_of_Yaizu.jpg", "credit": "Wikimedia Commons"}, {"url": "https://high-set-hotel.com/data/202312/img658d1b7b4188e.jpg", "caption": "サウナしきじ", "source": "https://high-set-hotel.com/info", "credit": "ハイセットホテル静岡インター 周辺情報"}], "mapStops": ["川崎駅", "焼津さかなセンター", "エキチカ温泉・くろしお", "駿府の工房 匠宿", "サウナしきじ", "登呂博物館", "久能山東照宮", "三保松原", "川崎駅"], "mapEmbed": "https://maps.google.com/maps?output=embed&saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&daddr=%E7%84%BC%E6%B4%A5%E3%81%95%E3%81%8B%E3%81%AA%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC+to%3A+%E3%82%A8%E3%82%AD%E3%83%81%E3%82%AB%E6%B8%A9%E6%B3%89%E3%83%BB%E3%81%8F%E3%82%8D%E3%81%97%E3%81%8A+to%3A+%E9%A7%BF%E5%BA%9C%E3%81%AE%E5%B7%A5%E6%88%BF+%E5%8C%A0%E5%AE%BF+to%3A+%E3%82%B5%E3%82%A6%E3%83%8A%E3%81%97%E3%81%8D%E3%81%98+to%3A+%E7%99%BB%E5%91%82%E5%8D%9A%E7%89%A9%E9%A4%A8+to%3A+%E4%B9%85%E8%83%BD%E5%B1%B1%E6%9D%B1%E7%85%A7%E5%AE%AE+to%3A+%E4%B8%89%E4%BF%9D%E6%9D%BE%E5%8E%9F+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&hl=ja", "mapOpen": "https://www.google.com/maps/dir/?api=1&origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&waypoints=%E7%84%BC%E6%B4%A5%E3%81%95%E3%81%8B%E3%81%AA%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC|%E3%82%A8%E3%82%AD%E3%83%81%E3%82%AB%E6%B8%A9%E6%B3%89%E3%83%BB%E3%81%8F%E3%82%8D%E3%81%97%E3%81%8A|%E9%A7%BF%E5%BA%9C%E3%81%AE%E5%B7%A5%E6%88%BF%20%E5%8C%A0%E5%AE%BF|%E3%82%B5%E3%82%A6%E3%83%8A%E3%81%97%E3%81%8D%E3%81%98|%E7%99%BB%E5%91%82%E5%8D%9A%E7%89%A9%E9%A4%A8|%E4%B9%85%E8%83%BD%E5%B1%B1%E6%9D%B1%E7%85%A7%E5%AE%AE|%E4%B8%89%E4%BF%9D%E6%9D%BE%E5%8E%9F&travelmode=driving"}];
-const prefs=[
- {key:"balance",label:"総合バランス",icon:"◎"},
- {key:"sauna",label:"サウナ",icon:"🧖"},
- {key:"onsen",label:"温泉",icon:"♨️"},
- {key:"activity",label:"遊び・体験",icon:"⚡"},
- {key:"sleep",label:"睡眠の快適さ",icon:"🛏"},
- {key:"value",label:"コスパ",icon:"💴"},
- {key:"drive_score",label:"運転のラクさ",icon:"🚗"}
-];
-let currentPref="balance";
-let lastModalTrigger=null;
-function dots(v){let h='<div class="bar">';for(let i=1;i<=5;i++)h+=`<i class="${i<=Math.round(v)?'on':''}"></i>`;return h+'</div>';}
-function photoHTML(ph, cls=""){return `<img class="${cls}" src="${ph.url}" alt="${ph.caption}" loading="lazy" referrerpolicy="no-referrer">`;}
-function bindPlanOpeners(selector){
- document.querySelectorAll(selector).forEach(el=>{
-  const open=()=>openModal(el.dataset.id);
-  el.addEventListener("click",open);
-  el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}});
- });
-}
-function renderMasthead(){
- document.getElementById("masthead").innerHTML=plans.map(p=>`<div class="mast-tile" data-id="${p.id}" role="button" tabindex="0" aria-label="${p.name}の詳細を見る">${photoHTML(p.photos[0])}<div class="mast-label">${p.name}</div></div>`).join("");
- bindPlanOpeners(".mast-tile");
-}
-function renderPriority(){
- document.getElementById("priority").innerHTML=prefs.map(p=>`<button data-key="${p.key}" class="${p.key===currentPref?'active':''}">${p.icon} ${p.label}</button>`).join("");
- document.querySelectorAll("#priority button").forEach(b=>b.addEventListener("click",()=>{currentPref=b.dataset.key;renderPriority();renderCards();}));
-}
-function renderCards(){
- document.getElementById("cards").innerHTML=plans.map(p=>`
- <article class="card" data-id="${p.id}" role="button" tabindex="0" aria-label="${p.name}の詳細を見る">
-   <div class="photo-grid">
-     <div class="main">${photoHTML(p.photos[0])}<span class="badge">${p.badge}</span></div>
-     <div class="thumb">${photoHTML(p.photos[1])}</div>
-     <div class="thumb">${photoHTML(p.photos[2])}</div>
-   </div>
-   <div class="card-copy">
-     <h3>${p.name}</h3><div class="short">${p.short}</div>
-     <p class="summary">${p.summary}</p>
-     <div class="mini-stats"><div class="mini"><span>BUDGET</span><b>${p.budget}</b></div><div class="mini"><span>STAY</span><b>${p.stay}</b></div></div>
-     <div class="score-row"><span class="score-label">${prefs.find(x=>x.key===currentPref).label}</span>${Array.from({length:5},(_,i)=>`<span class="dot ${i<Math.round(p[currentPref])?'on':''}"></span>`).join("")}</div>
-   </div>
- </article>`).join("");
- bindPlanOpeners(".card");
-}
-function renderCompare(){
- document.getElementById("compareBody").innerHTML=plans.map(p=>`<tr><td>${p.name}<br><span style="font-weight:500;color:var(--sub);font-size:11px">${p.short}</span></td><td>${p.budget}</td><td>${dots(p.drive_score)}</td><td>${dots(p.sauna)}</td><td>${dots(p.onsen)}</td><td>${dots(p.activity)}</td><td>${dots(p.sleep)}</td><td>${p.fit}</td></tr>`).join("");
-}
-function galleryHTML(p){
- return p.photos.map(ph=>`<div class="gallery-item">${photoHTML(ph)}<div class="gallery-caption">${ph.caption}<br><a href="${ph.source}" target="_blank" rel="noopener">写真出典: ${ph.credit} ↗</a></div></div>`).join("");
-}
-function routeHTML(p){
- return `<div class="route-flow" aria-label="${p.name}の主要立ち寄り順"><ol>${p.mapStops.map(stop=>`<li><strong>${stop}</strong></li>`).join("")}</ol><p class="route-caption">番号順に移動します。詳しい時刻は地図下の行程表で確認できます。</p></div>`;
-}
-function openModal(id){
- const p=plans.find(x=>x.id===id), modal=document.getElementById("modal");
- lastModalTrigger=document.activeElement;
- modal.innerHTML=`
- <div class="modal-cover">${photoHTML(p.photos[0])}<button class="close" aria-label="閉じる">×</button><div class="modal-title"><div class="eyeb">${p.badge} / ${p.budget}</div><h2 id="modalHeading">${p.name}</h2><p>${p.short}</p></div></div>
- <div class="modal-body">
-  <p class="lead">${p.concept}</p>
-  <div class="detail-grid"><div class="panel"><h4>向いている人</h4>${p.fit}</div><div class="panel"><h4>宿泊</h4>${p.stay}</div><div class="panel"><h4>強いところ</h4><ul class="list">${p.pros.map(x=>`<li>${x}</li>`).join("")}</ul></div><div class="panel"><h4>気になるところ</h4><ul class="list">${p.cons.map(x=>`<li>${x}</li>`).join("")}</ul></div></div>
-  <div class="section-title" style="margin:24px 0 9px"><div><div class="kicker">PHOTO STORY</div><h2 style="font-size:24px">この案で見る景色</h2></div><p>施設・観光地・地域の実写真</p></div>
-  <div class="gallery">${galleryHTML(p)}</div>
-  <div class="panel" style="margin-top:18px"><h4>主な見どころ</h4><div class="tags">${p.highlights.map(x=>`<span class="tag">${x}</span>`).join("")}</div></div>
-  <div class="section-title" style="margin:25px 0 9px"><div><div class="kicker">ROUTE OVERVIEW</div><h2 style="font-size:24px">2日間のルート図</h2></div><p>行程を一枚で把握</p></div>
-  ${routeHTML(p)}
-  <div class="section-title" style="margin:25px 0 9px"><div><div class="kicker">MAP</div><h2 style="font-size:24px">地図で見る</h2></div><p>主要スポットを車ルートで表示</p></div>
-  <div class="map-wrap"><iframe src="${p.mapEmbed}" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="${p.name}のGoogle Mapsルート"></iframe><div class="map-tools"><span>${p.mapStops.slice(1,-1).join(" → ")}</span><a class="map-link" href="${p.mapOpen}" target="_blank" rel="noopener">Google Mapsで開く ↗</a></div></div>
-  <div class="timeline"><div class="day"><h3>DAY 1</h3>${p.day1.map(x=>`<div class="event"><time>${x[0]}</time><div>${x[1]}</div></div>`).join("")}</div><div class="day"><h3>DAY 2</h3>${p.day2.map(x=>`<div class="event"><time>${x[0]}</time><div>${x[1]}</div></div>`).join("")}</div></div>
-  <div class="modal-note">${p.note}</div>
-  <div class="share-row"><button class="action" id="copyPlan">この案を共有用にコピー</button><button class="action secondary" id="close2">一覧に戻る</button></div>
- </div>`;
- const modalBack=document.getElementById("modalBack");modalBack.classList.add("open");modalBack.setAttribute("aria-hidden","false");modalBack.scrollTop=0;document.body.style.overflow="hidden";
- modal.querySelector(".close").addEventListener("click",closeModal);modal.querySelector("#close2").addEventListener("click",closeModal);modal.querySelector("#copyPlan").addEventListener("click",()=>copyPlan(p));
- modal.querySelector(".close").focus();
-}
-function closeModal(){const modalBack=document.getElementById("modalBack");if(!modalBack.classList.contains("open"))return;modalBack.classList.remove("open");modalBack.setAttribute("aria-hidden","true");document.body.style.overflow="";if(lastModalTrigger?.focus)lastModalTrigger.focus();}
-document.getElementById("modalBack").addEventListener("click",e=>{if(e.target.id==="modalBack")closeModal();});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
-async function copyPlan(p){const t=`【${p.name}｜${p.short}】\n予算：${p.budget}\n宿：${p.stay}\n\n${p.summary}\n\n${p.mapOpen}`;let copied=false;try{await navigator.clipboard.writeText(t);copied=true;}catch{}if(!copied){const area=document.createElement("textarea");area.value=t;area.setAttribute("readonly","");area.style.cssText="position:fixed;opacity:0;pointer-events:none";document.body.appendChild(area);area.select();copied=document.execCommand("copy");area.remove();}toast(copied?"共有用テキストをコピーしました":"コピーできませんでした");}
-function toast(t){const el=document.getElementById("toast");el.textContent=t;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),1800);}
-renderMasthead();renderPriority();renderCards();renderCompare();
-</script>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time class="timeline-time">08:30</time>
+            <div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🚗</span><div><h4>川崎出発</h4><p>東名高速で御殿場へ。早めの出発で、買い物とサウナの両方を回収します。</p></div></div></div>
+          </article>
+
+          <article class="timeline-item">
+            <time class="timeline-time">10:00</time>
+            <div class="timeline-card timeline-card--feature">
+              <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotemba%20premium%20outlets2.jpg?width=1400" alt="御殿場プレミアム・アウトレットの街並み" loading="lazy" style="height:280px;object-fit:cover">
+              <div class="timeline-card__content">
+                <div class="timeline-card__title"><span class="timeline-card__icon">🛍️</span><div><h4>御殿場プレミアム・アウトレット</h4><p>長時間ショッピングではなく、サウナ時間を守るための80分勝負。</p></div></div>
+                <div class="time-split"><div><b>10:00〜11:20</b>買い物</div><div><b>11:20〜12:00</b>早めの昼食</div></div>
+                <p class="mini-note">通常営業時間 10:00〜20:00（3〜11月）。季節・状況で変動あり。<a class="source-link" href="https://www.premiumoutlets.co.jp/gotemba/information/info245.html" target="_blank" rel="noopener">公式営業時間</a> / 写真：<a class="source-link" href="https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets2.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+                <div class="branch-wrap">
+                  <button class="btn btn--outline btn--small" id="shopping-toggle" type="button" aria-expanded="false" aria-controls="shopping-branch">SHOPPING FIRST？</button>
+                  <div class="branch-panel" id="shopping-branch" hidden><strong>元プラン寄りの分岐</strong><br>買い物を14:00頃まで延長 → 木の花の湯 14:30頃IN。12:30のアウフグースは手放して、15:30を狙います。</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <time class="timeline-time">12:20頃</time>
+            <div class="timeline-card">
+              <div class="timeline-card__title"><span class="timeline-card__icon">♨️</span><div><span class="tag tag--default">MAIN SAUNA</span><h4>木の花の湯 IN</h4><p>買い物のあと、富士山を見ながら蒸される。</p></div></div>
+              <div class="price-facts">
+                <div class="price-fact"><b>10:30〜22:00</b><small>最終受付 21:00</small></div>
+                <div class="price-fact"><b>2,200円</b><small>土日祝・大人</small></div>
+                <div class="price-fact"><b>−400円</b><small>13時までの入館</small></div>
+                <div class="price-fact"><b>−500円</b><small>9/18まで学生証提示</small></div>
+              </div>
+              <p class="mini-note">8月12日は夏期シーズン（8月9〜16日）のため休日料金。タオル込み・時間制限なし。早朝割（13時まで）と学割は併用できません。学割は2026年9月18日まで。<a class="source-link" href="https://www.gotemba-konohananoyu.jp/guide/" target="_blank" rel="noopener">公式料金</a></p>
+              <div class="aufguss" aria-label="アウフグース開催時刻">
+                <div class="aufguss__title"><small>1 DAY / 4 TIMES</small><strong>AUFGUSS TIME</strong></div>
+                <div class="aufguss__time">12:30</div><div class="aufguss__time">15:30</div><div class="aufguss__time">18:30</div><div class="aufguss__time">20:30</div>
+              </div>
+              <p>12:30に間に合えば参加。間に合わなければ急がず、15:30を狙います。<a class="source-link mini-note" href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">公式アウフグース案内</a></p>
+              <div class="feature-list" aria-label="木の花の湯の見どころ">
+                <div><span>🗻</span>幅約10m<br>富士山展望風呂</div><div><span>♨️</span>深さ約130cm<br>立湯</div><div><span>💧</span>富士山麓の<br>自家源泉</div><div><span>🔥</span>ロウリュ＋<br>アウフグース</div><div><span>🌬️</span>富士山を見ながら<br>外気浴</div>
+              </div>
+              <div class="photo-grid">
+                <figure class="photo-card photo-card--wide"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_opn01.jpg" alt="木の花の湯の富士山を望む露天風呂" loading="lazy"><figcaption><strong>富士山展望の露天風呂</strong><a href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">写真出典：木の花の湯 公式</a></figcaption></figure>
+                <figure class="photo-card"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_sauna.jpg" alt="木の花の湯のサウナ室" loading="lazy"><figcaption><strong>ロウリュサウナ</strong><a href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">写真出典：木の花の湯 公式</a></figcaption></figure>
+                <figure class="photo-card"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_ind02.jpg" alt="木の花の湯の富士山展望風呂" loading="lazy"><figcaption><strong>富士山を正面に</strong><a href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">写真出典：木の花の湯 公式</a></figcaption></figure>
+                <figure class="photo-card photo-card--wide"><img src="https://sp.jorudan.co.jp/onsen/images/spot/640/168192_1.jpg" alt="木の花の湯から望む富士山" loading="lazy"><figcaption><strong>富士山 × 温泉</strong><a href="https://sp.jorudan.co.jp/onsen/details/2166/" target="_blank" rel="noopener">写真出典：ジョルダン 温泉特集</a></figcaption></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item"><time class="timeline-time">16:15頃</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🚗</span><div><h4>木の花の湯 OUT</h4><p>温まりすぎる前に切り上げて、ホテルへ約15分。</p></div></div></div></article>
+
+          <article class="timeline-item">
+            <time class="timeline-time">16:30〜17:00</time>
+            <div class="timeline-card">
+              <div class="timeline-card__title"><span class="timeline-card__icon">🛏️</span><div><h4>レンブラントスタイル御殿場駒門 Check-in</h4><p>「今夜もサウナあります。」</p></div></div>
+              <div class="photo-grid">
+                <figure class="photo-card photo-card--wide"><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/01/rsg_mv01-1.jpg" alt="レンブラントスタイル御殿場駒門の外観" loading="lazy"><figcaption><strong>レンブラントスタイル御殿場駒門</strong><a href="https://rembrandt-style.com/gotemba-komakado" target="_blank" rel="noopener">写真出典：ホテル公式</a></figcaption></figure>
+                <figure class="photo-card"><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/02/rsg_twin01_1.jpg" alt="レンブラントスタイル御殿場駒門のツインルーム" loading="lazy"><figcaption><strong>和モダンな客室</strong><a href="https://rembrandt-style.com/gotemba-komakado" target="_blank" rel="noopener">写真出典：ホテル公式</a></figcaption></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <time class="timeline-time">18:00</time>
+            <div class="timeline-card">
+              <div class="timeline-card__title"><span class="timeline-card__icon">🍽️</span><div><span class="tag tag--default">DEFAULT</span><h4>「富士山の頂きます」で夕食</h4><p>18:00〜21:00（L.O. 20:30）。車を出さず、サウナ前の移動もなし。</p></div></div>
+              <div class="time-split"><div><b>ハーフビュッフェのみ</b>1,500円</div><div><b>メイン＋ハーフビュッフェ</b>1,800円〜</div></div>
+              <p class="mini-note">価格を読みやすく、夜サウナの開始時刻も守りやすい。<a class="source-link" href="https://rembrandt-style.com/gotemba-komakado_restaurant/restaurant_g" target="_blank" rel="noopener">レストラン公式</a></p>
+              <div class="optional-card"><span class="tag tag--optional">OPTIONAL / BONUS STAGE</span><strong>さわやかチャレンジ</strong><p>待ち時間が少なければ御殿場の店舗へ。「さわやかは取れたら勝ち。」固定旅程には組み込みません。</p></div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <time class="timeline-time">20:30〜22:00</time>
+            <div class="timeline-card">
+              <div class="timeline-card__title"><span class="timeline-card__icon">🔥</span><div><h4>富士の心湯：夜サウナ</h4><p>105℃ → 14℃。富士山の地下約100mから汲み上げた伏流水へ。</p></div></div>
+              <div class="sauna-specs">
+                <div class="sauna-spec"><span>LAVA SAUNA</span><strong>105℃</strong><small>定員 7名</small></div>
+                <div class="sauna-spec"><span>FUJI WATER</span><strong>14℃</strong><small>定員 3名</small></div>
+              </div>
+              <p>宿泊者は無料。利用時間は16:00〜25:00（最終入店24:00）、朝は6:00〜10:00。<a class="source-link mini-note" href="https://rembrandt-style.com/gotemba-komakado_info/spa-sauna_g" target="_blank" rel="noopener">サウナ公式</a> / <a class="source-link mini-note" href="https://rembrandt-style.com/gotemba-komakado_info/spa_g" target="_blank" rel="noopener">大浴場公式</a></p>
+              <div class="warning-card"><strong>富士の心湯のサウナ・水風呂は男性浴場のみ</strong><p>女性浴場では内風呂・露天風呂などを利用できますが、溶岩石サウナと水風呂は男性浴場のみです。同行者構成を必ず確認してください。</p></div>
+              <div class="photo-grid">
+                <figure class="photo-card photo-card--wide"><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/06/sauna01.jpg" alt="富士の心湯の溶岩石サウナ" loading="lazy"><figcaption><strong>溶岩石を使用したLAVA SAUNA</strong><a href="https://rembrandt-style.com/gotemba-komakado_info/spa-sauna_g" target="_blank" rel="noopener">写真出典：ホテル公式</a></figcaption></figure>
+                <figure class="photo-card"><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/06/mizuburo01.jpg" alt="富士の心湯の富士山伏流水の水風呂" loading="lazy"><figcaption><strong>富士山伏流水の水風呂</strong><a href="https://rembrandt-style.com/gotemba-komakado_info/spa-sauna_g" target="_blank" rel="noopener">写真出典：ホテル公式</a></figcaption></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item"><time class="timeline-time">23:00〜</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🌙</span><div><h4>就寝</h4><p>明日は朝ウナから始まります。</p></div></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="day2">
+      <div class="container">
+        <div class="day-ticket">
+          <div class="day-ticket__label"><strong>DAY 2</strong><span>8/13 THU</span></div>
+          <div class="day-ticket__body"><p>THURSDAY / SUSONO</p><h3>朝蒸す → 動物を見る → 帰る</h3></div>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item"><time class="timeline-time">06:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🌅</span><div><h4>朝ウナ</h4><p>夜より軽めの1〜2セット。旅行中なので、追い込みすぎない。</p></div></div></div></article>
+          <article class="timeline-item"><time class="timeline-time">07:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🥐</span><div><h4>朝食ビュッフェ</h4><p>6:30〜10:00（L.O. 9:30） / 1,400円</p><p><span class="tag tag--optional">予約プランを確認</span> 朝食付きなら追加料金は不要。</p></div></div></div></article>
+          <article class="timeline-item"><time class="timeline-time">09:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🧳</span><div><h4>チェックアウト</h4><p>サファリへ。朝の道路状況も確認します。</p></div></div></div></article>
+        </div>
+
+        <div class="safari-feature">
+          <img class="safari-feature__image" src="https://www.fujisafari.co.jp/wp-content/uploads/2019/01/car01.jpg" alt="マイカーから間近に動物を見学する富士サファリパーク" loading="lazy">
+          <div class="safari-feature__body">
+            <p class="eyebrow">10:00頃 / DAY 2 MAIN EVENT</p>
+            <h3>富士サファリ<br>パーク</h3>
+            <p>おすすめはMySAFARIの事前登録。電子入園チケットを到着前に購入します。</p>
+            <div class="safari-price"><div><span>通常</span><strong>3,200円</strong></div><div><span>MySAFARI</span><strong>2,700円</strong></div></div>
+            <span class="save-pill">500円節約・駐車料金無料</span>
+            <p class="mini-note" style="color:rgba(255,255,255,.72)">写真・料金出典：<a class="source-link" href="https://www.fujisafari.co.jp/ticket/" target="_blank" rel="noopener">富士サファリパーク公式</a></p>
+          </div>
+        </div>
+        <div class="experience">
+          <article class="experience-card"><span class="experience-card__time">10:00〜11:00</span><strong>マイカーでサファリゾーン</strong><p>所要目安50〜60分。車窓から動物を間近に。</p></article>
+          <article class="experience-card"><span class="experience-card__time">11:10〜12:30</span><strong>ふれあいゾーン</strong><p>所要目安60〜90分。歩いて小動物のエリアへ。</p></article>
+          <article class="experience-card"><span class="experience-card__time">12:30〜13:30</span><strong>昼食・休憩</strong><p>園内でゆっくり。再入園はできません。</p></article>
+          <article class="experience-card"><span class="experience-card__time">13:30〜14:00</span><strong>お土産 or 追加エリア</strong><p>気になった場所を最後にもうひとつ。</p></article>
+        </div>
+        <div class="check-card">📅 8月13日（木）の営業時間を、前日に公式営業カレンダーで再確認。日付によって営業開始時刻が早まる場合があります。 <a class="source-link" href="https://www.fujisafari.co.jp/pdf/calendar2026.pdf" target="_blank" rel="noopener">2026年営業カレンダー</a></div>
+
+        <div class="timeline" style="margin-top:36px">
+          <article class="timeline-item"><time class="timeline-time">14:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🚗</span><div><h4>御殿場出発</h4><p>帰るまでがサウナ旅行です。</p></div></div></div></article>
+          <article class="timeline-item"><time class="timeline-time">17:00〜18:00</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🏠</span><div><h4>川崎到着</h4><p>東名の渋滞状況で変動するため、到着は幅を持たせます。</p></div></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--forest" id="sauna">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">THE THREE SAUNA PLAN</p><h2>サウナ、三段構え。</h2></div>
+          <p>昼・夜・朝。熱さも景色も役割も、全部違う。</p>
+        </div>
+        <div class="three-sauna">
+          <article class="sauna-round"><div class="round-label">ROUND 1</div><div><h3>木の花の湯</h3><p>富士山 × アウフグース</p></div><div class="round-number">01</div></article>
+          <article class="sauna-round"><div class="round-label">ROUND 2</div><div><h3>富士の心湯</h3><p>105℃ × 14℃</p></div><div class="round-number">02</div></article>
+          <article class="sauna-round"><div class="round-label">ROUND 3</div><div><h3>朝ウナ</h3><p>軽く整えてDAY 2へ</p></div><div class="round-number">03</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--blue" id="budget">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">BUDGET CHECK</p><h2>2万円以内に、<br>着地。</h2></div><p>現在料金で再計算。宿泊費は元資料の目安を引き継いでいます。</p></div>
+        <div class="budget-shell">
+          <article class="budget-main">
+            <span class="mission">MISSION：20,000円以内</span>
+            <h3>17,400〜19,900<small>円 / 人</small></h3>
+            <p class="budget-range">車関連費を除く</p>
+            <div class="budget-bar" aria-label="予算上限2万円に対し最大1万9900円"><div class="budget-bar__fill"></div><div class="budget-bar__line"></div></div>
+            <div class="budget-scale"><span>0円</span><span>MAX 19,900円</span><span>20,000円</span></div>
+            <ul class="cost-list">
+              <li><span>宿泊</span><strong>7,500〜9,000円</strong></li>
+              <li><span>木の花の湯</span><strong>2,200円</strong></li>
+              <li><span>富士サファリ MySAFARI</span><strong>2,700円</strong></li>
+              <li><span>食事</span><strong>5,000〜6,000円</strong></li>
+            </ul>
+          </article>
+          <aside class="budget-options">
+            <div class="save-option"><span class="save-option__label">SAVE OPTION</span><h4>学生証が使える期間</h4><p>木の花の湯 2,200 → 1,700円<br><strong>TOTAL 16,900〜19,400円</strong></p></div>
+            <div class="save-option"><span class="save-option__label">EARLY ENTRY</span><h4>13時までに入館</h4><p>木の花の湯 2,200 → 1,800円<br><strong>TOTAL 17,000〜19,500円</strong></p></div>
+            <div class="save-option save-option--amber"><span class="save-option__label">IMPORTANT</span><h4>割引の併用は不可</h4><p>学割と13時までの入館割引は、どちらか一方を利用します。</p></div>
+            <div class="budget-warning"><strong>20,000円ライン注意</strong><br><span class="mini-note">ホテル代が9,000円を超える場合は、食事代と予約プランを再チェック。</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="map">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">ROUTE MAP</p><h2>川崎から、富士山のふもとへ。</h2></div><p>DAY 1は御殿場、DAY 2はサファリ。最後は川崎まで。</p></div>
+        <div class="route-layout">
+          <ol class="route-list">
+            <li data-step="1">川崎</li>
+            <li data-step="2">御殿場プレミアム・アウトレット</li>
+            <li data-step="3">木の花の湯</li>
+            <li data-step="4">レンブラントスタイル御殿場駒門</li>
+            <li class="day2" data-step="5">富士サファリパーク</li>
+            <li class="day2" data-step="6">川崎</li>
+          </ol>
+          <div class="map-card">
+            <iframe title="川崎から御殿場の各施設と富士サファリパークを巡るルート" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?output=embed&amp;saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;daddr=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88+to%3A+%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF+to%3A+%E3%83%AC%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B4%E9%A7%92%E9%96%80+to%3A+%E5%AF%8C%E5%A3%AB%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;hl=ja"></iframe>
+            <div class="map-actions"><p>交通状況と所要時間は出発前に再確認。</p><a class="btn btn--forest" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;waypoints=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88%7C%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF%7C%E3%83%AC%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B4%E9%A7%92%E9%96%80%7C%E5%AF%8C%E5%A3%AB%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF&amp;travelmode=driving" target="_blank" rel="noopener">Google Mapsで開く ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="other-plans">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">THE OTHER ROUTES</p><h2>最後まで候補だった旅。</h2></div><p>御殿場に決まるまで、こんな5つのルートも本気で検討していました。</p></div>
+        <div class="other-grid">
+          <article class="other-card"><figure><img src="https://high-set-hotel.com/data/202312/img658d1b7b4188e.jpg" alt="静岡のサウナしきじ" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>静岡・サウナしきじ</h3><p class="other-card__concept">聖地巡礼 × 美肌湯</p><p class="other-card__budget">約13,000〜14,000円</p><details><summary>ハイライトを見る</summary><ul><li>サウナしきじ</li><li>天然水の水風呂</li><li>日本平・久能山東照宮</li></ul></details><a class="other-card__credit" href="https://high-set-hotel.com/info" target="_blank" rel="noopener">写真出典：ハイセットホテル静岡インター</a></article>
+          <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/View%20of%20Atami%20Sun%20Beach%20from%20northeast%20-%20Mar%2014%2C%202024.jpg?width=1400" alt="熱海サンビーチと温泉街" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>熱海</h3><p class="other-card__concept">オーシャンスパ × 温泉街</p><p class="other-card__budget">約18,000〜19,500円</p><details><summary>ハイライトを見る</summary><ul><li>オーシャンスパ Fuua</li><li>熱海温泉街</li><li>海辺の朝散歩</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:View_of_Atami_Sun_Beach_from_northeast_-_Mar_14,_2024.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
+          <article class="other-card"><figure><img src="https://img.sauna-ikitai.com/sauna/8094_20200303_090610_zpB80yBI5A_large.jpg" alt="山中湖の天空のサウナ" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>山中湖</h3><p class="other-card__concept">天空のサウナ × 湖アクティビティ</p><p class="other-card__budget">約18,200〜18,400円</p><details><summary>ハイライトを見る</summary><ul><li>天空のサウナ</li><li>山中湖アクティビティ</li><li>富士山ビュー</li></ul></details><a class="other-card__credit" href="https://sauna-ikitai.com/saunas/8094" target="_blank" rel="noopener">写真出典：サウナイキタイ</a></article>
+          <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kusatsu%20Yubatake%2C%20Gunma%2001.jpg?width=1400" alt="草津温泉の湯畑" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>草津温泉</h3><p class="other-card__concept">温泉街 × 大滝乃湯 × ジップライン</p><p class="other-card__budget">約16,700〜16,950円</p><details><summary>ハイライトを見る</summary><ul><li>湯畑散策</li><li>大滝乃湯</li><li>ジップライン</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:Kusatsu_Yubatake,_Gunma_01.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
+          <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Yaizu%20fish%20center.jpg?width=1400" alt="静岡県焼津市の焼津さかなセンター" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>静岡・焼津</h3><p class="other-card__concept">しきじ巡礼 × 工芸・歴史</p><p class="other-card__budget">約14,150円</p><details><summary>ハイライトを見る</summary><ul><li>焼津さかなセンター</li><li>サウナしきじ</li><li>駿府の工房 匠宿</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:Yaizu_fish_center.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><p class="footer-title">GOTEMBA WEEKEND / 2026.08.12—13</p><p>富士山に整いに行きます。／ 最終情報確認：2026年8月8日</p></div>
+      <p><a href="#top">PAGE TOP ↑</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const overlay = document.getElementById('celebration');
+      const closeButton = document.getElementById('close-celebration');
+      const confetti = document.getElementById('confetti');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let closeTimer;
+
+      const closeCelebration = () => {
+        if (!overlay || overlay.classList.contains('is-closing')) return;
+        clearTimeout(closeTimer);
+        overlay.classList.add('is-closing');
+        document.body.classList.remove('overlay-open');
+        window.setTimeout(() => {
+          overlay.hidden = true;
+          document.querySelector('.hero .btn')?.focus({ preventScroll: true });
+        }, reduceMotion ? 0 : 560);
+      };
+
+      if (!reduceMotion && confetti) {
+        const colors = ['#f0bd72', '#b95138', '#79a9c7', '#dce9e3', '#fff2d9'];
+        for (let i = 0; i < 42; i += 1) {
+          const piece = document.createElement('span');
+          piece.className = 'confetti-piece';
+          piece.style.setProperty('--x', `${Math.random() * 100}%`);
+          piece.style.setProperty('--w', `${5 + Math.random() * 7}px`);
+          piece.style.setProperty('--drift', `${-70 + Math.random() * 140}px`);
+          piece.style.setProperty('--duration', `${2.1 + Math.random() * .9}s`);
+          piece.style.setProperty('--delay', `${Math.random() * .5}s`);
+          piece.style.setProperty('--color', colors[i % colors.length]);
+          confetti.appendChild(piece);
+        }
+      }
+
+      closeButton?.addEventListener('click', closeCelebration);
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && overlay && !overlay.hidden) closeCelebration();
+      });
+      closeTimer = window.setTimeout(closeCelebration, reduceMotion ? 4500 : 4800);
+
+      const shoppingToggle = document.getElementById('shopping-toggle');
+      const shoppingBranch = document.getElementById('shopping-branch');
+      shoppingToggle?.addEventListener('click', () => {
+        const isOpen = shoppingToggle.getAttribute('aria-expanded') === 'true';
+        shoppingToggle.setAttribute('aria-expanded', String(!isOpen));
+        if (shoppingBranch) shoppingBranch.hidden = isOpen;
+      });
+    })();
+  </script>
 </body>
 </html>
