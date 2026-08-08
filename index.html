@@ -3,629 +3,347 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>御殿場サウナ旅行 1泊2日｜富士山 × サウナ × サファリ</title>
-  <meta name="description" content="川崎発1泊2日。御殿場プレミアム・アウトレット、木の花の湯、富士の心湯、富士サファリパークを巡るサウナ旅行プラン。">
-  <meta name="theme-color" content="#173d36">
-  <meta property="og:type" content="website">
+  <title>御殿場サウナ旅行 1泊2日｜8/12–13 旅行のしおり</title>
+  <meta name="description" content="2026年8月12〜13日、川崎発。御殿場プレミアム・アウトレット、木の花の湯、さわやか、東口本宮冨士浅間神社を巡る1泊2日の旅行プラン。">
   <meta property="og:title" content="㊗️ 御殿場プランに決定！">
-  <meta property="og:description" content="富士山に整いに行きます。1泊2日の御殿場サウナ旅。">
-  <meta property="og:image" content="https://www.gotemba-konohananoyu.jp/files/ogp.jpg">
-  <meta property="og:locale" content="ja_JP">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:description" content="富士山に整いに行きます。8月12〜13日の御殿場サウナ旅。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.gotemba-konohananoyu.jp/spa/images/img_main.jpg">
+  <meta name="theme-color" content="#153f36">
   <style>
     :root {
-      --forest: #173d36;
-      --forest-2: #24584d;
-      --forest-3: #dce9e3;
-      --fuji: #2d6593;
-      --fuji-soft: #dfeaf3;
-      --ink: #1c2925;
-      --muted: #64736e;
-      --paper: #f8f4eb;
-      --sand: #e9deca;
-      --white: #fffef9;
-      --vermilion: #b95138;
-      --amber: #c58424;
-      --amber-soft: #fff0d2;
-      --line: rgba(28, 41, 37, .13);
-      --shadow: 0 18px 50px rgba(21, 47, 41, .12);
-      --radius: 26px;
-      --max: 1180px;
+      --ink:#162b28; --forest:#153f36; --forest-2:#28675a; --blue:#30749a;
+      --paper:#f7f2e9; --white:#fffefa; --sand:#eadcc7; --orange:#c85a3e;
+      --amber:#e8a84b; --muted:#60716c; --line:rgba(21,63,54,.16);
+      --shadow:0 18px 45px rgba(28,50,44,.10); --radius:26px;
     }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:82px; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.75; overflow-wrap:anywhere; }
+    body.overlay-open { overflow:hidden; }
+    img { display:block; width:100%; }
+    a { color:inherit; }
+    button,input,select { font:inherit; }
+    button { color:inherit; }
+    figure { margin:0; }
+    h1,h2,h3,h4,p { overflow-wrap:anywhere; }
+    h2 { margin:0; font:700 clamp(2rem,5vw,4.4rem)/1.12 Georgia,"Yu Mincho",serif; letter-spacing:-.04em; }
+    h3 { margin:0; font:700 clamp(1.45rem,3vw,2.5rem)/1.25 Georgia,"Yu Mincho",serif; }
+    .container { width:min(1180px,calc(100% - 44px)); margin-inline:auto; }
+    .section { padding:100px 0; }
+    .section--white { background:var(--white); }
+    .section--forest { color:#fff; background:var(--forest); }
+    .section--blue { color:#fff; background:#2d6f91; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:36px; margin-bottom:42px; }
+    .section-head > p { max-width:490px; margin:0; color:var(--muted); }
+    .section--forest .section-head > p,.section--blue .section-head > p { color:rgba(255,255,255,.75); }
+    .eyebrow { margin:0 0 10px; color:var(--orange); font-size:.75rem; font-weight:900; letter-spacing:.18em; text-transform:uppercase; }
+    .source { font-size:.74rem; color:var(--muted); }
+    .source a { text-underline-offset:3px; }
+    .section--forest .source,.section--blue .source { color:rgba(255,255,255,.7); }
+    .tag { display:inline-flex; align-items:center; min-height:27px; padding:3px 10px; border-radius:999px; color:#fff; background:var(--forest); font-size:.69rem; font-weight:900; letter-spacing:.08em; }
+    .tag--orange { background:var(--orange); }
+    .tag--amber { color:var(--forest); background:#ffd69d; }
+    .tag--outline { color:var(--forest); background:transparent; border:1px solid rgba(21,63,54,.3); }
+    .btn { display:inline-flex; justify-content:center; align-items:center; min-height:48px; padding:12px 22px; border:0; border-radius:999px; text-decoration:none; font-weight:900; letter-spacing:.03em; cursor:pointer; transition:transform .2s,background .2s; }
+    .btn:hover { transform:translateY(-2px); }
+    .btn--light { color:var(--forest); background:#fff; }
+    .btn--dark { color:#fff; background:var(--forest); }
+    .btn--outline { color:var(--forest); background:transparent; border:1px solid rgba(21,63,54,.36); }
+    .skip-link { position:fixed; z-index:3000; top:10px; left:10px; padding:10px 16px; transform:translateY(-150%); color:#fff; background:#000; }
+    .skip-link:focus { transform:none; }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
-    body {
-      margin: 0;
-      min-width: 280px;
-      color: var(--ink);
-      background: var(--paper);
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-      line-height: 1.75;
-      overflow-wrap: anywhere;
-    }
-    body.overlay-open { overflow: hidden; }
-    img { display: block; width: 100%; max-width: 100%; }
-    a { color: inherit; }
-    button, a { -webkit-tap-highlight-color: transparent; }
-    button { font: inherit; }
-    [hidden] { display: none !important; }
-    :focus-visible { outline: 3px solid #f3ad4e; outline-offset: 4px; }
+    /* celebration */
+    .celebration { position:fixed; z-index:2000; inset:0; display:grid; place-items:center; padding:24px; color:#fff; background:rgba(11,42,36,.96); transition:opacity .55s,visibility .55s; }
+    .celebration.is-closing { opacity:0; visibility:hidden; }
+    .celebration__panel { position:relative; z-index:2; width:min(720px,100%); padding:54px 28px; text-align:center; }
+    .celebration__mark,.celebration__date { margin:0 0 8px; font-size:.76rem; font-weight:900; letter-spacing:.18em; }
+    .celebration__date { color:#f3c57e; }
+    .celebration h1 { margin:14px 0; font:700 clamp(2rem,7vw,4.6rem)/1.18 Georgia,"Yu Mincho",serif; }
+    .celebration__route { margin:0; font-weight:800; }
+    .celebration__icons { margin:18px 0 4px; font-size:1.6rem; letter-spacing:.18em; }
+    .celebration__copy { margin:7px 0 28px; font-family:Georgia,"Yu Mincho",serif; font-size:1.2rem; }
+    .confetti { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+    .confetti-piece { position:absolute; top:-30px; width:9px; height:18px; opacity:.85; animation:fall var(--duration) linear var(--delay) forwards; }
+    @keyframes fall { to { transform:translate3d(var(--drift),110vh,0) rotate(720deg); } }
 
-    .skip-link {
-      position: fixed;
-      left: 12px;
-      top: 12px;
-      z-index: 2000;
-      padding: 10px 15px;
-      border-radius: 999px;
-      color: #fff;
-      background: var(--forest);
-      transform: translateY(-160%);
-    }
-    .skip-link:focus { transform: translateY(0); }
+    /* hero */
+    .hero { position:relative; min-height:760px; display:grid; align-items:end; color:#fff; background:var(--forest); overflow:hidden; }
+    .hero__media { position:absolute; inset:0; display:grid; grid-template-columns:1.6fr .8fr .8fr; }
+    .hero__media figure { min-width:0; overflow:hidden; }
+    .hero__media img { height:100%; object-fit:cover; }
+    .hero__media figure:nth-child(2),.hero__media figure:nth-child(3) { filter:saturate(.9); }
+    .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(5,31,27,.92) 0%,rgba(5,31,27,.64) 45%,rgba(5,31,27,.14)),linear-gradient(0deg,rgba(5,31,27,.6),transparent 55%); }
+    .hero__content { position:relative; z-index:2; width:100%; padding:130px 0 100px; }
+    .hero__inner { width:min(1180px,calc(100% - 44px)); margin:auto; }
+    .hero__overline { margin:0 0 22px; color:#f3c57e; font-size:.78rem; font-weight:900; letter-spacing:.16em; }
+    .hero h1 { margin:0 0 20px; }
+    .hero__en { display:block; font:900 clamp(1rem,2vw,1.45rem)/1 sans-serif; letter-spacing:.16em; }
+    .hero__jp { display:block; max-width:820px; margin-top:22px; font:700 clamp(2.8rem,7.5vw,6.4rem)/1.02 Georgia,"Yu Mincho",serif; letter-spacing:-.06em; }
+    .hero__sub { margin:0 0 28px; font-size:clamp(1rem,2vw,1.32rem); font-weight:700; }
+    .hero__stamp { position:absolute; z-index:3; top:40px; right:4vw; padding:14px 18px; transform:rotate(5deg); border:2px solid #fff; border-radius:7px; font-size:.75rem; font-weight:900; letter-spacing:.12em; text-align:center; }
+    .hero__credit { position:absolute; z-index:3; right:18px; bottom:14px; margin:0; font-size:.65rem; color:rgba(255,255,255,.75); }
+    .hero__credit a { text-underline-offset:2px; }
 
-    .container { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
-    .section { padding: 96px 0; }
-    .section--white { background: var(--white); }
-    .section--forest { color: #fff; background: var(--forest); }
-    .section--blue { background: var(--fuji-soft); }
-    .eyebrow {
-      margin: 0 0 10px;
-      color: var(--vermilion);
-      font-size: .76rem;
-      font-weight: 900;
-      letter-spacing: .18em;
-      line-height: 1.25;
-      text-transform: uppercase;
-    }
-    .section--forest .eyebrow { color: #e7b583; }
-    .section-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 30px;
-      margin-bottom: 40px;
-    }
-    .section-head h2 {
-      max-width: 800px;
-      margin: 0;
-      font-family: Georgia, "Yu Mincho", serif;
-      font-size: clamp(2rem, 5vw, 4.2rem);
-      font-weight: 700;
-      letter-spacing: -.045em;
-      line-height: 1.08;
-    }
-    .section-head p:last-child { max-width: 430px; margin: 0; color: var(--muted); }
-    .section--forest .section-head p:last-child { color: rgba(255,255,255,.72); }
-    .mini-note { color: var(--muted); font-size: .82rem; line-height: 1.55; }
-    .source-link { color: inherit; text-decoration: underline; text-decoration-color: currentColor; text-underline-offset: 3px; }
+    /* nav + overview */
+    .trip-nav { position:sticky; z-index:100; top:0; background:rgba(255,254,250,.95); border-bottom:1px solid var(--line); backdrop-filter:blur(14px); }
+    .trip-nav__inner { display:flex; gap:10px; width:min(1180px,calc(100% - 24px)); margin:auto; padding:11px 0; overflow-x:auto; scrollbar-width:none; }
+    .trip-nav__inner::-webkit-scrollbar { display:none; }
+    .trip-nav a { flex:0 0 auto; padding:8px 14px; border:1px solid var(--line); border-radius:999px; text-decoration:none; font-size:.72rem; font-weight:900; letter-spacing:.08em; white-space:nowrap; }
+    .summary-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:12px; }
+    .summary-card { min-width:0; min-height:166px; padding:23px 20px; background:var(--white); border:1px solid var(--line); border-radius:20px; box-shadow:0 10px 28px rgba(28,50,44,.06); }
+    .summary-card__top { margin-bottom:14px; color:var(--muted); font-size:.69rem; font-weight:900; letter-spacing:.1em; }
+    .summary-card__emoji { margin-right:5px; font-size:1.2rem; }
+    .summary-card strong { display:block; font-size:1.08rem; line-height:1.4; }
+    .summary-card small { display:block; margin-top:8px; color:var(--muted); line-height:1.4; }
+    .priority-board { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:14px; margin-top:30px; }
+    .priority-card { padding:24px; border-radius:22px; background:#fff; border:1px solid var(--line); }
+    .priority-card:first-child { color:#fff; background:var(--forest); }
+    .priority-card h3 { font-family:inherit; font-size:1rem; letter-spacing:.12em; }
+    .priority-card ol,.priority-card ul { margin:14px 0 0; padding-left:1.25em; }
+    .priority-note { margin:20px 0 0; color:var(--muted); font-size:.88rem; }
 
-    .btn {
-      display: inline-flex;
-      min-height: 48px;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 12px 21px;
-      border: 1px solid transparent;
-      border-radius: 999px;
-      font-weight: 800;
-      line-height: 1.3;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      transition: transform .2s ease, background .2s ease, color .2s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn--forest { color: #fff; background: var(--forest); }
-    .btn--light { color: var(--forest); background: var(--white); }
-    .btn--outline { color: var(--forest); border-color: rgba(23,61,54,.35); background: transparent; }
-    .btn--small { min-height: 40px; padding: 8px 15px; font-size: .82rem; }
+    /* schedule */
+    .day-ticket { display:grid; grid-template-columns:175px 1fr; margin-bottom:46px; color:#fff; background:var(--forest); border-radius:28px; overflow:hidden; box-shadow:var(--shadow); }
+    .day-ticket__label { display:grid; place-content:center; gap:12px; min-height:165px; padding:26px; text-align:center; border-right:1px dashed rgba(255,255,255,.3); }
+    .day-ticket__label strong { font-size:2rem; line-height:1; }
+    .day-ticket__label span { font-size:.75rem; font-weight:900; letter-spacing:.12em; }
+    .day-ticket__body { display:grid; align-content:center; padding:30px 42px; }
+    .day-ticket__body p { margin:0 0 4px; color:#a9d0c6; font-size:.73rem; font-weight:900; letter-spacing:.15em; }
+    .timeline { position:relative; max-width:1020px; margin:auto; }
+    .timeline::before { content:""; position:absolute; top:8px; bottom:8px; left:132px; width:2px; background:linear-gradient(var(--forest-2),var(--sand)); }
+    .timeline-item { position:relative; display:grid; grid-template-columns:132px minmax(0,1fr); gap:34px; padding-bottom:28px; }
+    .timeline-item:last-child { padding-bottom:0; }
+    .timeline-time { position:relative; z-index:2; display:block; padding:21px 30px 0 0; color:var(--forest); font-size:.86rem; font-weight:900; text-align:right; white-space:nowrap; }
+    .timeline-time::after { content:""; position:absolute; top:24px; right:-10px; width:14px; height:14px; border:4px solid var(--white); border-radius:50%; background:var(--orange); box-shadow:0 0 0 1px #d9a692; }
+    .timeline-card { min-width:0; padding:26px 29px; background:var(--white); border:1px solid var(--line); border-radius:23px; box-shadow:0 12px 32px rgba(28,50,44,.07); }
+    .timeline-card--feature { padding:0; overflow:hidden; }
+    .timeline-card__content { padding:28px 30px; }
+    .timeline-card__title { display:flex; align-items:flex-start; gap:11px; }
+    .timeline-card__icon { flex:0 0 auto; font-size:1.5rem; }
+    .timeline-card h4 { margin:0; font:700 clamp(1.3rem,3vw,2rem)/1.3 Georgia,"Yu Mincho",serif; }
+    .timeline-card p { margin:10px 0 0; }
+    .timeline-card ul { margin:12px 0 0; padding-left:1.2em; }
+    .soft-panel { margin-top:18px; padding:17px 19px; background:var(--paper); border-radius:16px; }
+    .soft-panel strong { color:var(--forest); }
+    .time-chips { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 0; }
+    .time-chip { min-width:120px; padding:14px 18px; border-radius:15px; color:#fff; background:var(--forest); text-align:center; }
+    .time-chip span { display:block; color:#b8d6cd; font-size:.66rem; font-weight:900; letter-spacing:.12em; }
+    .time-chip strong { font-size:1.3rem; }
+    .photo-strip { display:grid; grid-template-columns:1.45fr 1fr; gap:12px; margin-top:20px; }
+    .photo-card { min-width:0; background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden; }
+    .photo-card img { height:230px; object-fit:cover; }
+    .photo-card figcaption { padding:10px 13px; color:var(--muted); font-size:.72rem; }
+    .feature-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:18px; }
+    .feature-box { padding:16px; background:var(--paper); border-radius:16px; }
+    .feature-box strong { display:block; color:var(--forest); font-size:.78rem; letter-spacing:.08em; }
+    .feature-box span { font-size:.85rem; }
 
-    /* Celebration */
-    .celebration {
-      position: fixed;
-      inset: 0;
-      z-index: 1000;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-      color: #fff;
-      background:
-        radial-gradient(circle at 18% 18%, rgba(107,163,190,.45), transparent 30%),
-        radial-gradient(circle at 82% 78%, rgba(185,81,56,.28), transparent 32%),
-        rgba(13, 45, 40, .96);
-      opacity: 1;
-      visibility: visible;
-      transition: opacity .55s ease, visibility .55s ease;
-    }
-    .celebration.is-closing { opacity: 0; visibility: hidden; pointer-events: none; }
-    .celebration__panel {
-      position: relative;
-      z-index: 2;
-      width: min(760px, 100%);
-      padding: clamp(32px, 7vw, 72px) clamp(22px, 6vw, 68px);
-      border: 1px solid rgba(255,255,255,.2);
-      border-radius: 34px;
-      background: rgba(255,255,255,.08);
-      box-shadow: 0 30px 100px rgba(0,0,0,.28);
-      text-align: center;
-      backdrop-filter: blur(12px);
-    }
-    .celebration__mark { margin: 0 0 12px; color: #ffd49b; font-size: .8rem; font-weight: 900; letter-spacing: .18em; }
-    .celebration__date { margin: 0 0 13px; color: #b8d7e9; font-size: .78rem; font-weight: 900; letter-spacing: .14em; }
-    .celebration h1 {
-      margin: 0;
-      font-family: Georgia, "Yu Mincho", serif;
-      font-size: clamp(2.15rem, 7vw, 5.1rem);
-      letter-spacing: -.05em;
-      line-height: 1.12;
-    }
-    .celebration__route { margin: 22px 0 6px; font-weight: 800; letter-spacing: .04em; }
-    .celebration__icons { margin: 15px 0; font-size: clamp(1.35rem, 4vw, 2rem); letter-spacing: .12em; }
-    .celebration__copy { margin: 0 0 26px; color: rgba(255,255,255,.82); font-family: Georgia, "Yu Mincho", serif; font-size: 1.05rem; }
-    .confetti { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
-    .confetti-piece {
-      position: absolute;
-      top: -10vh;
-      left: var(--x);
-      width: var(--w);
-      height: calc(var(--w) * 1.7);
-      border-radius: 2px;
-      background: var(--color);
-      opacity: .9;
-      animation: confettiFall var(--duration) var(--delay) cubic-bezier(.18,.75,.4,1) forwards;
-    }
-    @keyframes confettiFall {
-      to { transform: translate3d(var(--drift), 118vh, 0) rotate(720deg); }
-    }
+    /* hotel */
+    .switcher { display:inline-flex; gap:8px; padding:6px; margin-bottom:28px; background:#e8e3d8; border-radius:999px; }
+    .switcher button { min-width:145px; min-height:46px; padding:9px 18px; border:0; border-radius:999px; background:transparent; font-weight:900; cursor:pointer; }
+    .switcher button[aria-selected="true"] { color:#fff; background:var(--forest); box-shadow:0 7px 18px rgba(21,63,54,.25); }
+    .hotel-panel { display:grid; grid-template-columns:1.05fr 1fr; min-height:500px; color:#fff; background:var(--forest); border-radius:30px; overflow:hidden; box-shadow:var(--shadow); }
+    .hotel-panel__media img { height:100%; object-fit:cover; }
+    .hotel-panel__body { display:flex; flex-direction:column; justify-content:center; padding:46px; }
+    .hotel-panel__body h3 { margin:15px 0 4px; font-size:clamp(2rem,4vw,3.5rem); }
+    .hotel-room { color:#f3c57e; font-weight:900; }
+    .bed-badge { display:inline-flex; align-self:flex-start; margin:20px 0; padding:10px 14px; color:var(--forest); background:#fff; border-radius:8px; font-size:.79rem; font-weight:900; letter-spacing:.12em; }
+    .hotel-facts { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:5px 0 20px; }
+    .hotel-facts div { padding:14px; border:1px solid rgba(255,255,255,.2); border-radius:15px; }
+    .hotel-facts strong { display:block; }
+    .hotel-alert { padding:16px; color:var(--ink); background:#ffd69d; border-radius:15px; font-size:.88rem; }
+    .hotel-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+    .hotel-links a { color:#fff; font-size:.8rem; font-weight:800; text-underline-offset:4px; }
 
-    /* Hero */
-    .hero {
-      position: relative;
-      min-height: 760px;
-      display: grid;
-      align-items: center;
-      overflow: hidden;
-      color: #fff;
-      background: var(--forest);
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      background: linear-gradient(90deg, rgba(10,35,31,.96) 0%, rgba(10,35,31,.83) 41%, rgba(10,35,31,.28) 74%, rgba(10,35,31,.16) 100%);
-      pointer-events: none;
-    }
-    .hero__media { position: absolute; inset: 0; display: grid; grid-template-columns: 58% 42%; }
-    .hero__media figure { position: relative; margin: 0; overflow: hidden; }
-    .hero__media figure:first-child { grid-row: span 2; }
-    .hero__media img { height: 100%; object-fit: cover; }
-    .hero__media figure:nth-child(2), .hero__media figure:nth-child(3) { border-left: 3px solid var(--forest); }
-    .hero__media figure:nth-child(3) { border-top: 3px solid var(--forest); }
-    .hero__content {
-      position: relative;
-      z-index: 2;
-      width: min(calc(100% - 40px), var(--max));
-      margin: 0 auto;
-      padding: 120px 0 100px;
-    }
-    .hero__inner { max-width: 720px; }
-    .hero__overline { margin: 0 0 14px; color: #d8ede7; font-size: .82rem; font-weight: 900; letter-spacing: .2em; }
-    .hero h1 { margin: 0; }
-    .hero__en {
-      display: block;
-      margin-bottom: 16px;
-      color: #b8d7e9;
-      font-size: clamp(1.1rem, 2vw, 1.55rem);
-      font-weight: 800;
-      letter-spacing: .16em;
-      line-height: 1.2;
-    }
-    .hero__jp {
-      display: block;
-      font-family: Georgia, "Yu Mincho", serif;
-      font-size: clamp(3rem, 7.5vw, 7rem);
-      font-weight: 700;
-      letter-spacing: -.065em;
-      line-height: 1.03;
-      text-wrap: balance;
-    }
-    .hero__sub { max-width: 660px; margin: 28px 0 34px; color: rgba(255,255,255,.82); font-size: clamp(1rem, 2vw, 1.22rem); font-weight: 700; }
-    .hero__stamp {
-      position: absolute;
-      top: 94px;
-      right: max(20px, calc((100vw - var(--max)) / 2));
-      z-index: 3;
-      padding: 15px 22px;
-      border: 3px double rgba(255,224,188,.95);
-      color: #ffe0bc;
-      background: rgba(23,61,54,.45);
-      font-size: .78rem;
-      font-weight: 900;
-      letter-spacing: .12em;
-      line-height: 1.45;
-      text-align: center;
-      transform: rotate(4deg);
-      backdrop-filter: blur(8px);
-    }
-    .hero__credit {
-      position: absolute;
-      right: 14px;
-      bottom: 14px;
-      z-index: 3;
-      margin: 0;
-      padding: 5px 9px;
-      border-radius: 8px;
-      color: rgba(255,255,255,.85);
-      background: rgba(0,0,0,.5);
-      font-size: .67rem;
-      line-height: 1.35;
-    }
+    /* day 2 / Sawayaka */
+    .mission { display:grid; grid-template-columns:1fr 1fr; color:#fff; background:#793822; border-radius:30px; overflow:hidden; box-shadow:var(--shadow); }
+    .mission img { height:100%; min-height:560px; object-fit:cover; }
+    .mission__body { display:flex; flex-direction:column; justify-content:center; padding:46px; }
+    .mission__body h3 { margin:4px 0 18px; font-size:clamp(2.5rem,5vw,5rem); }
+    .menu-price { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:22px 0; }
+    .menu-price div { padding:17px; border:1px solid rgba(255,255,255,.25); border-radius:16px; }
+    .menu-price small { display:block; color:#f2c9b9; }
+    .menu-price strong { display:block; font-size:1.4rem; }
+    .strategy { display:grid; grid-template-columns:.8fr 1.2fr; gap:28px; margin-top:26px; }
+    .strategy-card { padding:30px; background:#fff; border:1px solid var(--line); border-radius:23px; }
+    .strategy-card h3 { font-family:inherit; font-size:1.3rem; }
+    .strategy-flow { display:grid; gap:10px; margin-top:20px; }
+    .strategy-step { display:grid; grid-template-columns:44px 1fr; gap:12px; align-items:center; }
+    .strategy-step b { display:grid; place-items:center; width:40px; aspect-ratio:1; border-radius:50%; color:#fff; background:var(--forest); }
+    .strategy-step strong { display:block; }
+    .wait-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .wait-card { padding:22px; border:1px solid var(--line); border-radius:18px; background:var(--paper); }
+    .wait-card strong { display:block; margin-bottom:8px; color:var(--orange); }
+    .nature-feature { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:42px; }
+    .nature-card { overflow:hidden; background:#fff; border:1px solid var(--line); border-radius:23px; }
+    .nature-card img { height:310px; object-fit:cover; }
+    .nature-card__body { padding:24px; }
+    .nature-card__body h3 { margin:5px 0 10px; }
+    .gear-list { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .gear-list span { padding:6px 11px; border-radius:999px; background:var(--paper); font-size:.78rem; font-weight:800; }
+    .weather-note { margin-top:14px; padding:16px; border-left:5px solid var(--amber); background:#fff5df; border-radius:8px; }
 
-    .trip-nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      border-bottom: 1px solid var(--line);
-      background: rgba(255,254,249,.94);
-      backdrop-filter: blur(16px);
+    /* budget */
+    .budget-intro { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .cost-card,.calculator { padding:30px; color:var(--ink); background:#fff; border-radius:25px; }
+    .cost-card h3,.calculator h3 { font-family:inherit; font-size:1.2rem; }
+    .cost-list { list-style:none; padding:0; margin:19px 0 0; }
+    .cost-list li { display:flex; justify-content:space-between; gap:12px; padding:11px 0; border-bottom:1px solid var(--line); }
+    .cost-list strong { text-align:right; }
+    .cost-total { display:flex; justify-content:space-between; gap:16px; margin-top:18px; font-weight:900; }
+    .cost-total strong { color:var(--forest); font-size:1.5rem; }
+    .hotel-tiers { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:22px 0; }
+    .hotel-tier { padding:17px; border-radius:15px; background:var(--paper); }
+    .hotel-tier span { display:block; font-size:.68rem; font-weight:900; letter-spacing:.1em; }
+    .hotel-tier strong { display:block; font-size:1.1rem; }
+    .hotel-tier--caution { background:#ffe1aa; }
+    .form-row { display:grid; grid-template-columns:1.3fr .7fr; gap:12px; margin-top:18px; }
+    .field label { display:block; margin-bottom:6px; font-size:.75rem; font-weight:900; }
+    .field input,.field select { width:100%; min-height:50px; padding:9px 13px; border:1px solid #a9b9b4; border-radius:11px; background:#fff; }
+    .calc-result { margin-top:20px; padding:20px; color:#fff; background:var(--forest); border-radius:17px; }
+    .calc-result__grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .calc-result small { display:block; color:#b8d6cd; }
+    .calc-result strong { font-size:1.4rem; }
+    .budget-meter { height:14px; margin-top:17px; overflow:hidden; background:rgba(255,255,255,.18); border-radius:999px; }
+    .budget-meter span { display:block; width:0; height:100%; background:#f3c57e; transition:width .35s,background .35s; }
+    .calc-message { margin:9px 0 0; font-size:.8rem; }
+    .scenario-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:18px; }
+    .scenario { padding:18px; color:var(--ink); background:#fff; border-radius:16px; }
+    .scenario span { display:block; font-size:.72rem; color:var(--muted); }
+    .scenario strong { display:block; margin-top:5px; font-size:1rem; }
+
+    /* map + end matter */
+    .map-layout { display:grid; grid-template-columns:.72fr 1.28fr; gap:22px; }
+    .route-board { padding:28px; background:var(--paper); border-radius:24px; }
+    .route-board h3 { font-family:inherit; font-size:1rem; }
+    .route-list { list-style:none; padding:0; margin:15px 0 24px; }
+    .route-list li { position:relative; padding:0 0 18px 28px; font-weight:700; }
+    .route-list li::before { content:""; position:absolute; top:9px; left:6px; width:9px; height:9px; border-radius:50%; background:var(--orange); }
+    .route-list li:not(:last-child)::after { content:""; position:absolute; top:18px; bottom:0; left:10px; width:2px; background:#bdcbc7; }
+    .map-frame { overflow:hidden; min-height:540px; border-radius:24px; background:#ddd; }
+    .map-frame iframe { width:100%; height:100%; min-height:540px; border:0; }
+    .map-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:15px; }
+    .checklist { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+    .check-item { display:flex; align-items:flex-start; gap:11px; min-height:58px; padding:15px; background:#fff; border:1px solid var(--line); border-radius:14px; cursor:pointer; }
+    .check-item input { flex:0 0 auto; width:20px; height:20px; margin:2px 0 0; accent-color:var(--forest); }
+    .check-item:has(input:checked) { color:var(--muted); background:#e8eee9; text-decoration:line-through; }
+    .final-plan { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .final-day { padding:31px; color:#fff; background:var(--forest); border-radius:24px; }
+    .final-day:nth-child(2) { background:#2d6f91; }
+    .final-day h3 { margin-bottom:20px; font-family:inherit; }
+    .final-stop { display:grid; grid-template-columns:110px 1fr; gap:10px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,.17); }
+    .final-stop time { color:#f3c57e; font-weight:900; }
+    .other-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:13px; }
+    .other-card { min-width:0; overflow:hidden; background:#fff; border:1px solid var(--line); border-radius:20px; }
+    .other-card figure { position:relative; }
+    .other-card img { height:150px; object-fit:cover; }
+    .other-card figcaption { position:absolute; left:10px; bottom:10px; }
+    .other-card h3,.other-card > p,.other-card details,.other-card__credit { margin-left:17px; margin-right:17px; }
+    .other-card h3 { margin-top:17px; font-family:inherit; font-size:1.05rem; }
+    .other-card__concept { margin-top:7px; margin-bottom:5px; min-height:48px; color:var(--muted); font-size:.85rem; }
+    .other-card__budget { margin-top:0; font-weight:900; }
+    .other-card details { padding:10px 0; font-size:.8rem; border-top:1px solid var(--line); }
+    .other-card summary { cursor:pointer; font-weight:800; }
+    .other-card ul { padding-left:1.2em; }
+    .other-card__credit { display:block; margin-top:8px; margin-bottom:16px; color:var(--muted); font-size:.66rem; }
+    footer { padding:35px 0; color:#fff; background:#0d2f29; }
+    .footer-inner { display:flex; justify-content:space-between; gap:20px; }
+    .footer-inner p { margin:0; }
+    .footer-title { font-weight:900; letter-spacing:.06em; }
+
+    @media (max-width:1000px) {
+      .summary-grid { grid-template-columns:repeat(3,1fr); }
+      .other-grid { grid-template-columns:repeat(3,1fr); }
+      .scenario-grid { grid-template-columns:repeat(2,1fr); }
     }
-    .trip-nav__inner {
-      display: flex;
-      gap: 9px;
-      width: min(calc(100% - 28px), var(--max));
-      margin-inline: auto;
-      padding: 12px 0;
-      overflow-x: auto;
-      scrollbar-width: none;
+    @media (max-width:760px) {
+      .container { width:min(100% - 28px,1180px); }
+      .section { padding:72px 0; }
+      .section-head { display:block; }
+      .section-head > p { margin-top:15px; }
+      .hero { min-height:690px; }
+      .hero__media { grid-template-columns:1fr 1fr; grid-template-rows:1fr .56fr; }
+      .hero__media figure:first-child { grid-column:1/-1; }
+      .hero::after { background:linear-gradient(0deg,rgba(5,31,27,.92) 0%,rgba(5,31,27,.35) 80%); }
+      .hero__content { padding:130px 0 80px; }
+      .hero__stamp { top:24px; right:18px; font-size:.63rem; }
+      .hero__credit { right:14px; left:14px; text-align:right; }
+      .summary-grid { grid-template-columns:repeat(2,1fr); }
+      .summary-card { min-height:145px; }
+      .priority-board { grid-template-columns:1fr; }
+      .day-ticket { grid-template-columns:105px 1fr; }
+      .day-ticket__label { min-height:135px; padding:16px; }
+      .day-ticket__label strong { font-size:1.45rem; }
+      .day-ticket__body { padding:21px; }
+      .timeline::before { left:11px; }
+      .timeline-item { display:block; padding:0 0 23px 32px; }
+      .timeline-time { padding:0; margin-bottom:10px; text-align:left; white-space:normal; }
+      .timeline-time::after { top:7px; right:auto; left:-27px; border-color:var(--white); }
+      .timeline-card,.timeline-card__content { padding:22px 18px; }
+      .timeline-card--feature { padding:0; }
+      .photo-strip,.feature-grid { grid-template-columns:1fr 1fr; }
+      .photo-card img { height:190px; }
+      .hotel-panel,.mission,.strategy,.nature-feature,.budget-intro,.map-layout { grid-template-columns:1fr; }
+      .hotel-panel__media img { height:330px; }
+      .hotel-panel__body,.mission__body { padding:28px 23px; }
+      .mission img { min-height:0; height:330px; }
+      .map-frame,.map-frame iframe { min-height:430px; }
+      .other-grid { grid-template-columns:repeat(2,1fr); }
     }
-    .trip-nav__inner::-webkit-scrollbar { display: none; }
-    .trip-nav a {
-      flex: 0 0 auto;
-      padding: 8px 14px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: var(--forest);
-      background: #fff;
-      font-size: .72rem;
-      font-weight: 900;
-      letter-spacing: .08em;
-      text-decoration: none;
+    @media (max-width:480px) {
+      .container { width:min(100% - 22px,1180px); }
+      .section { padding:58px 0; }
+      h2 { font-size:2.2rem; }
+      .celebration { padding:14px; }
+      .celebration__panel { padding:35px 5px; }
+      .celebration__icons { letter-spacing:.04em; }
+      .hero { min-height:650px; }
+      .hero__inner { width:calc(100% - 28px); }
+      .hero__jp { font-size:clamp(2.45rem,13vw,4rem); }
+      .hero__overline { max-width:235px; }
+      .summary-grid { gap:8px; }
+      .summary-card { min-height:135px; padding:18px 14px; }
+      .summary-card strong { font-size:.94rem; }
+      .summary-card small { font-size:.72rem; }
+      .day-ticket { grid-template-columns:82px 1fr; border-radius:20px; }
+      .day-ticket__label { min-height:120px; padding:10px; }
+      .day-ticket__label strong { font-size:1.15rem; }
+      .day-ticket__label span { font-size:.62rem; }
+      .day-ticket__body { padding:17px; }
+      .day-ticket__body h3 { font-size:1.35rem; }
+      .photo-strip,.feature-grid,.hotel-facts,.menu-price,.wait-grid,.scenario-grid,.checklist,.final-plan,.calc-result__grid { grid-template-columns:1fr; }
+      .feature-grid { gap:8px; }
+      .feature-box { padding:13px; }
+      .switcher { width:100%; }
+      .switcher button { min-width:0; flex:1; padding-inline:10px; }
+      .hotel-panel__media img,.mission img { height:250px; }
+      .hotel-panel__body,.mission__body,.strategy-card,.cost-card,.calculator { padding:23px 18px; }
+      .form-row { grid-template-columns:1fr; }
+      .final-stop { grid-template-columns:95px 1fr; }
+      .other-grid { grid-template-columns:1fr; }
+      .other-card__concept { min-height:0; }
+      .footer-inner { display:block; }
+      .footer-inner > p { margin-top:12px; }
     }
-
-    /* Summary */
-    .summary-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
-    .summary-card {
-      min-width: 0;
-      padding: 23px 20px;
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      background: rgba(255,255,255,.72);
-      box-shadow: 0 8px 28px rgba(28,41,37,.05);
-    }
-    .summary-card__top { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; color: var(--muted); font-size: .76rem; font-weight: 900; letter-spacing: .08em; }
-    .summary-card__emoji { font-size: 1.35rem; }
-    .summary-card strong { display: block; font-size: clamp(1.05rem, 2vw, 1.38rem); line-height: 1.35; }
-    .summary-card small { display: block; margin-top: 8px; color: var(--muted); font-size: .72rem; line-height: 1.5; }
-
-    /* Timeline */
-    .day-ticket {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      margin-bottom: 42px;
-      overflow: hidden;
-      border-radius: var(--radius);
-      color: #fff;
-      background: var(--forest);
-      box-shadow: var(--shadow);
-    }
-    .day-ticket__label { display: grid; place-items: center; padding: 30px 20px; border-right: 1px dashed rgba(255,255,255,.35); }
-    .day-ticket__label strong { font-size: 2.2rem; line-height: 1; }
-    .day-ticket__label span { margin-top: 10px; color: #b9d9cf; font-size: .68rem; font-weight: 900; letter-spacing: .12em; }
-    .day-ticket__body { padding: 28px 34px; }
-    .day-ticket__body p { margin: 0 0 5px; color: #afd1c8; font-size: .72rem; font-weight: 900; letter-spacing: .14em; }
-    .day-ticket__body h3 { margin: 0; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(1.6rem, 4vw, 2.8rem); line-height: 1.2; }
-    .timeline { position: relative; max-width: 980px; margin: 0 auto; }
-    .timeline::before { content: ""; position: absolute; top: 8px; bottom: 8px; left: 124px; width: 2px; background: linear-gradient(var(--forest-2), var(--sand)); }
-    .timeline-item { position: relative; display: grid; grid-template-columns: 124px 1fr; gap: 32px; padding-bottom: 26px; }
-    .timeline-item:last-child { padding-bottom: 0; }
-    .timeline-time { position: relative; z-index: 2; padding: 21px 28px 0 0; color: var(--forest); font-size: .9rem; font-weight: 900; letter-spacing: -.02em; text-align: right; white-space: nowrap; }
-    .timeline-time::after {
-      content: "";
-      position: absolute;
-      top: 27px;
-      right: -10px;
-      width: 11px;
-      height: 11px;
-      border: 4px solid var(--paper);
-      border-radius: 50%;
-      background: var(--vermilion);
-      box-shadow: 0 0 0 1px rgba(185,81,56,.35);
-      transform: none;
-    }
-    .timeline-card {
-      min-width: 0;
-      padding: 27px 30px;
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      background: var(--white);
-      box-shadow: 0 10px 35px rgba(28,41,37,.07);
-    }
-    .timeline-card--feature { padding: 0; overflow: hidden; }
-    .timeline-card__content { padding: 28px 30px; }
-    .timeline-card__title { display: flex; align-items: flex-start; gap: 12px; }
-    .timeline-card__icon { flex: 0 0 auto; font-size: 1.55rem; line-height: 1.25; }
-    .timeline-card h4 { margin: 0; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(1.3rem, 3vw, 2rem); line-height: 1.3; }
-    .timeline-card p { margin: 11px 0 0; }
-    .timeline-card ul { margin: 14px 0 0; padding-left: 1.2em; }
-    .timeline-card li + li { margin-top: 4px; }
-    .time-split { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 18px 0 0; }
-    .time-split div { padding: 14px; border-radius: 13px; background: var(--paper); }
-    .time-split b { display: block; color: var(--forest); font-size: .82rem; }
-    .branch-wrap { margin-top: 18px; }
-    .branch-panel { margin-top: 12px; padding: 17px; border-left: 4px solid var(--fuji); border-radius: 0 13px 13px 0; background: var(--fuji-soft); }
-    .tag { display: inline-flex; align-items: center; min-height: 28px; padding: 5px 10px; border-radius: 999px; color: var(--forest); background: var(--forest-3); font-size: .68rem; font-weight: 900; letter-spacing: .08em; line-height: 1.2; }
-    .tag--default { color: #fff; background: var(--forest); }
-    .tag--optional { color: #7c4314; background: var(--amber-soft); }
-    .price-facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin-top: 20px; }
-    .price-fact { padding: 15px; border-radius: 13px; color: var(--forest); background: var(--forest-3); text-align: center; }
-    .price-fact b { display: block; font-size: 1.03rem; }
-    .price-fact small { color: var(--muted); font-size: .66rem; }
-
-    .aufguss {
-      display: grid;
-      grid-template-columns: 1.3fr repeat(4, 1fr);
-      gap: 10px;
-      margin: 24px 0 0;
-      padding: 16px;
-      border-radius: 18px;
-      color: #fff;
-      background: var(--forest);
-    }
-    .aufguss__title { display: flex; flex-direction: column; justify-content: center; padding: 5px 8px; }
-    .aufguss__title small { color: #acd2c7; font-size: .64rem; font-weight: 900; letter-spacing: .15em; }
-    .aufguss__title strong { font-family: Georgia, serif; }
-    .aufguss__time { display: grid; place-items: center; min-height: 62px; border: 1px solid rgba(255,255,255,.18); border-radius: 12px; font-weight: 900; background: rgba(255,255,255,.06); }
-
-    .photo-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 15px; margin-top: 28px; }
-    .photo-card { grid-column: span 4; margin: 0; overflow: hidden; border-radius: 20px; background: #ddd; box-shadow: 0 12px 36px rgba(28,41,37,.1); }
-    .photo-card--wide { grid-column: span 8; }
-    .photo-card img { height: 250px; object-fit: cover; transition: transform .5s ease; }
-    .photo-card:hover img { transform: scale(1.025); }
-    .photo-card figcaption { min-height: 70px; padding: 13px 15px; color: var(--ink); background: var(--white); font-size: .76rem; line-height: 1.45; }
-    .photo-card figcaption strong { display: block; margin-bottom: 2px; }
-    .photo-card figcaption a { color: var(--muted); font-size: .65rem; }
-
-    .feature-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 11px; margin-top: 20px; }
-    .feature-list div { padding: 16px 13px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.62); font-size: .78rem; font-weight: 800; text-align: center; }
-    .feature-list span { display: block; margin-bottom: 5px; font-size: 1.25rem; }
-
-    .optional-card { margin-top: 16px; padding: 20px; border: 1px dashed var(--amber); border-radius: 17px; background: var(--amber-soft); }
-    .optional-card strong { display: block; color: #7d4819; font-family: Georgia, "Yu Mincho", serif; font-size: 1.15rem; }
-
-    .sauna-specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 13px; margin-top: 20px; }
-    .sauna-spec {
-      padding: 22px;
-      border-radius: 17px;
-      color: #fff;
-      background: linear-gradient(135deg, #163a34, #24584d);
-    }
-    .sauna-spec:nth-child(2) { background: linear-gradient(135deg, #214c71, #397daa); }
-    .sauna-spec span { display: block; color: rgba(255,255,255,.7); font-size: .67rem; font-weight: 900; letter-spacing: .14em; }
-    .sauna-spec strong { display: inline-block; margin: 6px 14px 0 0; font-family: Georgia, serif; font-size: 2.1rem; line-height: 1; }
-    .sauna-spec small { font-size: .75rem; }
-    .warning-card {
-      position: relative;
-      margin-top: 22px;
-      padding: 24px 24px 24px 68px;
-      border: 2px solid #d0902d;
-      border-radius: 18px;
-      background: var(--amber-soft);
-      box-shadow: 0 10px 30px rgba(197,132,36,.13);
-    }
-    .warning-card::before { content: "⚠️"; position: absolute; left: 22px; top: 21px; font-size: 1.7rem; }
-    .warning-card strong { display: block; color: #73400f; font-size: 1.12rem; line-height: 1.45; }
-    .warning-card p { margin: 7px 0 0; color: #654b2e; font-size: .86rem; }
-
-    /* Safari */
-    .safari-feature { display: grid; grid-template-columns: 1.15fr .85fr; margin-top: 52px; overflow: hidden; border-radius: var(--radius); background: var(--forest); box-shadow: var(--shadow); }
-    .safari-feature__image { min-height: 500px; object-fit: cover; }
-    .safari-feature__body { display: flex; flex-direction: column; justify-content: center; padding: clamp(28px, 5vw, 56px); color: #fff; }
-    .safari-feature__body h3 { margin: 8px 0 16px; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(2rem, 4vw, 3.8rem); line-height: 1.08; }
-    .safari-price { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 20px 0; }
-    .safari-price div { padding: 16px; border: 1px solid rgba(255,255,255,.18); border-radius: 14px; background: rgba(255,255,255,.07); }
-    .safari-price span { display: block; color: #b8d7e9; font-size: .7rem; font-weight: 900; }
-    .safari-price strong { font-size: 1.55rem; }
-    .save-pill { display: inline-flex; align-self: flex-start; padding: 7px 12px; border-radius: 999px; color: var(--forest); background: #ffd59b; font-size: .75rem; font-weight: 900; }
-    .experience { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; margin-top: 26px; }
-    .experience-card { padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); }
-    .experience-card__time { color: var(--vermilion); font-size: .72rem; font-weight: 900; letter-spacing: .08em; }
-    .experience-card strong { display: block; margin: 7px 0; font-size: 1rem; line-height: 1.4; }
-    .experience-card p { margin: 0; color: var(--muted); font-size: .78rem; }
-    .check-card { margin-top: 18px; padding: 17px 20px; border-radius: 14px; color: #563710; background: var(--amber-soft); font-weight: 800; }
-
-    /* Sauna plan */
-    .three-sauna { position: relative; max-width: 930px; margin: 0 auto; }
-    .sauna-round { position: relative; display: grid; grid-template-columns: 120px 1fr auto; gap: 24px; align-items: center; padding: 28px; border: 1px solid rgba(255,255,255,.14); border-radius: 22px; background: rgba(255,255,255,.06); }
-    .sauna-round + .sauna-round { margin-top: 42px; }
-    .sauna-round + .sauna-round::before { content: "↓"; position: absolute; top: -39px; left: 50%; color: #a8d0c5; font-size: 1.55rem; transform: translateX(-50%); }
-    .round-label { color: #e7b583; font-size: .7rem; font-weight: 900; letter-spacing: .16em; }
-    .sauna-round h3 { margin: 0 0 5px; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(1.35rem, 3vw, 2rem); }
-    .sauna-round p { margin: 0; color: rgba(255,255,255,.7); }
-    .round-number { color: rgba(255,255,255,.16); font-family: Georgia, serif; font-size: 4rem; font-weight: 700; line-height: 1; }
-
-    /* Budget */
-    .budget-shell { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; }
-    .budget-main, .budget-options { padding: clamp(24px, 4vw, 42px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 0 10px 40px rgba(28,41,37,.07); }
-    .mission { display: inline-flex; padding: 8px 13px; border-radius: 999px; color: #fff; background: var(--vermilion); font-size: .74rem; font-weight: 900; letter-spacing: .09em; }
-    .budget-main h3 { margin: 17px 0 3px; font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -.05em; line-height: 1; }
-    .budget-main h3 small { font-family: inherit; font-size: .28em; }
-    .budget-range { margin: 9px 0 22px; color: var(--forest); font-size: 1.15rem; font-weight: 900; }
-    .budget-bar { position: relative; height: 22px; overflow: hidden; border-radius: 999px; background: #e8e2d7; }
-    .budget-bar__fill { width: 99.5%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--forest-2), #e5a84e); }
-    .budget-bar__line { position: absolute; right: 0; top: -4px; width: 3px; height: 30px; background: var(--ink); }
-    .budget-scale { display: flex; justify-content: space-between; margin-top: 8px; color: var(--muted); font-size: .68rem; font-weight: 800; }
-    .cost-list { margin: 26px 0 0; padding: 0; list-style: none; }
-    .cost-list li { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); }
-    .cost-list li:last-child { border: 0; }
-    .cost-list span { color: var(--muted); }
-    .cost-list strong { text-align: right; }
-    .save-option { padding: 20px; border-radius: 18px; background: var(--forest-3); }
-    .save-option + .save-option { margin-top: 13px; }
-    .save-option--amber { background: var(--amber-soft); }
-    .save-option__label { color: var(--forest); font-size: .68rem; font-weight: 900; letter-spacing: .12em; }
-    .save-option h4 { margin: 6px 0; font-family: Georgia, "Yu Mincho", serif; font-size: 1.2rem; }
-    .save-option p { margin: 0; font-size: .82rem; }
-    .budget-warning { margin-top: 15px; padding: 17px; border-left: 4px solid var(--amber); border-radius: 0 14px 14px 0; background: #fff6e4; }
-    .budget-warning strong { color: #77450f; }
-
-    /* Map */
-    .route-layout { display: grid; grid-template-columns: 330px 1fr; gap: 18px; }
-    .route-list { margin: 0; padding: 28px; border-radius: var(--radius); color: #fff; background: var(--forest); list-style: none; }
-    .route-list li { position: relative; padding: 0 0 24px 34px; font-size: .82rem; font-weight: 800; }
-    .route-list li:last-child { padding-bottom: 0; }
-    .route-list li::before { content: attr(data-step); position: absolute; left: 0; top: 0; display: grid; width: 24px; height: 24px; place-items: center; border-radius: 50%; color: var(--forest); background: #fff; font-size: .65rem; }
-    .route-list li:not(:last-child)::after { content: ""; position: absolute; left: 11px; top: 27px; bottom: 3px; width: 2px; background: rgba(255,255,255,.27); }
-    .route-list .day2::before { background: #bdd9ed; }
-    .map-card { min-width: 0; overflow: hidden; border-radius: var(--radius); background: #ddd; box-shadow: var(--shadow); }
-    .map-card iframe { display: block; width: 100%; height: 500px; border: 0; }
-    .map-actions { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 18px; background: var(--white); }
-    .map-actions p { margin: 0; color: var(--muted); font-size: .76rem; }
-
-    /* Other routes */
-    .other-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
-    .other-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--white); }
-    .other-card figure { margin: 0; }
-    .other-card img { height: 170px; object-fit: cover; }
-    .other-card figcaption { padding: 14px 16px 0; }
-    .other-card .tag { transform: translateY(-30px); margin-bottom: -22px; box-shadow: 0 5px 15px rgba(0,0,0,.15); }
-    .other-card h3 { min-height: 2.7em; margin: 10px 16px 3px; font-family: Georgia, "Yu Mincho", serif; font-size: 1.05rem; line-height: 1.35; }
-    .other-card__concept { min-height: 3em; margin: 0 16px; color: var(--muted); font-size: .75rem; }
-    .other-card__budget { margin: 13px 16px 16px; color: var(--forest); font-weight: 900; }
-    .other-card details { border-top: 1px solid var(--line); }
-    .other-card summary { padding: 13px 16px; color: var(--forest); font-size: .72rem; font-weight: 900; cursor: pointer; }
-    .other-card details ul { margin: 0; padding: 0 22px 17px 34px; color: var(--muted); font-size: .72rem; }
-    .other-card__credit { display: block; padding: 0 16px 13px; color: var(--muted); font-size: .61rem; }
-
-    footer { padding: 42px 0; color: rgba(255,255,255,.72); background: #102d28; }
-    .footer-inner { display: flex; align-items: end; justify-content: space-between; gap: 30px; }
-    .footer-title { margin: 0; color: #fff; font-family: Georgia, serif; font-size: 1.3rem; }
-    .footer-inner p { margin: 5px 0 0; font-size: .75rem; }
-    .footer-inner a { color: #fff; }
-
-    @media (max-width: 1020px) {
-      .summary-grid { grid-template-columns: repeat(3, 1fr); }
-      .other-grid { grid-template-columns: repeat(3, 1fr); }
-      .price-facts { grid-template-columns: repeat(2, 1fr); }
-      .feature-list { grid-template-columns: repeat(3, 1fr); }
-      .experience { grid-template-columns: repeat(2, 1fr); }
-      .budget-shell { grid-template-columns: 1fr; }
-      .route-layout { grid-template-columns: 280px 1fr; }
-    }
-
-    @media (max-width: 760px) {
-      .container { width: min(calc(100% - 28px), var(--max)); }
-      .section { padding: 70px 0; }
-      .section-head { display: block; margin-bottom: 28px; }
-      .section-head p:last-child { margin-top: 14px; }
-      .hero { min-height: 720px; align-items: end; }
-      .hero::before { background: linear-gradient(180deg, rgba(10,35,31,.25), rgba(10,35,31,.7) 45%, rgba(10,35,31,.98) 100%); }
-      .hero__media { grid-template-columns: 1fr 1fr; grid-template-rows: 52% 48%; }
-      .hero__media figure:first-child { grid-column: span 2; grid-row: auto; }
-      .hero__media figure:nth-child(2), .hero__media figure:nth-child(3) { border-top: 3px solid var(--forest); }
-      .hero__content { width: min(calc(100% - 28px), var(--max)); padding: 280px 0 68px; }
-      .hero__stamp { top: 24px; right: 20px; font-size: .63rem; }
-      .hero__credit { right: 8px; bottom: 6px; max-width: 70%; font-size: .57rem; }
-      .summary-grid { grid-template-columns: repeat(2, 1fr); }
-      .summary-card:last-child { grid-column: span 2; }
-      .day-ticket { grid-template-columns: 90px 1fr; }
-      .day-ticket__label { padding: 22px 12px; }
-      .day-ticket__label strong { font-size: 1.5rem; }
-      .day-ticket__body { padding: 23px 20px; }
-      .timeline::before { left: 11px; }
-      .timeline-item { display: block; padding: 0 0 23px 31px; }
-      .timeline-time { padding: 0 0 8px; text-align: left; }
-      .timeline-time::after { top: 7px; right: auto; left: -20px; border-color: var(--paper); }
-      .timeline-card, .timeline-card__content { padding: 22px 19px; }
-      .timeline-card--feature { padding: 0; }
-      .time-split { grid-template-columns: 1fr; }
-      .aufguss { grid-template-columns: repeat(4, 1fr); }
-      .aufguss__title { grid-column: span 4; }
-      .photo-card, .photo-card--wide { grid-column: span 6; }
-      .photo-card img { height: 210px; }
-      .feature-list { grid-template-columns: repeat(2, 1fr); }
-      .safari-feature { grid-template-columns: 1fr; margin-top: 34px; }
-      .safari-feature__image { min-height: 310px; }
-      .sauna-round { grid-template-columns: 82px 1fr; }
-      .round-number { display: none; }
-      .route-layout { grid-template-columns: 1fr; }
-      .route-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 20px; }
-      .route-list li { padding: 0 0 0 32px; }
-      .route-list li::after { display: none; }
-      .map-card iframe { height: 420px; }
-      .other-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-inner { display: block; }
-      .footer-inner > p { margin-top: 18px; }
-    }
-
-    @media (max-width: 480px) {
-      .section { padding: 58px 0; }
-      .celebration { padding: 12px; }
-      .celebration__panel { border-radius: 24px; }
-      .celebration__route { font-size: .82rem; }
-      .hero { min-height: 680px; }
-      .hero__jp { font-size: clamp(2.5rem, 14vw, 4rem); }
-      .hero__sub { margin-top: 20px; font-size: .9rem; }
-      .hero__stamp { padding: 10px 13px; }
-      .summary-grid { grid-template-columns: 1fr; }
-      .summary-card:last-child { grid-column: auto; }
-      .day-ticket { grid-template-columns: 1fr; }
-      .day-ticket__label { display: block; border-right: 0; border-bottom: 1px dashed rgba(255,255,255,.35); }
-      .day-ticket__label span { display: block; }
-      .timeline-card__title { gap: 8px; }
-      .price-facts { grid-template-columns: 1fr 1fr; }
-      .aufguss { grid-template-columns: repeat(2, 1fr); }
-      .aufguss__title { grid-column: span 2; }
-      .photo-grid { grid-template-columns: 1fr; }
-      .photo-card, .photo-card--wide { grid-column: auto; }
-      .photo-card img { height: 220px; }
-      .feature-list { grid-template-columns: 1fr; }
-      .sauna-specs, .safari-price { grid-template-columns: 1fr; }
-      .warning-card { padding: 62px 18px 20px; }
-      .warning-card::before { left: 18px; top: 15px; }
-      .experience { grid-template-columns: 1fr; }
-      .sauna-round { display: block; padding: 22px; }
-      .round-label { display: block; margin-bottom: 10px; }
-      .cost-list li { display: block; }
-      .cost-list strong { display: block; margin-top: 3px; text-align: left; }
-      .route-list { grid-template-columns: 1fr; }
-      .map-actions { display: block; }
-      .map-actions .btn { width: 100%; margin-top: 12px; }
-      .other-grid { grid-template-columns: 1fr; }
-      .other-card h3, .other-card__concept { min-height: 0; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-      .confetti-piece { display: none; }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto; }
+      *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+      .confetti-piece { display:none; }
     }
   </style>
 </head>
 <body class="overlay-open">
-  <a class="skip-link" href="#trip">旅程へスキップ</a>
+  <a class="skip-link" href="#overview">旅程へスキップ</a>
 
   <div class="celebration" id="celebration" role="dialog" aria-modal="true" aria-labelledby="celebration-title" aria-describedby="celebration-copy">
     <div class="confetti" id="confetti" aria-hidden="true"></div>
     <div class="celebration__panel">
       <p class="celebration__mark">DESTINATION ANNOUNCEMENT</p>
-      <p class="celebration__date">2026.08.12 WED → 08.13 THU</p>
+      <p class="celebration__date">2026.08.12 → 08.13</p>
       <h1 id="celebration-title">㊗️ 御殿場プランに決定！</h1>
-      <p class="celebration__route">富士山 × サウナ × アウトレット × サファリ</p>
-      <p class="celebration__icons" aria-hidden="true">🗻 🧖 ♨️ 🛍️ 🦁 🚗</p>
+      <p class="celebration__route">2〜3人 / 1泊2日</p>
+      <p class="celebration__icons" aria-hidden="true">🗻 🧖 ♨️ 🛍️ 🍖 🚗</p>
       <p class="celebration__copy" id="celebration-copy">「富士山に整いに行きます。」</p>
       <button class="btn btn--light" id="close-celebration" type="button">旅程を見る →</button>
     </div>
@@ -635,275 +353,135 @@
     <div class="hero__media" aria-hidden="true">
       <figure><img src="https://www.gotemba-konohananoyu.jp/spa/images/img_main.jpg" alt="" fetchpriority="high"></figure>
       <figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotemba%20premium%20outlets1.jpg?width=1400" alt=""></figure>
-      <figure><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/01/rsg_mv01-1.jpg" alt=""></figure>
+      <figure><img src="https://www.genkotsu-hb.com/storage/menu/M1001112.jpg" alt=""></figure>
     </div>
     <div class="hero__stamp">DESTINATION LOCKED ✓<br>GOTEMBA</div>
     <div class="hero__content">
       <div class="hero__inner">
-        <p class="hero__overline">2026.08.12 WED → 08.13 THU / KAWASAKI → GOTEMBA</p>
-        <h1>
-          <span class="hero__en">GOTEMBA WEEKEND</span>
-          <span class="hero__jp">富士山のふもとで、<br>サウナを3回。</span>
-        </h1>
-        <p class="hero__sub">御殿場に決定。<br>買って、蒸されて、寝て、動物を見る1泊2日。</p>
-        <a class="btn btn--light" href="#schedule">08:30から旅程を見る ↓</a>
+        <p class="hero__overline">2026.08.12 WED → 08.13 THU / 2–3 PEOPLE</p>
+        <h1><span class="hero__en">GOTEMBA WEEKEND</span><span class="hero__jp">買って、蒸されて、<br>ハンバーグを食べる。</span></h1>
+        <p class="hero__sub">8月12〜13日。<br>御殿場で過ごす1泊2日のサウナ旅。</p>
+        <a class="btn btn--light" href="#day1">05:30から旅程を見る ↓</a>
       </div>
     </div>
-    <p class="hero__credit">写真出典：<a class="source-link" href="https://www.gotemba-konohananoyu.jp/" target="_blank" rel="noopener">木の花の湯 公式</a> / <a class="source-link" href="https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets1.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> / <a class="source-link" href="https://rembrandt-style.com/gotemba-komakado" target="_blank" rel="noopener">ホテル公式</a></p>
+    <p class="hero__credit">写真：<a href="https://www.gotemba-konohananoyu.jp/" target="_blank" rel="noopener">木の花の湯</a> / <a href="https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets1.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> / <a href="https://www.genkotsu-hb.com/menu/detail/M1001112" target="_blank" rel="noopener">さわやか公式</a></p>
   </header>
 
-  <nav class="trip-nav" aria-label="ページ内ナビゲーション">
-    <div class="trip-nav__inner">
-      <a href="#trip">TRIP</a>
-      <a href="#schedule">SCHEDULE</a>
-      <a href="#sauna">SAUNA</a>
-      <a href="#budget">BUDGET</a>
-      <a href="#map">MAP</a>
-      <a href="#other-plans">OTHER PLANS</a>
-    </div>
-  </nav>
+  <nav class="trip-nav" aria-label="ページ内ナビゲーション"><div class="trip-nav__inner">
+    <a href="#overview">OVERVIEW</a><a href="#day1">DAY 1</a><a href="#hotel">HOTEL</a><a href="#day2">DAY 2</a><a href="#sawayaka">SAWAYAKA</a><a href="#budget">BUDGET</a><a href="#map">MAP</a><a href="#other-plans">OTHER PLANS</a>
+  </div></nav>
 
   <main>
-    <section class="section" id="trip">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">TRIP AT A GLANCE</p>
-            <h2>今回の旅。</h2>
-          </div>
-          <p>買い物は短く、サウナはしっかり。2日目はライオン。</p>
+    <section class="section" id="overview"><div class="container">
+      <div class="section-head"><div><p class="eyebrow">TRIP AT A GLANCE</p><h2>今回の旅。</h2></div><p>実際に8月12日に開いて使う、渋滞と待ち時間込みの旅行しおりです。</p></div>
+      <div class="summary-grid">
+        <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🗓</span>DATE</div><strong>8/12 → 8/13</strong><small>水曜日 → 木曜日</small></article>
+        <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">👥</span>MEMBERS</div><strong>2〜3人</strong><small>車で川崎から</small></article>
+        <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🛏</span>BED</div><strong>1人1ベッド</strong><small>人数別にホテルを選択</small></article>
+        <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🧖</span>MAIN SAUNA</div><strong>木の花の湯</strong><small>12:15〜16:00</small></article>
+        <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🍖</span>DAY 2</div><strong>さわやか</strong><small>朝イチ受付が最優先</small></article>
+        <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">💴</span>TARGET</div><strong>20,000円 / 人</strong><small>車関連費を除く</small></article>
+      </div>
+      <div class="priority-board" aria-label="旅程の優先順位">
+        <article class="priority-card"><p class="eyebrow">FLEXIBLE PLAN / MUST</p><h3>必ず回収する3つ</h3><ol><li>木の花の湯</li><li>さわやか</li><li>ホテル</li></ol></article>
+        <article class="priority-card"><p class="eyebrow">SHOULD</p><h3>できれば行く</h3><ol start="4"><li>アウトレット</li></ol></article>
+        <article class="priority-card"><p class="eyebrow">OPTIONAL</p><h3>状況で決める</h3><ol start="5"><li>浅間神社・滝</li><li>オアシス御殿場</li></ol></article>
+      </div>
+      <p class="priority-note">渋滞・待ち時間・天気に合わせてOPTIONALを外しても、旅のメインは達成です。</p>
+    </div></section>
+
+    <section class="section section--white" id="day1"><div class="container">
+      <div class="day-ticket"><div class="day-ticket__label"><strong>DAY 1</strong><span>8/12 WED</span></div><div class="day-ticket__body"><p>OBON TRAFFIC DAY</p><h3>買う → 蒸す → 泊まる</h3></div></div>
+      <div class="timeline">
+        <article class="timeline-item"><time class="timeline-time">05:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🚗</span><div><h4>川崎出発</h4><p>今回は早起きが一番の渋滞対策。休憩を取りながら御殿場へ向かいます。</p></div></div><div class="soft-panel"><strong>お盆 vs 俺たち。</strong><br>渋滞情報は出発前に確認し、遅れは次のバッファで吸収。</div></div></article>
+        <article class="timeline-item"><time class="timeline-time">08:00〜10:00</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">⏳</span><div><span class="tag tag--amber">EARLY ARRIVAL BUFFER</span><h4>早着したら自由時間</h4><p>御殿場市内で朝食・カフェ・富士山撮影・平和公園・車で休憩。ここは固定予定にしません。</p></div></div><div class="soft-panel"><strong>目的：お盆渋滞の吸収用バッファ</strong></div></div></article>
+        <article class="timeline-item"><time class="timeline-time">10:00〜11:30</time><div class="timeline-card timeline-card--feature"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotemba%20premium%20outlets1.jpg?width=1400" alt="御殿場プレミアム・アウトレット" loading="lazy"><div class="timeline-card__content"><div class="timeline-card__title"><span class="timeline-card__icon">🛍</span><div><h4>御殿場プレミアム・アウトレット</h4><p>今回は約90分。木の花の湯へ13時前に入るため、長時間滞在はしません。</p></div></div><p class="source">通常営業時間 10:00〜20:00（時期により変更あり） / <a href="https://www.premiumoutlets.co.jp/gotemba/" target="_blank" rel="noopener">公式情報</a> / 写真：Wikimedia Commons</p></div></div></article>
+        <article class="timeline-item"><time class="timeline-time">11:30〜12:00</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🥪</span><div><h4>軽めの昼食</h4><p>午後のサウナを考えて食べすぎない。目安 <strong>1,000〜1,500円</strong>。</p></div></div></div></article>
+        <article class="timeline-item"><time class="timeline-time">12:15〜16:00</time><div class="timeline-card timeline-card--feature"><img src="https://www.gotemba-konohananoyu.jp/spa/images/img_main.jpg" alt="木の花の湯から望む富士山" loading="lazy"><div class="timeline-card__content"><div class="timeline-card__title"><span class="timeline-card__icon">♨️</span><div><span class="tag tag--orange">MAIN EVENT</span><h4>木の花の湯</h4><p>買い物のあと、富士山を見ながら蒸される。</p></div></div>
+          <div class="soft-panel"><strong>通常 2,200円 → 13時まで 1,800円</strong><br>学生証割引なら1,700円。早期割引との併用不可。タオル込み・時間制限なし。</div>
+          <p class="eyebrow" style="margin-top:22px">AUFGUSS</p><div class="time-chips"><div class="time-chip"><span>FIRST CHANCE</span><strong>12:30</strong></div><div class="time-chip"><span>SECOND CHANCE</span><strong>15:30</strong></div></div><p><strong>12:30に間に合えば参加。逃しても15:30があります。</strong></p>
+          <div class="feature-grid"><div class="feature-box"><strong>🗻 FUJI VIEW</strong><span>富士山を望む露天風呂</span></div><div class="feature-box"><strong>🔥 AUFGUSS</strong><span>ロウリュ＋アウフグース</span></div><div class="feature-box"><strong>🛁 130cm</strong><span>深さ約130cmの立湯</span></div><div class="feature-box"><strong>♨️ ONSEN</strong><span>自家源泉</span></div></div>
+          <div class="photo-strip"><figure class="photo-card"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_opn01.jpg" alt="木の花の湯の富士山展望露天風呂" loading="lazy"><figcaption>富士山展望 / 木の花の湯公式</figcaption></figure><figure class="photo-card"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_sauna.jpg" alt="木の花の湯のサウナ室" loading="lazy"><figcaption>サウナ / 木の花の湯公式</figcaption></figure></div>
+          <p class="source"><a href="https://www.gotemba-konohananoyu.jp/guide/" target="_blank" rel="noopener">料金・営業情報</a> / <a href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">設備・アウフグース情報</a>（公式）</p>
+        </div></div></article>
+        <article class="timeline-item"><time class="timeline-time">16:30〜17:00</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🛏</span><div><h4>CHECK-IN</h4><p id="checkin-hotel">2人ならスーパーホテル御殿場1号館。チェックイン後は30〜60分休憩。</p></div></div></div></article>
+        <article class="timeline-item"><time class="timeline-time">18:00〜19:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🍽</span><div><h4>御殿場で夕食</h4><p>定食・ラーメン・そば・焼肉など、混雑に合わせて柔軟に。目安 <strong>1,000〜1,500円</strong>。</p></div></div><div class="soft-panel"><strong>DAY 1はさわやかを使わない。</strong><br>本番は明日。</div></div></article>
+        <article class="timeline-item"><time class="timeline-time">OPTION</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🔥</span><div><span class="tag tag--outline">OPTIONAL ROUND</span><h4>オアシス御殿場</h4><p>まだ蒸されたい人だけ。疲労が少なく、ホテル代が安く収まったときに追加します。</p></div></div><div class="soft-panel"><strong>+ 約1,500円</strong><br>予算が厳しい場合は真っ先に外すOPTION。</div><p class="source">利用前に料金・営業時間を<a href="https://www.oasisgotemba.com/" target="_blank" rel="noopener">公式サイト</a>で確認</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="section" id="hotel"><div class="container">
+      <div class="section-head"><div><p class="eyebrow">HOTEL / NOT BOOKED YET</p><h2>何人で行く？</h2></div><p>1人1ベッドを最優先。予約時に8/12の実価格・空室とベッド構成を必ず確認します。</p></div>
+      <div class="switcher" role="tablist" aria-label="参加人数"><button id="people-2" type="button" role="tab" aria-selected="true" aria-controls="hotel-panel">2 PEOPLE</button><button id="people-3" type="button" role="tab" aria-selected="false" aria-controls="hotel-panel">3 PEOPLE</button></div>
+      <article class="hotel-panel" id="hotel-panel" aria-live="polite">
+        <div class="hotel-panel__media"><img id="hotel-image" src="https://www.superhotel.co.jp/img/common_gallery/1063/43_65A03935.jpg" alt="スーパーホテル御殿場1号館のエコノミーツインルーム" loading="lazy"></div>
+        <div class="hotel-panel__body"><span class="tag tag--orange" id="hotel-label">FOR 2 PEOPLE / FIRST CHOICE</span><h3 id="hotel-name">スーパーホテル<br>御殿場1号館</h3><p class="hotel-room" id="hotel-room">エコノミーツイン</p><span class="bed-badge" id="hotel-bed">2 BEDS / 2 PEOPLE</span>
+          <div class="hotel-facts"><div><small>BED RULE</small><strong>1人1ベッド</strong></div><div><small>BREAKFAST</small><strong>無料朝食付き</strong></div><div><small>ONSEN</small><strong>天然温泉あり</strong></div><div><small>STATUS</small><strong>第一候補・未予約</strong></div></div>
+          <div class="hotel-alert"><strong>お盆期間のため料金変動大</strong><br>目標 1人10,000〜12,000円程度。<strong>13,000円 / 人を超えたら2万円ライン注意。</strong></div>
+          <div class="hotel-links"><a id="hotel-official" href="https://www.superhotel.co.jp/s_hotels/gotenba/" target="_blank" rel="noopener">公式サイト ↗</a><a id="hotel-gallery" href="https://www.superhotel.co.jp/s_hotels/gotenba/gallery.html" target="_blank" rel="noopener">客室・写真出典 ↗</a><a id="hotel-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B41%E5%8F%B7%E9%A4%A8" target="_blank" rel="noopener">ホテルを地図で開く ↗</a></div>
         </div>
-        <div class="summary-grid">
-          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🚗</span>川崎から</div><strong>約1.5時間</strong><small>東名高速で御殿場へ</small></article>
-          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">💴</span>予算</div><strong>約17,400〜<br>19,900円 / 人</strong><small>車関連費を除く</small></article>
-          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🧖</span>サウナ</div><strong>最大3回</strong><small>木の花 → 夜 → 朝ウナ</small></article>
-          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🛏️</span>宿</div><strong>レンブラントスタイル<br>御殿場駒門</strong><small>宿泊目安 7,500〜9,000円</small></article>
-          <article class="summary-card"><div class="summary-card__top"><span class="summary-card__emoji">🦁</span>DAY 2</div><strong>富士サファリパーク</strong><small>MySAFARIなら500円節約</small></article>
+      </article>
+    </div></section>
+
+    <section class="section section--white" id="day2"><div class="container">
+      <div class="day-ticket"><div class="day-ticket__label"><strong>DAY 2</strong><span>8/13 THU</span></div><div class="day-ticket__body"><p>SAWAYAKA FIRST</p><h3>肉 → 神社 → 滝 → 帰宅</h3></div></div>
+      <div class="timeline">
+        <article class="timeline-item"><time class="timeline-time">06:30〜07:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🥐</span><div><h4>BREAKFAST</h4><p>スーパーホテルの無料朝食。追加費用 <strong>0円</strong>。</p></div></div></div></article>
+        <article class="timeline-item"><time class="timeline-time">08:00</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🧳</span><div><h4>CHECK-OUT</h4><p>通常より早めにホテルを出発。さわやかの受付を最優先します。</p></div></div></div></article>
+        <article class="timeline-item"><time class="timeline-time">08:30〜09:00</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">📱</span><div><h4>さわやか受付準備 → 受付</h4><p>8:30に営業・受付状況、LINE、位置情報を確認。<strong>9:00のスマホ受付開始に合わせて手続き。</strong></p></div></div></div></article>
+      </div>
+
+      <div id="sawayaka" style="padding-top:55px">
+        <article class="mission"><img src="https://www.genkotsu-hb.com/storage/menu/M1001112.jpg" alt="炭焼きレストランさわやかのげんこつハンバーグ" loading="lazy"><div class="mission__body"><p class="eyebrow" style="color:#f3c57e">DAY 2 / MISSION</p><h3>さわやかを<br>食べる。</h3><p><strong>御殿場プレミアム・アウトレット店</strong><br>DAY 2の最重要ミッション。</p><div class="menu-price"><div><small>げんこつハンバーグ</small><strong>250g / 1,540円</strong></div><div><small>ライス込み</small><strong>約1,830円</strong></div></div><span class="tag tag--amber">予算 約2,000円</span><p class="source" style="margin-top:16px">価格・写真：<a href="https://www.genkotsu-hb.com/menu/detail/M1001112" target="_blank" rel="noopener">さわやか公式メニュー</a>（2026年6月時点）</p></div></article>
+        <div class="strategy"><article class="strategy-card"><p class="eyebrow">SAWAYAKA STRATEGY</p><h3>受付してから考える。</h3><div class="strategy-flow"><div class="strategy-step"><b>1</b><div><strong>朝イチで受付</strong><span>9:00を狙う</span></div></div><div class="strategy-step"><b>2</b><div><strong>待ち時間を確認</strong><span>呼出目安をスクショ</span></div></div><div class="strategy-step"><b>3</b><div><strong>自由行動</strong><span>遠くへ行かない</span></div></div><div class="strategy-step"><b>4</b><div><strong>呼出時刻に戻る</strong><span>肉を回収</span></div></div></div><p class="source">最新案内では御殿場2店舗のスマホ受付は9:00開始。LINE・位置情報ONが必要。混雑時は受付を早期終了する場合あり。<a href="https://www.genkotsu-hb.com/news/detail/97" target="_blank" rel="noopener">公式案内</a></p></article>
+          <article class="strategy-card"><p class="eyebrow">WAIT TIME BRANCH</p><h3>待ち時間で観光を変える。</h3><div class="wait-grid"><div class="wait-card"><strong>〜1時間</strong>アウトレット散策 / カフェ / 車で休憩</div><div class="wait-card"><strong>1〜2時間</strong>富士仏舎利塔 平和公園（無料・富士山ビュー）</div><div class="wait-card"><strong>非常に長い</strong>遠くへ行かず、アウトレット周辺で待機</div></div><div class="soft-panel"><strong>食事目安 10:30〜13:30頃</strong><br>固定時刻にせず、呼出を軸に組み替えます。</div></article>
         </div>
       </div>
-    </section>
 
-    <section class="section section--white" id="schedule">
-      <div class="container">
-        <div class="day-ticket">
-          <div class="day-ticket__label"><strong>DAY 1</strong><span>8/12 WED</span></div>
-          <div class="day-ticket__body"><p>WEDNESDAY / GOTEMBA</p><h3>買う → 蒸す → 食べる → また蒸す</h3></div>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <time class="timeline-time">08:30</time>
-            <div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🚗</span><div><h4>川崎出発</h4><p>東名高速で御殿場へ。早めの出発で、買い物とサウナの両方を回収します。</p></div></div></div>
-          </article>
-
-          <article class="timeline-item">
-            <time class="timeline-time">10:00</time>
-            <div class="timeline-card timeline-card--feature">
-              <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotemba%20premium%20outlets2.jpg?width=1400" alt="御殿場プレミアム・アウトレットの街並み" loading="lazy" style="height:280px;object-fit:cover">
-              <div class="timeline-card__content">
-                <div class="timeline-card__title"><span class="timeline-card__icon">🛍️</span><div><h4>御殿場プレミアム・アウトレット</h4><p>長時間ショッピングではなく、サウナ時間を守るための80分勝負。</p></div></div>
-                <div class="time-split"><div><b>10:00〜11:20</b>買い物</div><div><b>11:20〜12:00</b>早めの昼食</div></div>
-                <p class="mini-note">通常営業時間 10:00〜20:00（3〜11月）。季節・状況で変動あり。<a class="source-link" href="https://www.premiumoutlets.co.jp/gotemba/information/info245.html" target="_blank" rel="noopener">公式営業時間</a> / 写真：<a class="source-link" href="https://commons.wikimedia.org/wiki/File:Gotemba_premium_outlets2.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
-                <div class="branch-wrap">
-                  <button class="btn btn--outline btn--small" id="shopping-toggle" type="button" aria-expanded="false" aria-controls="shopping-branch">SHOPPING FIRST？</button>
-                  <div class="branch-panel" id="shopping-branch" hidden><strong>元プラン寄りの分岐</strong><br>買い物を14:00頃まで延長 → 木の花の湯 14:30頃IN。12:30のアウフグースは手放して、15:30を狙います。</div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <time class="timeline-time">12:20頃</time>
-            <div class="timeline-card">
-              <div class="timeline-card__title"><span class="timeline-card__icon">♨️</span><div><span class="tag tag--default">MAIN SAUNA</span><h4>木の花の湯 IN</h4><p>買い物のあと、富士山を見ながら蒸される。</p></div></div>
-              <div class="price-facts">
-                <div class="price-fact"><b>10:30〜22:00</b><small>最終受付 21:00</small></div>
-                <div class="price-fact"><b>2,200円</b><small>土日祝・大人</small></div>
-                <div class="price-fact"><b>−400円</b><small>13時までの入館</small></div>
-                <div class="price-fact"><b>−500円</b><small>9/18まで学生証提示</small></div>
-              </div>
-              <p class="mini-note">8月12日は夏期シーズン（8月9〜16日）のため休日料金。タオル込み・時間制限なし。早朝割（13時まで）と学割は併用できません。学割は2026年9月18日まで。<a class="source-link" href="https://www.gotemba-konohananoyu.jp/guide/" target="_blank" rel="noopener">公式料金</a></p>
-              <div class="aufguss" aria-label="アウフグース開催時刻">
-                <div class="aufguss__title"><small>1 DAY / 4 TIMES</small><strong>AUFGUSS TIME</strong></div>
-                <div class="aufguss__time">12:30</div><div class="aufguss__time">15:30</div><div class="aufguss__time">18:30</div><div class="aufguss__time">20:30</div>
-              </div>
-              <p>12:30に間に合えば参加。間に合わなければ急がず、15:30を狙います。<a class="source-link mini-note" href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">公式アウフグース案内</a></p>
-              <div class="feature-list" aria-label="木の花の湯の見どころ">
-                <div><span>🗻</span>幅約10m<br>富士山展望風呂</div><div><span>♨️</span>深さ約130cm<br>立湯</div><div><span>💧</span>富士山麓の<br>自家源泉</div><div><span>🔥</span>ロウリュ＋<br>アウフグース</div><div><span>🌬️</span>富士山を見ながら<br>外気浴</div>
-              </div>
-              <div class="photo-grid">
-                <figure class="photo-card photo-card--wide"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_opn01.jpg" alt="木の花の湯の富士山を望む露天風呂" loading="lazy"><figcaption><strong>富士山展望の露天風呂</strong><a href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">写真出典：木の花の湯 公式</a></figcaption></figure>
-                <figure class="photo-card"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_sauna.jpg" alt="木の花の湯のサウナ室" loading="lazy"><figcaption><strong>ロウリュサウナ</strong><a href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">写真出典：木の花の湯 公式</a></figcaption></figure>
-                <figure class="photo-card"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_ind02.jpg" alt="木の花の湯の富士山展望風呂" loading="lazy"><figcaption><strong>富士山を正面に</strong><a href="https://www.gotemba-konohananoyu.jp/spa/public.php" target="_blank" rel="noopener">写真出典：木の花の湯 公式</a></figcaption></figure>
-                <figure class="photo-card photo-card--wide"><img src="https://sp.jorudan.co.jp/onsen/images/spot/640/168192_1.jpg" alt="木の花の湯から望む富士山" loading="lazy"><figcaption><strong>富士山 × 温泉</strong><a href="https://sp.jorudan.co.jp/onsen/details/2166/" target="_blank" rel="noopener">写真出典：ジョルダン 温泉特集</a></figcaption></figure>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item"><time class="timeline-time">16:15頃</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🚗</span><div><h4>木の花の湯 OUT</h4><p>温まりすぎる前に切り上げて、ホテルへ約15分。</p></div></div></div></article>
-
-          <article class="timeline-item">
-            <time class="timeline-time">16:30〜17:00</time>
-            <div class="timeline-card">
-              <div class="timeline-card__title"><span class="timeline-card__icon">🛏️</span><div><h4>レンブラントスタイル御殿場駒門 Check-in</h4><p>「今夜もサウナあります。」</p></div></div>
-              <div class="photo-grid">
-                <figure class="photo-card photo-card--wide"><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/01/rsg_mv01-1.jpg" alt="レンブラントスタイル御殿場駒門の外観" loading="lazy"><figcaption><strong>レンブラントスタイル御殿場駒門</strong><a href="https://rembrandt-style.com/gotemba-komakado" target="_blank" rel="noopener">写真出典：ホテル公式</a></figcaption></figure>
-                <figure class="photo-card"><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/02/rsg_twin01_1.jpg" alt="レンブラントスタイル御殿場駒門のツインルーム" loading="lazy"><figcaption><strong>和モダンな客室</strong><a href="https://rembrandt-style.com/gotemba-komakado" target="_blank" rel="noopener">写真出典：ホテル公式</a></figcaption></figure>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <time class="timeline-time">18:00</time>
-            <div class="timeline-card">
-              <div class="timeline-card__title"><span class="timeline-card__icon">🍽️</span><div><span class="tag tag--default">DEFAULT</span><h4>「富士山の頂きます」で夕食</h4><p>18:00〜21:00（L.O. 20:30）。車を出さず、サウナ前の移動もなし。</p></div></div>
-              <div class="time-split"><div><b>ハーフビュッフェのみ</b>1,500円</div><div><b>メイン＋ハーフビュッフェ</b>1,800円〜</div></div>
-              <p class="mini-note">価格を読みやすく、夜サウナの開始時刻も守りやすい。<a class="source-link" href="https://rembrandt-style.com/gotemba-komakado_restaurant/restaurant_g" target="_blank" rel="noopener">レストラン公式</a></p>
-              <div class="optional-card"><span class="tag tag--optional">OPTIONAL / BONUS STAGE</span><strong>さわやかチャレンジ</strong><p>待ち時間が少なければ御殿場の店舗へ。「さわやかは取れたら勝ち。」固定旅程には組み込みません。</p></div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <time class="timeline-time">20:30〜22:00</time>
-            <div class="timeline-card">
-              <div class="timeline-card__title"><span class="timeline-card__icon">🔥</span><div><h4>富士の心湯：夜サウナ</h4><p>105℃ → 14℃。富士山の地下約100mから汲み上げた伏流水へ。</p></div></div>
-              <div class="sauna-specs">
-                <div class="sauna-spec"><span>LAVA SAUNA</span><strong>105℃</strong><small>定員 7名</small></div>
-                <div class="sauna-spec"><span>FUJI WATER</span><strong>14℃</strong><small>定員 3名</small></div>
-              </div>
-              <p>宿泊者は無料。利用時間は16:00〜25:00（最終入店24:00）、朝は6:00〜10:00。<a class="source-link mini-note" href="https://rembrandt-style.com/gotemba-komakado_info/spa-sauna_g" target="_blank" rel="noopener">サウナ公式</a> / <a class="source-link mini-note" href="https://rembrandt-style.com/gotemba-komakado_info/spa_g" target="_blank" rel="noopener">大浴場公式</a></p>
-              <div class="warning-card"><strong>富士の心湯のサウナ・水風呂は男性浴場のみ</strong><p>女性浴場では内風呂・露天風呂などを利用できますが、溶岩石サウナと水風呂は男性浴場のみです。同行者構成を必ず確認してください。</p></div>
-              <div class="photo-grid">
-                <figure class="photo-card photo-card--wide"><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/06/sauna01.jpg" alt="富士の心湯の溶岩石サウナ" loading="lazy"><figcaption><strong>溶岩石を使用したLAVA SAUNA</strong><a href="https://rembrandt-style.com/gotemba-komakado_info/spa-sauna_g" target="_blank" rel="noopener">写真出典：ホテル公式</a></figcaption></figure>
-                <figure class="photo-card"><img src="https://rembrandt-style.com/wp/wp-content/uploads/2020/06/mizuburo01.jpg" alt="富士の心湯の富士山伏流水の水風呂" loading="lazy"><figcaption><strong>富士山伏流水の水風呂</strong><a href="https://rembrandt-style.com/gotemba-komakado_info/spa-sauna_g" target="_blank" rel="noopener">写真出典：ホテル公式</a></figcaption></figure>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item"><time class="timeline-time">23:00〜</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🌙</span><div><h4>就寝</h4><p>明日は朝ウナから始まります。</p></div></div></div></article>
-        </div>
+      <div style="padding-top:70px"><div class="section-head"><div><p class="eyebrow">SHRINE &amp; WATERFALL</p><h2>肉のあとは、<br>神社と滝。</h2></div><p>2日目は、お金を使わず自然へ。食後に須走方面へ移動し、60〜90分だけ歩きます。</p></div>
+        <div class="nature-feature"><article class="nature-card"><img src="https://higashiguchi-fujisengenjinja.or.jp/wp/wp-content/themes/fujisengenjinja_1.0/images/guide_syaden01.jpg" alt="東口本宮冨士浅間神社の本殿・拝殿" loading="lazy"><div class="nature-card__body"><span class="tag">① SHRINE</span><h3>東口本宮<br>冨士浅間神社</h3><p>参拝後、鎮守の森を抜けて信しげの滝へ。</p><p class="source"><a href="https://higashiguchi-fujisengenjinja.or.jp/guide" target="_blank" rel="noopener">写真・境内案内：神社公式</a></p></div></article>
+          <article class="nature-card"><img src="https://higashiguchi-fujisengenjinja.or.jp/wp/wp-content/themes/fujisengenjinja_1.0/images/guide_shizen05.jpg" alt="東口本宮冨士浅間神社境内の信しげの滝" loading="lazy"><div class="nature-card__body"><span class="tag tag--orange">② WATERFALL</span><h3>鎮守の森 →<br>信しげの滝</h3><p>本格登山ではなく、境内と森を一続きで散策。費用0円。</p><div class="gear-list"><span>💧 水分</span><span>🧢 帽子</span><span>👟 歩きやすい靴</span></div><p class="source"><a href="https://higashiguchi-fujisengenjinja.or.jp/guide" target="_blank" rel="noopener">写真・境内案内：神社公式</a></p></div></article></div>
+        <div class="weather-note"><strong>☔ 強い雨なら神社＋滝はOPTIONAL。</strong> アウトレット・カフェ・市内散策、または早めの帰宅に変更し、無理に山道へ入りません。</div>
       </div>
-    </section>
 
-    <section class="section" id="day2">
-      <div class="container">
-        <div class="day-ticket">
-          <div class="day-ticket__label"><strong>DAY 2</strong><span>8/13 THU</span></div>
-          <div class="day-ticket__body"><p>THURSDAY / SUSONO</p><h3>朝蒸す → 動物を見る → 帰る</h3></div>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item"><time class="timeline-time">06:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🌅</span><div><h4>朝ウナ</h4><p>夜より軽めの1〜2セット。旅行中なので、追い込みすぎない。</p></div></div></div></article>
-          <article class="timeline-item"><time class="timeline-time">07:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🥐</span><div><h4>朝食ビュッフェ</h4><p>6:30〜10:00（L.O. 9:30） / 1,400円</p><p><span class="tag tag--optional">予約プランを確認</span> 朝食付きなら追加料金は不要。</p></div></div></div></article>
-          <article class="timeline-item"><time class="timeline-time">09:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🧳</span><div><h4>チェックアウト</h4><p>サファリへ。朝の道路状況も確認します。</p></div></div></div></article>
-        </div>
-
-        <div class="safari-feature">
-          <img class="safari-feature__image" src="https://www.fujisafari.co.jp/wp-content/uploads/2019/01/car01.jpg" alt="マイカーから間近に動物を見学する富士サファリパーク" loading="lazy">
-          <div class="safari-feature__body">
-            <p class="eyebrow">10:00頃 / DAY 2 MAIN EVENT</p>
-            <h3>富士サファリ<br>パーク</h3>
-            <p>おすすめはMySAFARIの事前登録。電子入園チケットを到着前に購入します。</p>
-            <div class="safari-price"><div><span>通常</span><strong>3,200円</strong></div><div><span>MySAFARI</span><strong>2,700円</strong></div></div>
-            <span class="save-pill">500円節約・駐車料金無料</span>
-            <p class="mini-note" style="color:rgba(255,255,255,.72)">写真・料金出典：<a class="source-link" href="https://www.fujisafari.co.jp/ticket/" target="_blank" rel="noopener">富士サファリパーク公式</a></p>
-          </div>
-        </div>
-        <div class="experience">
-          <article class="experience-card"><span class="experience-card__time">10:00〜11:00</span><strong>マイカーでサファリゾーン</strong><p>所要目安50〜60分。車窓から動物を間近に。</p></article>
-          <article class="experience-card"><span class="experience-card__time">11:10〜12:30</span><strong>ふれあいゾーン</strong><p>所要目安60〜90分。歩いて小動物のエリアへ。</p></article>
-          <article class="experience-card"><span class="experience-card__time">12:30〜13:30</span><strong>昼食・休憩</strong><p>園内でゆっくり。再入園はできません。</p></article>
-          <article class="experience-card"><span class="experience-card__time">13:30〜14:00</span><strong>お土産 or 追加エリア</strong><p>気になった場所を最後にもうひとつ。</p></article>
-        </div>
-        <div class="check-card">📅 8月13日（木）の営業時間を、前日に公式営業カレンダーで再確認。日付によって営業開始時刻が早まる場合があります。 <a class="source-link" href="https://www.fujisafari.co.jp/pdf/calendar2026.pdf" target="_blank" rel="noopener">2026年営業カレンダー</a></div>
-
-        <div class="timeline" style="margin-top:36px">
-          <article class="timeline-item"><time class="timeline-time">14:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🚗</span><div><h4>御殿場出発</h4><p>帰るまでがサウナ旅行です。</p></div></div></div></article>
-          <article class="timeline-item"><time class="timeline-time">17:00〜18:00</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🏠</span><div><h4>川崎到着</h4><p>東名の渋滞状況で変動するため、到着は幅を持たせます。</p></div></div></div></article>
-        </div>
+      <div class="timeline" style="margin-top:55px">
+        <article class="timeline-item"><time class="timeline-time">15:30〜16:00</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🚗</span><div><h4>御殿場出発</h4><p>お盆の上り渋滞を考え、余裕を持って川崎へ。</p></div></div></div></article>
+        <article class="timeline-item"><time class="timeline-time">18:00〜19:30</time><div class="timeline-card"><div class="timeline-card__title"><span class="timeline-card__icon">🏠</span><div><h4>川崎着</h4><p>固定時刻ではなく、<strong>渋滞次第</strong>。</p></div></div></div></article>
       </div>
-    </section>
+    </div></section>
 
-    <section class="section section--forest" id="sauna">
-      <div class="container">
-        <div class="section-head">
-          <div><p class="eyebrow">THE THREE SAUNA PLAN</p><h2>サウナ、三段構え。</h2></div>
-          <p>昼・夜・朝。熱さも景色も役割も、全部違う。</p>
-        </div>
-        <div class="three-sauna">
-          <article class="sauna-round"><div class="round-label">ROUND 1</div><div><h3>木の花の湯</h3><p>富士山 × アウフグース</p></div><div class="round-number">01</div></article>
-          <article class="sauna-round"><div class="round-label">ROUND 2</div><div><h3>富士の心湯</h3><p>105℃ × 14℃</p></div><div class="round-number">02</div></article>
-          <article class="sauna-round"><div class="round-label">ROUND 3</div><div><h3>朝ウナ</h3><p>軽く整えてDAY 2へ</p></div><div class="round-number">03</div></article>
-        </div>
-      </div>
-    </section>
+    <section class="section section--blue" id="budget"><div class="container">
+      <div class="section-head"><div><p class="eyebrow" style="color:#ffd69d">MISSION</p><h2>20,000円 / 人以内。</h2></div><p>ホテル代が今回のラスボス。部屋総額を入れると、1人あたりの旅行総額をその場で計算できます。</p></div>
+      <div class="budget-intro"><article class="cost-card"><h3>HOTEL以外</h3><ul class="cost-list"><li><span>木の花の湯（13時前）</span><strong>1,800円</strong></li><li><span>DAY 1 昼</span><strong>1,000〜1,500円</strong></li><li><span>DAY 1 夜</span><strong>1,000〜1,500円</strong></li><li><span>朝食</span><strong>0円</strong></li><li><span>さわやか</span><strong>約2,000円</strong></li><li><span>神社・滝</span><strong>0円</strong></li><li><span>飲料等</span><strong>500〜800円</strong></li></ul><div class="cost-total"><span>合計</span><strong>約6,300〜7,600円</strong></div><p class="source">車関連費・OPTIONのオアシス御殿場は除外。</p></article>
+        <article class="calculator"><p class="eyebrow">HOTEL PRICE CALCULATOR</p><h3>予約画面の「部屋総額」を入力</h3><div class="hotel-tiers"><div class="hotel-tier"><span>IDEAL</span><strong>〜11,000円 / 人</strong></div><div class="hotel-tier"><span>SAFE</span><strong>〜12,000円 / 人</strong></div><div class="hotel-tier hotel-tier--caution"><span>CAUTION</span><strong>13,000円 / 人〜</strong></div></div>
+          <div class="form-row"><div class="field"><label for="room-total">部屋総額（税込・円）</label><input id="room-total" type="number" min="0" step="100" value="22000" inputmode="numeric"></div><div class="field"><label for="calc-people">人数</label><select id="calc-people"><option value="2" selected>2人</option><option value="3">3人</option></select></div></div>
+          <div class="calc-result" aria-live="polite"><div class="calc-result__grid"><div><small>ホテル / 1人</small><strong id="hotel-per-person">11,000円</strong></div><div><small>旅行総額 / 1人</small><strong id="trip-total">17,300〜18,600円</strong></div></div><div class="budget-meter" aria-hidden="true"><span id="budget-bar"></span></div><p class="calc-message" id="calc-message">20,000円以内に収まる見込みです。</p></div>
+        </article></div>
+      <div class="scenario-grid"><div class="scenario"><span>ホテル 10,000円</span><strong>16,300〜17,600円</strong></div><div class="scenario"><span>ホテル 11,000円</span><strong>17,300〜18,600円</strong></div><div class="scenario"><span>ホテル 12,000円</span><strong>18,300〜19,600円</strong></div><div class="scenario"><span>ホテル 13,000円</span><strong>19,300〜20,600円</strong></div></div>
+    </div></section>
 
-    <section class="section section--blue" id="budget">
-      <div class="container">
-        <div class="section-head"><div><p class="eyebrow">BUDGET CHECK</p><h2>2万円以内に、<br>着地。</h2></div><p>現在料金で再計算。宿泊費は元資料の目安を引き継いでいます。</p></div>
-        <div class="budget-shell">
-          <article class="budget-main">
-            <span class="mission">MISSION：20,000円以内</span>
-            <h3>17,400〜19,900<small>円 / 人</small></h3>
-            <p class="budget-range">車関連費を除く</p>
-            <div class="budget-bar" aria-label="予算上限2万円に対し最大1万9900円"><div class="budget-bar__fill"></div><div class="budget-bar__line"></div></div>
-            <div class="budget-scale"><span>0円</span><span>MAX 19,900円</span><span>20,000円</span></div>
-            <ul class="cost-list">
-              <li><span>宿泊</span><strong>7,500〜9,000円</strong></li>
-              <li><span>木の花の湯</span><strong>2,200円</strong></li>
-              <li><span>富士サファリ MySAFARI</span><strong>2,700円</strong></li>
-              <li><span>食事</span><strong>5,000〜6,000円</strong></li>
-            </ul>
-          </article>
-          <aside class="budget-options">
-            <div class="save-option"><span class="save-option__label">SAVE OPTION</span><h4>学生証が使える期間</h4><p>木の花の湯 2,200 → 1,700円<br><strong>TOTAL 16,900〜19,400円</strong></p></div>
-            <div class="save-option"><span class="save-option__label">EARLY ENTRY</span><h4>13時までに入館</h4><p>木の花の湯 2,200 → 1,800円<br><strong>TOTAL 17,000〜19,500円</strong></p></div>
-            <div class="save-option save-option--amber"><span class="save-option__label">IMPORTANT</span><h4>割引の併用は不可</h4><p>学割と13時までの入館割引は、どちらか一方を利用します。</p></div>
-            <div class="budget-warning"><strong>20,000円ライン注意</strong><br><span class="mini-note">ホテル代が9,000円を超える場合は、食事代と予約プランを再チェック。</span></div>
-          </aside>
-        </div>
-      </div>
-    </section>
+    <section class="section section--white" id="map"><div class="container">
+      <div class="section-head"><div><p class="eyebrow">ROUTE MAP</p><h2>迷ったら、ここ。</h2></div><p>人数ボタンに合わせてホテル経由地も切り替わります。DAY 1とDAY 2を一続きに表示。</p></div>
+      <div class="map-layout"><div class="route-board"><h3>DAY 1</h3><ol class="route-list"><li>川崎</li><li>御殿場プレミアム・アウトレット</li><li>木の花の湯</li><li id="route-hotel-day1">スーパーホテル御殿場1号館</li></ol><h3>DAY 2</h3><ol class="route-list"><li id="route-hotel-day2">スーパーホテル御殿場1号館</li><li>アウトレット（さわやか）</li><li>東口本宮 冨士浅間神社</li><li>川崎</li></ol><div class="map-actions"><a class="btn btn--dark" id="full-route-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;waypoints=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88%7C%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF%7C%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B41%E5%8F%B7%E9%A4%A8%7C%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88%7C%E6%9D%B1%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%86%A8%E5%A3%AB%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE&amp;travelmode=driving" target="_blank" rel="noopener">Google Mapsで開く ↗</a></div></div>
+        <div class="map-frame"><iframe id="route-map" title="川崎から御殿場の旅程を巡るルート" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?output=embed&amp;saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;daddr=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88+to%3A+%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF+to%3A+%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B41%E5%8F%B7%E9%A4%A8+to%3A+%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88+to%3A+%E6%9D%B1%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%86%A8%E5%A3%AB%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;hl=ja"></iframe></div></div>
+    </div></section>
 
-    <section class="section section--white" id="map">
-      <div class="container">
-        <div class="section-head"><div><p class="eyebrow">ROUTE MAP</p><h2>川崎から、富士山のふもとへ。</h2></div><p>DAY 1は御殿場、DAY 2はサファリ。最後は川崎まで。</p></div>
-        <div class="route-layout">
-          <ol class="route-list">
-            <li data-step="1">川崎</li>
-            <li data-step="2">御殿場プレミアム・アウトレット</li>
-            <li data-step="3">木の花の湯</li>
-            <li data-step="4">レンブラントスタイル御殿場駒門</li>
-            <li class="day2" data-step="5">富士サファリパーク</li>
-            <li class="day2" data-step="6">川崎</li>
-          </ol>
-          <div class="map-card">
-            <iframe title="川崎から御殿場の各施設と富士サファリパークを巡るルート" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?output=embed&amp;saddr=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;daddr=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88+to%3A+%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF+to%3A+%E3%83%AC%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B4%E9%A7%92%E9%96%80+to%3A+%E5%AF%8C%E5%A3%AB%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF+to%3A+%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;hl=ja"></iframe>
-            <div class="map-actions"><p>交通状況と所要時間は出発前に再確認。</p><a class="btn btn--forest" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;destination=%E5%B7%9D%E5%B4%8E%E9%A7%85&amp;waypoints=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88%7C%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF%7C%E3%83%AC%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%BE%A1%E6%AE%BF%E5%A0%B4%E9%A7%92%E9%96%80%7C%E5%AF%8C%E5%A3%AB%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF&amp;travelmode=driving" target="_blank" rel="noopener">Google Mapsで開く ↗</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="section" id="before-go"><div class="container"><div class="section-head"><div><p class="eyebrow">BEFORE WE GO</p><h2>予約前チェック。</h2></div><p>タップで完了にできます。この端末ではチェック状態を保存します。</p></div><div class="checklist" id="checklist">
+      <label class="check-item"><input type="checkbox"><span>参加人数を2人 / 3人で確定</span></label><label class="check-item"><input type="checkbox"><span>ホテルを確保</span></label><label class="check-item"><input type="checkbox"><span>1人1ベッドになっているか確認</span></label><label class="check-item"><input type="checkbox"><span>ホテル代が1人12,000円前後以内か確認</span></label><label class="check-item"><input type="checkbox"><span>2人：1号館エコノミーツインを確認</span></label><label class="check-item"><input type="checkbox"><span>3人：2号館コネクティングを確認</span></label><label class="check-item"><input type="checkbox"><span>木の花の湯の営業情報を前日確認</span></label><label class="check-item"><input type="checkbox"><span>学生証を持つ</span></label><label class="check-item"><input type="checkbox"><span>さわやかのLINE / スマホ受付準備</span></label><label class="check-item"><input type="checkbox"><span>8/13朝にさわやかの営業・受付状況確認</span></label><label class="check-item"><input type="checkbox"><span>天気と東名渋滞情報を確認</span></label><label class="check-item"><input type="checkbox"><span>水分・帽子・歩きやすい靴</span></label>
+    </div></div></section>
 
-    <section class="section" id="other-plans">
-      <div class="container">
-        <div class="section-head"><div><p class="eyebrow">THE OTHER ROUTES</p><h2>最後まで候補だった旅。</h2></div><p>御殿場に決まるまで、こんな5つのルートも本気で検討していました。</p></div>
-        <div class="other-grid">
-          <article class="other-card"><figure><img src="https://high-set-hotel.com/data/202312/img658d1b7b4188e.jpg" alt="静岡のサウナしきじ" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>静岡・サウナしきじ</h3><p class="other-card__concept">聖地巡礼 × 美肌湯</p><p class="other-card__budget">約13,000〜14,000円</p><details><summary>ハイライトを見る</summary><ul><li>サウナしきじ</li><li>天然水の水風呂</li><li>日本平・久能山東照宮</li></ul></details><a class="other-card__credit" href="https://high-set-hotel.com/info" target="_blank" rel="noopener">写真出典：ハイセットホテル静岡インター</a></article>
-          <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/View%20of%20Atami%20Sun%20Beach%20from%20northeast%20-%20Mar%2014%2C%202024.jpg?width=1400" alt="熱海サンビーチと温泉街" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>熱海</h3><p class="other-card__concept">オーシャンスパ × 温泉街</p><p class="other-card__budget">約18,000〜19,500円</p><details><summary>ハイライトを見る</summary><ul><li>オーシャンスパ Fuua</li><li>熱海温泉街</li><li>海辺の朝散歩</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:View_of_Atami_Sun_Beach_from_northeast_-_Mar_14,_2024.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
-          <article class="other-card"><figure><img src="https://img.sauna-ikitai.com/sauna/8094_20200303_090610_zpB80yBI5A_large.jpg" alt="山中湖の天空のサウナ" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>山中湖</h3><p class="other-card__concept">天空のサウナ × 湖アクティビティ</p><p class="other-card__budget">約18,200〜18,400円</p><details><summary>ハイライトを見る</summary><ul><li>天空のサウナ</li><li>山中湖アクティビティ</li><li>富士山ビュー</li></ul></details><a class="other-card__credit" href="https://sauna-ikitai.com/saunas/8094" target="_blank" rel="noopener">写真出典：サウナイキタイ</a></article>
-          <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kusatsu%20Yubatake%2C%20Gunma%2001.jpg?width=1400" alt="草津温泉の湯畑" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>草津温泉</h3><p class="other-card__concept">温泉街 × 大滝乃湯 × ジップライン</p><p class="other-card__budget">約16,700〜16,950円</p><details><summary>ハイライトを見る</summary><ul><li>湯畑散策</li><li>大滝乃湯</li><li>ジップライン</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:Kusatsu_Yubatake,_Gunma_01.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
-          <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Yaizu%20fish%20center.jpg?width=1400" alt="静岡県焼津市の焼津さかなセンター" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>静岡・焼津</h3><p class="other-card__concept">しきじ巡礼 × 工芸・歴史</p><p class="other-card__budget">約14,150円</p><details><summary>ハイライトを見る</summary><ul><li>焼津さかなセンター</li><li>サウナしきじ</li><li>駿府の工房 匠宿</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:Yaizu_fish_center.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
-        </div>
-      </div>
-    </section>
+    <section class="section section--forest" id="summary"><div class="container"><div class="section-head"><div><p class="eyebrow">FINAL ITINERARY</p><h2>一枚で見る旅程。</h2></div><p>固定するのは出発・木の花の湯・さわやか受付。あとは当日の状況で調整。</p></div><div class="final-plan"><article class="final-day"><h3>AUG 12</h3><div class="final-stop"><time>05:30</time><strong>川崎</strong></div><div class="final-stop"><time>10:00</time><strong>アウトレット</strong></div><div class="final-stop"><time>12:15</time><strong>木の花の湯</strong></div><div class="final-stop"><time>16:30</time><strong>ホテル</strong></div><div class="final-stop"><time>18:00</time><strong>夕食</strong></div><div class="final-stop"><time>OPTION</time><strong>オアシス御殿場</strong></div></article><article class="final-day"><h3>AUG 13</h3><div class="final-stop"><time>08:00</time><strong>ホテルOUT</strong></div><div class="final-stop"><time>08:30</time><strong>受付準備</strong></div><div class="final-stop"><time>09:00</time><strong>さわやか受付</strong></div><div class="final-stop"><time>LUNCH</time><strong>さわやか</strong></div><div class="final-stop"><time>AFTER</time><strong>浅間神社 → 滝</strong></div><div class="final-stop"><time>15:30〜</time><strong>川崎へ</strong></div></article></div></div></section>
+
+    <section class="section" id="other-plans"><div class="container"><div class="section-head"><div><p class="eyebrow">THE OTHER ROUTES</p><h2>最後まで候補だった旅。</h2></div><p>御殿場に決まるまで、本気で検討した5つのルート。</p></div><div class="other-grid">
+      <article class="other-card"><figure><img src="https://high-set-hotel.com/data/202312/img658d1b7b4188e.jpg" alt="静岡のサウナしきじ" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>静岡・サウナしきじ</h3><p class="other-card__concept">聖地巡礼 × 美肌湯</p><p class="other-card__budget">約13,000〜14,000円</p><details><summary>ハイライト</summary><ul><li>サウナしきじ</li><li>天然水の水風呂</li><li>日本平</li></ul></details><a class="other-card__credit" href="https://high-set-hotel.com/info" target="_blank" rel="noopener">写真出典</a></article>
+      <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/View%20of%20Atami%20Sun%20Beach%20from%20northeast%20-%20Mar%2014%2C%202024.jpg?width=1400" alt="熱海サンビーチと温泉街" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>熱海</h3><p class="other-card__concept">オーシャンスパ × 温泉街</p><p class="other-card__budget">約18,000〜19,500円</p><details><summary>ハイライト</summary><ul><li>オーシャンスパ</li><li>温泉街</li><li>海辺の散歩</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:View_of_Atami_Sun_Beach_from_northeast_-_Mar_14,_2024.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
+      <article class="other-card"><figure><img src="https://img.sauna-ikitai.com/sauna/8094_20200303_090610_zpB80yBI5A_large.jpg" alt="山中湖の天空のサウナ" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>山中湖</h3><p class="other-card__concept">天空のサウナ × 湖アクティビティ</p><p class="other-card__budget">約18,200〜18,400円</p><details><summary>ハイライト</summary><ul><li>天空のサウナ</li><li>湖アクティビティ</li><li>富士山ビュー</li></ul></details><a class="other-card__credit" href="https://sauna-ikitai.com/saunas/8094" target="_blank" rel="noopener">写真出典</a></article>
+      <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kusatsu%20Yubatake%2C%20Gunma%2001.jpg?width=1400" alt="草津温泉の湯畑" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>草津温泉</h3><p class="other-card__concept">温泉街 × 大滝乃湯 × ジップライン</p><p class="other-card__budget">約16,700〜16,950円</p><details><summary>ハイライト</summary><ul><li>湯畑散策</li><li>大滝乃湯</li><li>ジップライン</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:Kusatsu_Yubatake,_Gunma_01.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
+      <article class="other-card"><figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Yaizu%20fish%20center.jpg?width=1400" alt="静岡県焼津市の焼津さかなセンター" loading="lazy"><figcaption><span class="tag">OTHER CANDIDATE</span></figcaption></figure><h3>静岡・焼津</h3><p class="other-card__concept">しきじ巡礼 × 工芸・歴史</p><p class="other-card__budget">約14,150円</p><details><summary>ハイライト</summary><ul><li>焼津さかなセンター</li><li>サウナしきじ</li><li>匠宿</li></ul></details><a class="other-card__credit" href="https://commons.wikimedia.org/wiki/File:Yaizu_fish_center.jpg" target="_blank" rel="noopener">写真出典：Wikimedia Commons</a></article>
+    </div></div></section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <div><p class="footer-title">GOTEMBA WEEKEND / 2026.08.12—13</p><p>富士山に整いに行きます。／ 最終情報確認：2026年8月8日</p></div>
-      <p><a href="#top">PAGE TOP ↑</a></p>
-    </div>
-  </footer>
+  <footer><div class="container footer-inner"><div><p class="footer-title">GOTEMBA WEEKEND / 2026.08.12—13</p><p>富士山に整いに行きます。／ 情報確認：2026年8月8日</p></div><p><a href="#top">PAGE TOP ↑</a></p></div></footer>
 
   <script>
     (() => {
@@ -912,46 +490,59 @@
       const confetti = document.getElementById('confetti');
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       let closeTimer;
-
       const closeCelebration = () => {
         if (!overlay || overlay.classList.contains('is-closing')) return;
         clearTimeout(closeTimer);
         overlay.classList.add('is-closing');
         document.body.classList.remove('overlay-open');
-        window.setTimeout(() => {
-          overlay.hidden = true;
-          document.querySelector('.hero .btn')?.focus({ preventScroll: true });
-        }, reduceMotion ? 0 : 560);
+        window.setTimeout(() => { overlay.hidden = true; document.querySelector('.hero .btn')?.focus({preventScroll:true}); }, reduceMotion ? 0 : 560);
       };
-
       if (!reduceMotion && confetti) {
-        const colors = ['#f0bd72', '#b95138', '#79a9c7', '#dce9e3', '#fff2d9'];
+        const colors = ['#f0bd72','#b95138','#79a9c7','#dce9e3','#fff2d9'];
         for (let i = 0; i < 42; i += 1) {
-          const piece = document.createElement('span');
-          piece.className = 'confetti-piece';
-          piece.style.setProperty('--x', `${Math.random() * 100}%`);
-          piece.style.setProperty('--w', `${5 + Math.random() * 7}px`);
-          piece.style.setProperty('--drift', `${-70 + Math.random() * 140}px`);
-          piece.style.setProperty('--duration', `${2.1 + Math.random() * .9}s`);
-          piece.style.setProperty('--delay', `${Math.random() * .5}s`);
-          piece.style.setProperty('--color', colors[i % colors.length]);
-          confetti.appendChild(piece);
+          const piece = document.createElement('span'); piece.className = 'confetti-piece';
+          piece.style.left = `${Math.random()*100}%`; piece.style.background = colors[i%colors.length]; piece.style.setProperty('--duration',`${2.1+Math.random()*.9}s`); piece.style.setProperty('--delay',`${Math.random()*.8}s`); piece.style.setProperty('--drift',`${-80+Math.random()*160}px`); confetti.appendChild(piece);
         }
       }
+      closeButton?.addEventListener('click',closeCelebration);
+      document.addEventListener('keydown',event => { if (event.key === 'Escape' && !overlay?.hidden) closeCelebration(); });
+      closeTimer = window.setTimeout(closeCelebration,4700);
 
-      closeButton?.addEventListener('click', closeCelebration);
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && overlay && !overlay.hidden) closeCelebration();
-      });
-      closeTimer = window.setTimeout(closeCelebration, reduceMotion ? 4500 : 4800);
+      const hotelData = {
+        2:{label:'FOR 2 PEOPLE / FIRST CHOICE',name:'スーパーホテル<br>御殿場1号館',plain:'スーパーホテル御殿場1号館',room:'エコノミーツイン',bed:'2 BEDS / 2 PEOPLE',image:'https://www.superhotel.co.jp/img/common_gallery/1063/43_65A03935.jpg',alt:'スーパーホテル御殿場1号館のエコノミーツインルーム',official:'https://www.superhotel.co.jp/s_hotels/gotenba/',gallery:'https://www.superhotel.co.jp/s_hotels/gotenba/gallery.html',map:'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('スーパーホテル御殿場1号館')},
+        3:{label:'FOR 3 PEOPLE / FIRST CHOICE',name:'スーパーホテル<br>御殿場2号館',plain:'スーパーホテル御殿場2号館',room:'コネクティングルーム（スーパールーム2室接続）',bed:'3 PEOPLE / SEPARATE BEDS',image:'https://www.superhotel.co.jp/img/common_gallery/245/P1144833-Edit.jpg',alt:'スーパーホテル御殿場2号館のコネクティングルーム',official:'https://www.superhotel.co.jp/s_hotels/gotenba2/',gallery:'https://www.superhotel.co.jp/s_hotels/gotenba2/gallery.html',map:'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('スーパーホテル御殿場2号館')}
+      };
+      const els = {image:document.getElementById('hotel-image'),label:document.getElementById('hotel-label'),name:document.getElementById('hotel-name'),room:document.getElementById('hotel-room'),bed:document.getElementById('hotel-bed'),official:document.getElementById('hotel-official'),gallery:document.getElementById('hotel-gallery'),mapLink:document.getElementById('hotel-map-link'),checkin:document.getElementById('checkin-hotel'),route1:document.getElementById('route-hotel-day1'),route2:document.getElementById('route-hotel-day2'),routeMap:document.getElementById('route-map'),routeLink:document.getElementById('full-route-link'),calcPeople:document.getElementById('calc-people')};
+      const makeMapUrls = hotel => {
+        const points = ['御殿場プレミアム・アウトレット','木の花の湯',hotel,'御殿場プレミアム・アウトレット','東口本宮 冨士浅間神社'];
+        return {embed:'https://maps.google.com/maps?output=embed&saddr='+encodeURIComponent('川崎駅')+'&daddr='+points.map(p=>encodeURIComponent(p)).join('+to%3A+')+'+to%3A+'+encodeURIComponent('川崎駅')+'&hl=ja',open:'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent('川崎駅')+'&destination='+encodeURIComponent('川崎駅')+'&waypoints='+points.map(encodeURIComponent).join('%7C')+'&travelmode=driving'};
+      };
+      const setPeople = number => {
+        const data = hotelData[number];
+        document.querySelectorAll('.switcher [role="tab"]').forEach(button => button.setAttribute('aria-selected',String(button.id === `people-${number}`)));
+        els.image.src=data.image; els.image.alt=data.alt; els.label.textContent=data.label; els.name.innerHTML=data.name; els.room.textContent=data.room; els.bed.textContent=data.bed; els.official.href=data.official; els.gallery.href=data.gallery; els.mapLink.href=data.map;
+        els.checkin.textContent=`${number}人なら${data.plain}。チェックイン後は30〜60分休憩。`; els.route1.textContent=data.plain; els.route2.textContent=data.plain; els.calcPeople.value=String(number);
+        const urls=makeMapUrls(data.plain); els.routeMap.src=urls.embed; els.routeLink.href=urls.open; updateBudget();
+      };
+      document.getElementById('people-2')?.addEventListener('click',()=>setPeople(2));
+      document.getElementById('people-3')?.addEventListener('click',()=>setPeople(3));
 
-      const shoppingToggle = document.getElementById('shopping-toggle');
-      const shoppingBranch = document.getElementById('shopping-branch');
-      shoppingToggle?.addEventListener('click', () => {
-        const isOpen = shoppingToggle.getAttribute('aria-expanded') === 'true';
-        shoppingToggle.setAttribute('aria-expanded', String(!isOpen));
-        if (shoppingBranch) shoppingBranch.hidden = isOpen;
-      });
+      const roomTotal=document.getElementById('room-total'), hotelPerPerson=document.getElementById('hotel-per-person'), tripTotal=document.getElementById('trip-total'), budgetBar=document.getElementById('budget-bar'), calcMessage=document.getElementById('calc-message');
+      function updateBudget(){
+        const people=Number(els.calcPeople.value)||2,total=Math.max(0,Number(roomTotal.value)||0),hotel=Math.round(total/people),low=hotel+6300,high=hotel+7600,fmt=value=>`${value.toLocaleString('ja-JP')}円`;
+        hotelPerPerson.textContent=fmt(hotel); tripTotal.textContent=`${fmt(low).replace('円','')}〜${fmt(high)}`; budgetBar.style.width=`${Math.min(100,high/20000*100)}%`;
+        const caution=high>20000||hotel>=13000; budgetBar.style.background=caution?'#f0a34a':'#f3c57e'; calcMessage.textContent=caution?'20,000円ライン注意。ホテル再検討かOPTION削減を。':'20,000円以内に収まる見込みです。';
+      }
+      roomTotal?.addEventListener('input',updateBudget); els.calcPeople?.addEventListener('change',updateBudget); updateBudget();
+
+      const checks=[...document.querySelectorAll('#checklist input[type="checkbox"]')];
+      try {
+        const saved=JSON.parse(localStorage.getItem('gotemba-checklist')||'[]');
+        checks.forEach((box,index)=>{
+          box.checked=Boolean(saved[index]);
+          box.addEventListener('change',()=>{ try { localStorage.setItem('gotemba-checklist',JSON.stringify(checks.map(item=>item.checked))); } catch (_) { /* Storage is optional. */ } });
+        });
+      } catch (_) { /* Storage is optional. */ }
     })();
   </script>
 </body>
