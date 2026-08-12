@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>御殿場ロードトリップ 8/13-14｜3人で御殿場・富士急・さわやか</title>
-  <meta name="description" content="鋼管通を7:30に出発し、新城・十日市場で合流。御殿場プレミアム・アウトレット、木の花の湯、ハイランドステーションイン、夜の富士急、さわやかを巡る3人旅のしおり。">
-  <meta property="og:title" content="㊗️ 御殿場プランに決定！">
-  <meta property="og:description" content="3人揃ったら御殿場へ。買って、蒸されて、夜の富士急。翌日はさわやか。">
+  <title>御殿場旅行 旅のしおり｜8/13-14 3人ロードトリップ</title>
+  <meta name="description" content="8月13〜14日の3人御殿場ロードトリップ用しおり。集合、木の花の湯、ハイランドステーションイン、夜の富士急、さわやか、予算、地図をまとめた旅行当日用ページ。">
+  <meta property="og:title" content="御殿場 ROAD TRIP｜旅のしおり">
+  <meta property="og:description" content="拾って、走って、整いに行く。8/13〜14、3人の御殿場旅行。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://www.gotemba-konohananoyu.jp/spa/images/img_main.jpg">
   <meta name="theme-color" content="#153f36">
   <link rel="icon" href="data:,">
+  <script>document.documentElement.dataset.initialView=new URLSearchParams(location.search).get('view')==='magazine'?'magazine':'guide';</script>
   <style>
     :root {
       --ink:#162b28; --forest:#153f36; --forest-2:#28675a; --blue:#2d6f91;
@@ -319,6 +320,138 @@
     .footer-inner p { margin:0; }
     .footer-title { font-weight:900; letter-spacing:.06em; }
 
+    /* shared view switcher */
+    [hidden] { display:none!important; }
+    html[data-initial-view="magazine"] #guide-view { display:none; }
+    html[data-initial-view="magazine"] #magazine-view[hidden] { display:block!important; }
+    .view-switcher-wrap { position:fixed; z-index:900; top:0; left:0; right:0; display:flex; justify-content:center; padding:10px 14px; pointer-events:none; }
+    .view-switcher { display:grid; grid-template-columns:1fr 1fr; width:min(420px,calc(100vw - 28px)); padding:5px; border:1px solid rgba(21,63,54,.18); border-radius:18px; background:rgba(255,254,250,.94); box-shadow:0 10px 30px rgba(15,43,37,.15); backdrop-filter:blur(16px); pointer-events:auto; }
+    .view-switcher button { min-height:43px; padding:8px 16px; border:0; border-radius:13px; background:transparent; color:var(--muted); font-weight:900; cursor:pointer; }
+    .view-switcher button[aria-pressed="true"] { color:#fff; background:var(--forest); }
+    .view-switcher__short { display:none; }
+    #magazine-view,.guide-view { padding-top:76px; }
+    #magazine-view .trip-nav { top:76px; }
+
+    /* trip guide */
+    .guide-view { min-height:100vh; background:#eee5d6; background-image:linear-gradient(rgba(255,255,255,.33) 1px,transparent 1px); background-size:100% 28px; }
+    .guide-shell { width:min(1060px,calc(100% - 36px)); margin-inline:auto; }
+    .guide-cover { position:relative; min-height:760px; display:grid; align-items:end; overflow:hidden; color:#fff; background:var(--forest); border:1px solid rgba(255,255,255,.15); }
+    .guide-cover::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(7,40,34,.95),rgba(7,40,34,.52)),url("https://www.gotemba-konohananoyu.jp/spa/images/img_main.jpg") center/cover; }
+    .guide-cover__inner { position:relative; z-index:1; display:grid; grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr); gap:42px; align-items:end; width:min(1060px,calc(100% - 72px)); margin:auto; padding:90px 0 62px; }
+    .guide-kicker { margin:0 0 16px; color:#f3c57e; font-size:.75rem; font-weight:900; letter-spacing:.2em; }
+    .guide-cover h1 { margin:0; font:700 clamp(3rem,8vw,6.7rem)/.98 Georgia,"Yu Mincho",serif; letter-spacing:-.055em; }
+    .guide-cover h1 small { display:block; margin-top:20px; font:900 .22em/1.2 sans-serif; letter-spacing:.18em; }
+    .guide-cover__date { margin:25px 0 0; font-size:1.2rem; font-weight:900; letter-spacing:.14em; }
+    .guide-cover__copy { margin:28px 0 8px; font:700 clamp(1.3rem,3vw,2rem)/1.5 Georgia,"Yu Mincho",serif; }
+    .guide-cover__route { color:#c8ddd7; font-size:.83rem; font-weight:800; }
+    .guide-stamp { justify-self:end; width:100%; padding:24px; transform:rotate(2deg); border:2px solid rgba(255,255,255,.85); text-align:center; }
+    .guide-stamp small,.guide-stamp strong,.guide-stamp span { display:block; }
+    .guide-stamp small { letter-spacing:.16em; }
+    .guide-stamp strong { margin:7px 0; color:#f3c57e; font-size:1.05rem; }
+    .guide-stamp span { font-weight:900; }
+    .guide-countdown { margin-top:22px; padding:18px; transform:rotate(-2deg); color:var(--forest); background:#fff6df; }
+    .guide-countdown small,.guide-countdown strong { display:block; }
+    .guide-countdown small { font-size:.68rem; font-weight:900; letter-spacing:.14em; }
+    .guide-countdown strong { margin-top:4px; font-size:1.25rem; }
+    .guide-cover__footer { position:absolute; z-index:1; right:22px; bottom:16px; color:rgba(255,255,255,.6); font-size:.66rem; letter-spacing:.1em; }
+    .guide-tools { position:sticky; z-index:110; top:76px; border-bottom:1px solid var(--line); background:rgba(247,242,233,.96); backdrop-filter:blur(14px); }
+    .guide-tools__inner { display:flex; gap:8px; align-items:center; overflow-x:auto; padding:10px 0; scrollbar-width:none; }
+    .guide-tools__inner::-webkit-scrollbar { display:none; }
+    .guide-tools a,.guide-tools button { flex:0 0 auto; min-height:39px; padding:8px 13px; border:1px solid var(--line); border-radius:10px; color:var(--forest); background:#fff; text-decoration:none; font-size:.7rem; font-weight:900; cursor:pointer; }
+    .guide-section { padding:70px 0; border-bottom:1px solid rgba(21,63,54,.17); }
+    .guide-section--white { background:rgba(255,254,250,.78); }
+    .guide-heading { display:flex; justify-content:space-between; align-items:end; gap:30px; margin-bottom:30px; }
+    .guide-heading h2 { font-size:clamp(2rem,5vw,3.8rem); }
+    .guide-heading p { max-width:430px; margin:0; color:var(--muted); }
+    .guide-contents { display:grid; grid-template-columns:repeat(5,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); background:#fffefa; }
+    .guide-contents a { min-height:92px; padding:18px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); text-decoration:none; }
+    .guide-contents span { display:block; color:var(--orange); font-size:.68rem; font-weight:900; }
+    .guide-contents strong { display:block; margin-top:5px; }
+    .guide-now { display:grid; grid-template-columns:150px 1fr auto; gap:24px; align-items:center; padding:28px; color:#fff; background:var(--blue); border-left:8px solid #f3c57e; }
+    .guide-now__label { font-size:.7rem; font-weight:900; letter-spacing:.16em; }
+    .guide-now time { display:block; color:#ffd69d; font-size:2rem; font-weight:900; }
+    .guide-now strong { display:block; font:700 clamp(1.5rem,4vw,2.5rem)/1.2 Georgia,"Yu Mincho",serif; }
+    .guide-now small { color:rgba(255,255,255,.72); }
+    .guide-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; margin-top:14px; }
+    .guide-quick a { min-width:0; padding:15px 8px; border:1px solid var(--line); background:#fff; text-align:center; text-decoration:none; font-size:.73rem; font-weight:900; }
+    .guide-pickup { position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+    .guide-pickup::before { content:""; position:absolute; top:58px; left:10%; right:10%; height:2px; background:var(--forest-2); }
+    .guide-pickup-card { position:relative; padding:22px; border:1px solid var(--line); background:#fff; }
+    .guide-pickup-card::before { content:""; position:absolute; top:51px; right:-20px; width:14px; height:14px; border:4px solid #eee5d6; border-radius:50%; background:var(--orange); }
+    .guide-pickup-card:last-child::before { display:none; }
+    .guide-pickup-card time { color:var(--orange); font-size:1.35rem; font-weight:900; }
+    .guide-pickup-card h3 { margin-top:16px; font-family:inherit; font-size:1.1rem; }
+    .guide-pickup-card p { margin:6px 0 0; color:var(--muted); font-size:.8rem; }
+    .guide-link { display:inline-flex; margin-top:13px; color:var(--forest); font-size:.7rem; font-weight:900; text-underline-offset:3px; }
+    .guide-day-switch { position:sticky; z-index:105; top:136px; display:grid; grid-template-columns:1fr 1fr; width:min(520px,100%); margin:0 auto 26px; padding:5px; border:1px solid var(--line); background:#fff; }
+    .guide-day-switch button { padding:12px; border:0; background:transparent; font-weight:900; cursor:pointer; }
+    .guide-day-switch button[aria-selected="true"] { color:#fff; background:var(--forest); }
+    .guide-day-panel { display:grid; grid-template-columns:1.35fr .65fr; gap:20px; align-items:start; }
+    .guide-schedule { border-top:1px solid var(--line); background:#fff; }
+    .guide-event { display:grid; grid-template-columns:138px 1fr; gap:20px; padding:21px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); border-left:1px solid var(--line); }
+    .guide-event time { color:var(--orange); font-size:1rem; font-weight:900; }
+    .guide-event h3 { font-family:inherit; font-size:1.16rem; }
+    .guide-event p { margin:5px 0 0; color:var(--muted); font-size:.82rem; }
+    .guide-event--main { border-left:6px solid var(--orange); background:#fff9ed; }
+    .guide-event--next { outline:3px solid #f3c57e; outline-offset:-3px; }
+    .guide-side-note { position:sticky; top:202px; padding:24px; color:#fff; background:var(--forest); }
+    .guide-side-note h3 { font-family:inherit; font-size:1.15rem; }
+    .guide-side-note strong { display:block; margin:12px 0; color:#f3c57e; font-size:1.3rem; }
+    .guide-side-note button { width:100%; min-height:46px; border:0; color:var(--forest); background:#fff; font-weight:900; cursor:pointer; }
+    .guide-delay-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:15px; }
+    .guide-delay-grid div { padding:11px; border:1px solid rgba(255,255,255,.22); }
+    .guide-delay-grid small,.guide-delay-grid b { display:block; }
+    .guide-delay-grid small { color:#b8d6cd; font-size:.62rem; }
+    .guide-ticket-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .guide-ticket { position:relative; overflow:hidden; padding:34px; border:1px solid var(--line); background:#fff; box-shadow:8px 8px 0 rgba(21,63,54,.1); }
+    .guide-ticket::before,.guide-ticket::after { content:""; position:absolute; top:50%; width:28px; height:28px; margin-top:-14px; border-radius:50%; background:#eee5d6; }
+    .guide-ticket::before { left:-14px; }.guide-ticket::after { right:-14px; }
+    .guide-ticket__head { padding-bottom:20px; border-bottom:1px dashed var(--line); }
+    .guide-ticket__head h3 { margin-top:7px; font-size:clamp(1.8rem,4vw,3rem); }
+    .guide-ticket__big { margin:22px 0; color:var(--orange); font-size:clamp(2rem,5vw,3.4rem); font-weight:900; line-height:1.1; }
+    .guide-ticket__specs { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .guide-ticket__specs div { padding:12px; background:var(--paper); }
+    .guide-ticket__specs small,.guide-ticket__specs strong { display:block; }
+    .guide-ticket__specs small { color:var(--muted); font-size:.62rem; font-weight:900; }
+    .guide-photo-pair { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:18px; }
+    .guide-photo-pair img { height:150px; object-fit:cover; }
+    .guide-bonus { padding:32px; color:#fff; background:#101d36; }
+    .guide-bonus h3 { margin-top:8px; font-size:clamp(2rem,5vw,3.6rem); }
+    .guide-bonus__price { margin:18px 0; color:#f3c57e; font-size:2.5rem; font-weight:900; }
+    .guide-mission { display:grid; grid-template-columns:.8fr 1.2fr; overflow:hidden; color:#fff; background:var(--forest); }
+    .guide-mission img { height:100%; min-height:480px; object-fit:cover; }
+    .guide-mission__body { padding:38px; }
+    .guide-mission h3 { margin:7px 0 20px; font-size:clamp(2.3rem,6vw,4.8rem); }
+    .guide-mission__time { display:inline-block; padding:12px 18px; color:var(--forest); background:#f3c57e; font-size:2rem; font-weight:900; }
+    .guide-wait-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:18px; }
+    .guide-wait-grid div { padding:17px; border:1px solid rgba(255,255,255,.2); }
+    .guide-wait-grid small,.guide-wait-grid strong { display:block; }
+    .guide-budget { display:grid; grid-template-columns:1fr .78fr; gap:22px; }
+    .guide-costs { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--line); border-left:1px solid var(--line); background:#fff; }
+    .guide-cost { display:flex; justify-content:space-between; gap:12px; padding:17px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .guide-cost strong { color:var(--orange); }
+    .guide-wallet { display:flex; flex-direction:column; justify-content:center; padding:30px; color:#fff; background:var(--blue); }
+    .guide-wallet strong { display:block; color:#ffd69d; font-size:2.25rem; }
+    .guide-checklists { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .guide-checklist { padding:25px; border:1px solid var(--line); background:#fff; }
+    .guide-checklist h3 { margin-bottom:15px; font-family:inherit; font-size:1.2rem; }
+    .guide-check { display:flex; gap:10px; align-items:flex-start; padding:10px 0; border-bottom:1px solid var(--line); cursor:pointer; }
+    .guide-check input { width:20px; height:20px; margin-top:3px; accent-color:var(--forest); }
+    .guide-check:has(input:checked) { color:var(--muted); text-decoration:line-through; }
+    .guide-reset { margin-top:18px; padding:9px 14px; border:1px solid var(--line); background:transparent; font-weight:900; cursor:pointer; }
+    .guide-map-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .guide-route-card { padding:26px; border:1px solid var(--line); background:#fff; }
+    .guide-route-card ol { margin:18px 0 0; padding:0; list-style:none; }
+    .guide-route-card li { position:relative; padding:9px 0 9px 28px; border-left:2px solid var(--forest-2); }
+    .guide-route-card li::before { content:""; position:absolute; left:-6px; top:18px; width:10px; height:10px; border-radius:50%; background:var(--orange); }
+    .guide-rules { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
+    .guide-rule { min-height:155px; padding:20px; transform:rotate(var(--rule-rotate,0deg)); border:1px solid var(--line); background:#fff6df; }
+    .guide-rule span { color:var(--orange); font-size:.65rem; font-weight:900; letter-spacing:.12em; }
+    .guide-rule strong { display:block; margin-top:16px; font:700 1.2rem/1.5 Georgia,"Yu Mincho",serif; }
+    .guide-other { display:flex; flex-wrap:wrap; gap:8px; }
+    .guide-other span { padding:9px 13px; border:1px solid var(--line); background:#fff; font-size:.76rem; }
+    .guide-deep-link { display:inline-flex; margin-top:16px; padding:9px 13px; border:1px solid currentColor; background:transparent; color:inherit; font-weight:900; cursor:pointer; }
+
     @media (max-width:1000px) {
       .summary-grid { grid-template-columns:repeat(4,1fr); }
       .pickup-route { grid-template-columns:1fr; }
@@ -328,6 +461,15 @@
       .hotel-specs,.night-schedule { grid-template-columns:repeat(2,1fr); }
       .quick-links { grid-template-columns:repeat(3,1fr); }
       .other-grid { grid-template-columns:repeat(3,1fr); }
+      .guide-cover__inner { grid-template-columns:1fr; }
+      .guide-stamp { justify-self:start; width:min(420px,100%); }
+      .guide-contents { grid-template-columns:repeat(2,1fr); }
+      .guide-pickup { grid-template-columns:1fr 1fr; }
+      .guide-pickup::before,.guide-pickup-card::before { display:none; }
+      .guide-day-panel,.guide-budget { grid-template-columns:1fr; }
+      .guide-side-note { position:static; }
+      .guide-quick { grid-template-columns:repeat(3,1fr); }
+      .guide-rules { grid-template-columns:repeat(3,1fr); }
     }
     @media (max-width:760px) {
       .container { width:min(100% - 28px,1180px); }
@@ -376,6 +518,18 @@
       .wait-panel img { min-height:250px; }
       .map-frame,.map-frame iframe { min-height:430px; }
       .other-grid { grid-template-columns:repeat(2,1fr); }
+      .guide-shell { width:calc(100% - 24px); }
+      .guide-cover { min-height:730px; }
+      .guide-cover__inner { width:calc(100% - 34px); padding:82px 0 52px; }
+      .guide-cover__footer { display:none; }
+      .guide-section { padding:54px 0; }
+      .guide-heading { display:block; }
+      .guide-heading p { margin-top:12px; }
+      .guide-now { grid-template-columns:1fr; gap:8px; }
+      .guide-pickup { grid-template-columns:1fr; }
+      .guide-ticket-grid,.guide-mission,.guide-checklists,.guide-map-grid { grid-template-columns:1fr; }
+      .guide-mission img { min-height:0; height:290px; }
+      .guide-rules { grid-template-columns:1fr 1fr; }
     }
     @media (max-width:480px) {
       .container { width:min(100% - 22px,1180px); }
@@ -422,6 +576,48 @@
       .other-card__concept { min-height:0; }
       .footer-inner { display:block; }
       .footer-inner > p { margin-top:12px; }
+      .view-switcher__long { display:none; }
+      .view-switcher__short { display:inline; }
+      #magazine-view,.guide-view { padding-top:76px; }
+      #magazine-view .trip-nav { top:76px; }
+      .guide-tools { top:76px; }
+      .guide-day-switch { top:136px; }
+      .guide-cover h1 { font-size:2.8rem; }
+      .guide-cover__copy { font-size:1.25rem; }
+      .guide-cover__date { font-size:.9rem; }
+      .guide-stamp { padding:19px; }
+      .guide-contents,.guide-costs { grid-template-columns:1fr 1fr; }
+      .guide-contents a { min-height:82px; padding:14px; }
+      .guide-quick { grid-template-columns:repeat(2,1fr); }
+      .guide-event { grid-template-columns:1fr; gap:4px; padding:17px; }
+      .guide-event time { font-size:1.15rem; }
+      .guide-ticket { padding:25px 20px; }
+      .guide-ticket__specs,.guide-wait-grid,.guide-delay-grid { grid-template-columns:1fr; }
+      .guide-photo-pair { grid-template-columns:1fr; }
+      .guide-photo-pair img { height:180px; }
+      .guide-mission__body { padding:28px 20px; }
+      .guide-mission h3 { font-size:2.55rem; }
+      .guide-costs { grid-template-columns:1fr; }
+      .guide-rules { grid-template-columns:1fr; }
+    }
+    @media print {
+      @page { size:A4; margin:12mm; }
+      body { color:#111; background:#fff; font-size:10pt; }
+      .celebration,.view-switcher-wrap,#magazine-view,.guide-tools,.guide-quick,.guide-deep-link,.guide-reset,.spot-actions { display:none!important; }
+      #guide-view { display:block!important; padding:0; background:#fff; }
+      .guide-shell { width:100%; }
+      .guide-cover { min-height:260mm; break-after:page; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+      .guide-cover__inner { width:88%; padding:35mm 0 20mm; }
+      .guide-section { padding:10mm 0; break-inside:avoid; }
+      .guide-section--page { break-before:page; }
+      .guide-day-panel[hidden] { display:grid!important; }
+      .guide-day-switch { display:none; }
+      .guide-day-panel { grid-template-columns:1fr; }
+      .guide-side-note { position:static; }
+      .guide-ticket-grid,.guide-checklists,.guide-map-grid,.guide-budget { grid-template-columns:1fr 1fr; }
+      .guide-mission { grid-template-columns:.7fr 1.3fr; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+      .guide-mission img { min-height:0; height:110mm; }
+      a { text-decoration:none; }
     }
     @media (prefers-reduced-motion:reduce) {
       html { scroll-behavior:auto; }
@@ -431,7 +627,7 @@
   </style>
 </head>
 <body class="overlay-open">
-  <a class="skip-link" href="#overview">旅程へスキップ</a>
+  <a class="skip-link" href="#guide-overview">旅程へスキップ</a>
 
   <div class="celebration" id="celebration" role="dialog" aria-modal="true" aria-labelledby="celebration-title" aria-describedby="celebration-copy">
     <div class="confetti" id="confetti" aria-hidden="true"></div>
@@ -445,6 +641,79 @@
       <button class="btn btn--light" id="close-celebration" type="button">旅程を見る →</button>
     </div>
   </div>
+
+  <div class="view-switcher-wrap"><div class="view-switcher" role="group" aria-label="表示モード">
+    <button type="button" data-view="guide" aria-pressed="true"><span class="view-switcher__long">📖 旅のしおり</span><span class="view-switcher__short">📖 しおり</span></button>
+    <button type="button" data-view="magazine" aria-pressed="false"><span class="view-switcher__long">🗻 旅マガジン</span><span class="view-switcher__short">🗻 マガジン</span></button>
+  </div></div>
+
+  <main class="guide-view" id="guide-view" data-view-panel>
+    <section class="guide-cover" id="guide-top" aria-labelledby="guide-cover-title">
+      <div class="guide-cover__inner">
+        <div><p class="guide-kicker">TRIP GUIDE / GOTEMBA ROAD TRIP</p><h1 id="guide-cover-title">御殿場<br>ROAD TRIP<small>旅のしおり</small></h1><p class="guide-cover__date">2026.08.13 — 08.14<br>3 PEOPLE / 1 NIGHT・2 DAYS</p><p class="guide-cover__copy">拾って、走って、整いに行く。</p><p class="guide-cover__route">鋼管通 → 新城 → 十日市場 → 御殿場 → 富士急</p></div>
+        <div><div class="guide-stamp"><small>PLAN LOCKED ✓ / BOOKED ✓</small><strong>HIGHLAND STATION INN</strong><span>¥5,500 / PERSON</span></div><div class="guide-countdown" aria-live="polite"><small id="guide-countdown-label">出発まで</small><strong id="guide-countdown">計算中…</strong></div></div>
+      </div>
+      <p class="guide-cover__footer">GOTEMBA ROAD TRIP 2026 / KAWASAKI → GOTEMBA → FUJI-Q / for 3 people</p>
+    </section>
+
+    <nav class="guide-tools" aria-label="しおりクイックメニュー"><div class="guide-shell guide-tools__inner">
+      <a href="#guide-overview">CONTENTS</a><a href="#guide-pickup">集合</a><a href="#guide-day1">DAY 1</a><a href="#guide-day2">DAY 2</a><a href="#guide-sawayaka">さわやか</a><a href="#guide-packing">持ち物</a><a href="#guide-map">MAP</a><button type="button" id="guide-print">🖨 印刷 / PDF</button>
+    </div></nav>
+
+    <section class="guide-section" id="guide-overview"><div class="guide-shell">
+      <div class="guide-heading"><div><p class="eyebrow">CONTENTS / TODAY'S PLAN</p><h2>当日、迷わない。</h2></div><p>最初に「次の予定」、その次に時刻と地図。詳しい写真と物語は旅マガジンで確認できます。</p></div>
+      <nav class="guide-contents" aria-label="旅のしおり目次"><a href="#guide-pickup"><span>01</span><strong>集合</strong></a><a href="#guide-day1"><span>02</span><strong>DAY 1</strong></a><a href="#guide-sauna"><span>03</span><strong>サウナ</strong></a><a href="#guide-hotel"><span>04</span><strong>ホテル</strong></a><a href="#guide-fujiq"><span>05</span><strong>夜の富士急</strong></a><a href="#guide-day2"><span>06</span><strong>DAY 2</strong></a><a href="#guide-sawayaka"><span>07</span><strong>さわやか</strong></a><a href="#guide-budget"><span>08</span><strong>予算</strong></a><a href="#guide-packing"><span>09</span><strong>持ち物</strong></a><a href="#guide-map"><span>10</span><strong>MAP</strong></a></nav>
+      <article class="guide-now" style="margin-top:20px"><div><span class="guide-now__label" id="guide-next-label">NEXT / 予定時刻ベース</span><time id="guide-next-time">07:30</time></div><div><strong id="guide-next-title">鋼管通 START</strong><small id="guide-next-copy">まず全員を揃えます。</small></div><span aria-hidden="true" style="font-size:2.2rem">🚗</span></article>
+      <div class="guide-quick" aria-label="クイックリンク"><a href="https://www.c-ihighway.jp/pcsite/" target="_blank" rel="noopener">🚗 TRAFFIC ↗</a><a href="https://www.gotemba-konohananoyu.jp/guide/" target="_blank" rel="noopener">♨️ 木の花の湯 ↗</a><a href="https://www.highlandstation-inn.com/" target="_blank" rel="noopener">🛏 HOTEL ↗</a><a href="https://www.fujiq.jp/" target="_blank" rel="noopener">🎢 FUJI-Q ↗</a><a href="https://www.genkotsu-hb.com/shop/detail/233" target="_blank" rel="noopener">🍖 SAWAYAKA ↗</a><a href="#guide-map">🗺 MAP ↓</a></div>
+    </div></section>
+
+    <section class="guide-section guide-section--white" id="guide-pickup"><div class="guide-shell">
+      <div class="guide-heading"><div><p class="eyebrow">01 / PICKUP MISSION</p><h2>集合。<br>まず3人を揃える。</h2></div><p>すべてPLAN TIME。道路状況で変動します。正確な集合地点は公開せず、グループLINEで共有。</p></div>
+      <div class="guide-pickup">
+        <article class="guide-pickup-card"><time>07:30</time><h3>🚗 鋼管通</h3><p>START</p></article>
+        <article class="guide-pickup-card"><time>08:00〜08:10</time><h3>👤 新城エリア</h3><p>PICKUP 1</p><a class="guide-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%AD%A6%E8%94%B5%E6%96%B0%E5%9F%8E%E9%A7%85" target="_blank" rel="noopener">MAP（武蔵新城駅周辺）↗</a></article>
+        <article class="guide-pickup-card"><time>08:45〜09:00</time><h3>👤 十日市場エリア</h3><p>PICKUP 2</p><a class="guide-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%81%E6%97%A5%E5%B8%82%E5%A0%B4%E9%A7%85%20%E6%A8%AA%E6%B5%9C%E5%B8%82" target="_blank" rel="noopener">MAP（十日市場駅周辺）↗</a></article>
+        <article class="guide-pickup-card"><time>09:00〜09:10</time><h3>🎉 3 PEOPLE READY</h3><p>ここから本編。</p></article>
+      </div>
+      <button class="guide-deep-link" type="button" data-magazine-target="pickup">写真と詳細を見る → 旅マガジン</button>
+    </div></section>
+
+    <section class="guide-section" id="guide-day1"><div class="guide-shell">
+      <div class="guide-heading"><div><p class="eyebrow">02 + 06 / DAY SCHEDULE</p><h2>時刻から見る旅程。</h2></div><p>旅行前と8/13はDAY 1、8/14はDAY 2を初期表示。手動でも切り替えられます。</p></div>
+      <div class="guide-day-switch" role="tablist" aria-label="旅行日"><button type="button" role="tab" data-guide-day="day1" aria-selected="true" aria-controls="guide-day1-panel">AUG 13 / DAY 1</button><button type="button" role="tab" data-guide-day="day2" aria-selected="false" aria-controls="guide-day2-panel">AUG 14 / DAY 2</button></div>
+      <div class="guide-day-panel" id="guide-day1-panel" role="tabpanel">
+        <div class="guide-schedule">
+          <article class="guide-event"><time>07:30</time><div><h3>鋼管通 START</h3><p>ロードトリップ開始。</p></div></article><article class="guide-event"><time>08:00〜08:10</time><div><h3>新城 PICKUP</h3></div></article><article class="guide-event"><time>08:45〜09:00</time><div><h3>十日市場 PICKUP</h3></div></article><article class="guide-event"><time>09:00〜09:10</time><div><h3>3人揃って御殿場へ</h3></div></article><article class="guide-event"><time>11:30〜13:00</time><div><span class="tag tag--amber">FLEXIBLE</span><h3>御殿場到着予定</h3><p>リアルタイムナビを優先。</p></div></article><article class="guide-event"><time>到着後</time><div><h3>御殿場アウトレット</h3><p>買い物＋昼食 / 60〜90 MIN</p><a class="guide-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88" target="_blank" rel="noopener">MAP ↗</a></div></article><article class="guide-event guide-event--main"><time>14:00頃〜</time><div><h3>木の花の湯</h3><p>今回のメイン。</p></div></article><article class="guide-event guide-event--main"><time>15:30</time><div><h3>🔥 AUFGUSS / TARGET</h3></div></article><article class="guide-event"><time>17:15頃</time><div><h3>木の花の湯 OUT</h3></div></article><article class="guide-event"><time>18:15頃</time><div><h3>ホテル CHECK-IN</h3></div></article><article class="guide-event"><time>18:30</time><div><h3>DINNER</h3></div></article><article class="guide-event"><time>19:30〜20:45</time><div><h3>FUJI-Q NIGHT</h3><p>FREE BONUS / 遅ければSKIP。</p></div></article><article class="guide-event"><time>21:00〜</time><div><h3>HOTEL</h3></div></article>
+        </div>
+        <aside class="guide-side-note"><p class="eyebrow" style="color:#f3c57e">DELAY MODE</p><h3 id="guide-delay-title">NORMAL PLAN</h3><strong>木の花の湯 ＞ アウトレット ＞ 富士急</strong><button type="button" id="guide-delay-toggle" aria-pressed="false">🚗 渋滞した！</button><div class="guide-delay-grid"><div><small>OUTLET</small><b id="guide-delay-outlet">60〜90分</b></div><div><small>SAUNA</small><b id="guide-delay-sauna">約3時間</b></div><div><small>FUJI-Q</small><b id="guide-delay-fujiq">〜75分</b></div></div><button class="guide-deep-link" type="button" data-magazine-target="day1">詳しく見る → 旅マガジン</button></aside>
+      </div>
+      <div class="guide-day-panel" id="guide-day2-panel" role="tabpanel" hidden>
+        <div class="guide-schedule"><article class="guide-event"><time>07:00</time><div><h3>WAKE UP</h3></div></article><article class="guide-event"><time>07:15</time><div><h3>BREAKFAST</h3></div></article><article class="guide-event"><time>07:45</time><div><h3>HOTEL OUT</h3></div></article><article class="guide-event"><time>08:35〜08:50</time><div><h3>御殿場エリア</h3><p>さわやか受付準備。</p></div></article><article class="guide-event guide-event--main"><time>09:00</time><div><h3>SAWAYAKA ENTRY</h3><p>店頭・スマホ受付開始。</p></div></article><article class="guide-event"><time>WAIT</time><div><h3>平和公園など</h3><p>呼出を最優先。</p></div></article><article class="guide-event guide-event--main"><time>CALL</time><div><h3>げんこつハンバーグ</h3></div></article><article class="guide-event"><time>食後</time><div><h3>GO HOME</h3><p>十日市場 → 新城 → 鋼管通。</p></div></article></div>
+        <aside class="guide-side-note"><p class="eyebrow" style="color:#f3c57e">DAY 2 PRIORITY</p><h3>09:00、勝負開始。</h3><strong>さわやかを取ったら、食べて帰る。</strong><p>8/14は上り渋滞。大規模観光は追加しません。</p><button class="guide-deep-link" type="button" data-magazine-target="day2">詳しく見る → 旅マガジン</button></aside>
+      </div>
+    </div></section>
+
+    <section class="guide-section guide-section--white guide-section--page" id="guide-sauna"><div class="guide-shell"><div class="guide-heading"><div><p class="eyebrow">03 / SAUNA TICKET</p><h2>ここが本番。</h2></div><p>学生証を使える本人は500円OFF。15:30へ間に合うように動きます。</p></div><div class="guide-ticket-grid">
+      <article class="guide-ticket"><div class="guide-ticket__head"><p class="eyebrow">木の花の湯 / ADMISSION TICKET</p><h3>15:30<br>AUFGUSS</h3></div><div class="guide-ticket__big">TARGET 🔥</div><div class="guide-ticket__specs"><div><small>PRICE</small><strong>¥2,200</strong></div><div><small>STUDENT</small><strong>¥1,700</strong></div><div><small>HOURS</small><strong>10:30 → 22:00</strong></div><div><small>REMINDER</small><strong>学生証忘れずに</strong></div></div><div class="guide-photo-pair"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_opn01.jpg" alt="木の花の湯の富士山展望風呂" loading="lazy"><img src="https://www.gotemba-konohananoyu.jp/spa/images/public/img_sauna.jpg" alt="木の花の湯のサウナ" loading="lazy"></div><a class="guide-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF" target="_blank" rel="noopener">MAP ↗</a>　<a class="guide-link" href="https://www.gotemba-konohananoyu.jp/guide/" target="_blank" rel="noopener">OFFICIAL ↗</a></article>
+      <article class="guide-ticket"><div class="guide-ticket__head"><p class="eyebrow">FEATURES</p><h3>富士山を見て、<br>整う。</h3></div><div class="guide-ticket__specs" style="margin-top:22px"><div><small>🗻</small><strong>FUJI VIEW</strong></div><div><small>🔥</small><strong>AUFGUSS</strong></div><div><small>♨️</small><strong>ONSEN</strong></div><div><small>🛁</small><strong>130cm</strong></div></div><button class="guide-deep-link" type="button" data-magazine-target="sauna">写真と詳細を見る → 旅マガジン</button></article>
+    </div></div></section>
+
+    <section class="guide-section guide-section--page" id="guide-hotel"><div class="guide-shell"><div class="guide-heading"><div><p class="eyebrow">04 / TONIGHT'S STAY</p><h2>今夜の宿泊券。</h2></div><p>予約済み。3人それぞれ1キャビンです。</p></div><article class="guide-ticket"><div class="guide-ticket__head"><p class="eyebrow">BOOKED ✓ / CABIN &amp; LOUNGE</p><h3>HIGHLAND<br>STATION INN</h3></div><div class="guide-ticket__big">¥5,500</div><div class="guide-ticket__specs"><div><small>GUEST</small><strong>3 PEOPLE</strong></div><div><small>BED</small><strong>3 CABINS</strong></div><div><small>CHECK-IN</small><strong>15:00〜</strong></div><div><small>CHECK-OUT</small><strong>〜10:00</strong></div></div><div class="guide-photo-pair"><img src="https://www.highlandstation-inn.com/common/images/cabin/cabin_photo-1.jpg" alt="ハイランドステーションイン外観" loading="lazy"><img src="https://www.highlandstation-inn.com/common/images/cabin/cabin_photo3.jpg" alt="ハイランドステーションインのキャビン" loading="lazy"></div><p><strong>貴重品はLOCKERへ。耳栓推奨。</strong></p><a class="guide-link" href="https://www.google.com/maps/search/?api=1&amp;query=CABIN%20%26%20LOUNGE%20HIGHLAND%20STATION%20INN" target="_blank" rel="noopener">MAP ↗</a>　<a class="guide-link" href="https://www.highlandstation-inn.com/" target="_blank" rel="noopener">OFFICIAL ↗</a><br><button class="guide-deep-link" type="button" data-magazine-target="hotel">館内写真を見る → 旅マガジン</button></article></div></section>
+
+    <section class="guide-section guide-section--white" id="guide-fujiq"><div class="guide-shell"><article class="guide-bonus"><p class="eyebrow" style="color:#f3c57e">05 / BONUS STAGE</p><h3>🎢 夜の富士急</h3><div class="guide-bonus__price">ENTRY ¥0</div><p><strong>TARGET 19:30〜20:45</strong><br>ホテル到着が遅ければ短縮またはSKIP。「ホテルの隣なので、とりあえず入る。」</p><a class="guide-link" style="color:#fff" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89" target="_blank" rel="noopener">MAP ↗</a>　<a class="guide-link" style="color:#fff" href="https://www.fujiq.jp/" target="_blank" rel="noopener">OFFICIAL ↗</a><br><button class="guide-deep-link" type="button" data-magazine-target="fujiq">夜の写真を見る → 旅マガジン</button></article></div></section>
+
+    <section class="guide-section guide-section--page" id="guide-day2"><div class="guide-shell"><div class="guide-heading"><div><p class="eyebrow">06 + 07 / DAY 2 MISSION</p><h2>さわやかを取れ。</h2></div><p>DAY2で最も重要。8:50までにLINEログインと位置情報を確認。</p></div><article class="guide-mission" id="guide-sawayaka"><img src="https://www.genkotsu-hb.com/storage/menu/M1001112.jpg" alt="さわやかのげんこつハンバーグ" loading="lazy"><div class="guide-mission__body"><p class="eyebrow" style="color:#f3c57e">DAY 2 MISSION / BATTLE START</p><h3>さわやかを<br>取れ。</h3><div class="guide-mission__time">09:00</div><p><strong>LINE ＋ 位置情報ON</strong><br>御殿場インター店 / げんこつハンバーグ / 予算 ¥1,800〜2,200</p><p>「9:00、勝負開始。」</p><div class="guide-wait-grid"><div><small>SHORT / 〜60min</small><strong>近場待機</strong></div><div><small>MEDIUM / 60〜120min</small><strong>平和公園</strong></div><div><small>LONG / 120min〜</small><strong>遠くへ行かない</strong></div></div><a class="guide-link" style="color:#fff" href="https://www.genkotsu-hb.com/shop/detail/233" target="_blank" rel="noopener">LIVE CHECK ↗</a><br><button class="guide-deep-link" type="button" data-magazine-target="sawayaka">待ち時間モードを見る → 旅マガジン</button></div></article></div></section>
+
+    <section class="guide-section guide-section--white guide-section--page" id="guide-budget"><div class="guide-shell"><div class="guide-heading"><div><p class="eyebrow">08 / WALLET PAGE</p><h2>旅のおかね。</h2></div><p>車関連費用と富士急の有料アトラクションは含めません。</p></div><div class="guide-budget"><div class="guide-costs"><div class="guide-cost"><span>HOTEL</span><strong>¥5,500</strong></div><div class="guide-cost"><span>SAUNA</span><strong>¥2,200</strong></div><div class="guide-cost"><span>LUNCH</span><strong>¥1,000〜1,500</strong></div><div class="guide-cost"><span>DINNER</span><strong>¥1,000〜1,500</strong></div><div class="guide-cost"><span>BREAKFAST</span><strong>¥500〜800</strong></div><div class="guide-cost"><span>SAWAYAKA</span><strong>¥1,800〜2,200</strong></div><div class="guide-cost"><span>DRINK / SNACK</span><strong>¥500〜1,000</strong></div><div class="guide-cost"><span>LIMIT</span><strong>¥20,000</strong></div></div><aside class="guide-wallet"><small>BASIC TOTAL</small><strong>¥12,500〜14,700</strong><p><b>BONUS MONEY ¥5,300〜7,500+</b><br>富士急・お土産・買い物に使えます。</p><button class="guide-deep-link" type="button" data-magazine-target="budget">内訳を見る → 旅マガジン</button></aside></div></div></section>
+
+    <section class="guide-section" id="guide-packing"><div class="guide-shell"><div class="guide-heading"><div><p class="eyebrow">09 / PACKING LIST</p><h2>忘れ物チェック。</h2></div><p>チェック状態はこの端末に保存されます。表示モード自体は保存しません。</p></div><div class="guide-checklists" id="guide-checklists"><article class="guide-checklist"><h3>PACKING LIST</h3><label class="guide-check"><input type="checkbox" data-guide-check><span>財布</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>スマホ</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>モバイルバッテリー</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>充電ケーブル</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>着替え</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>学生証</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>免許証（運転者）</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>耳栓</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>水分</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>サウナ後の飲み物</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>ホテル予約情報</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>LINE / さわやか受付準備</span></label></article><article class="guide-checklist"><h3>BEFORE WE GO</h3><p class="eyebrow">AUG 13 MORNING</p><label class="guide-check"><input type="checkbox" data-guide-check><span>高速道路状況</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>木の花の湯営業</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>天気</span></label><p class="eyebrow" style="margin-top:24px">AUG 14 MORNING</p><label class="guide-check"><input type="checkbox" data-guide-check><span>さわやか営業</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>LINE位置情報ON</span></label><label class="guide-check"><input type="checkbox" data-guide-check><span>上り渋滞</span></label><button class="guide-reset" id="guide-reset-checklist" type="button">Reset checklist</button></article></div></div></section>
+
+    <section class="guide-section guide-section--white guide-section--page" id="guide-map"><div class="guide-shell"><div class="guide-heading"><div><p class="eyebrow">10 / PRIVACY-SAFE ROUTE MAP</p><h2>近似地点で開く。</h2></div><p>私人宅は使わず、新城と十日市場は駅周辺を公開用地点として使用します。</p></div><div class="guide-map-grid"><article class="guide-route-card"><p class="eyebrow">DAY 1</p><h3>鋼管通 → 富士急</h3><ol><li>鋼管通</li><li>武蔵新城駅周辺</li><li>十日市場駅周辺</li><li>御殿場アウトレット</li><li>木の花の湯</li><li>ホテル</li></ol><a class="btn btn--dark btn--small" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%B7%9D%E5%B4%8E%E5%8C%BA%E9%8B%BC%E7%AE%A1%E9%80%9A&amp;destination=CABIN%20%26%20LOUNGE%20HIGHLAND%20STATION%20INN&amp;waypoints=%E6%AD%A6%E8%94%B5%E6%96%B0%E5%9F%8E%E9%A7%85%7C%E5%8D%81%E6%97%A5%E5%B8%82%E5%A0%B4%E9%A7%85%7C%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88%7C%E6%9C%A8%E3%81%AE%E8%8A%B1%E3%81%AE%E6%B9%AF&amp;travelmode=driving" target="_blank" rel="noopener">DAY 1 MAP ↗</a></article><article class="guide-route-card"><p class="eyebrow">DAY 2</p><h3>ホテル → HOME</h3><ol><li>ホテル</li><li>さわやか御殿場インター店</li><li>十日市場駅周辺</li><li>武蔵新城駅周辺</li><li>鋼管通</li></ol><a class="btn btn--dark btn--small" href="https://www.google.com/maps/dir/?api=1&amp;origin=CABIN%20%26%20LOUNGE%20HIGHLAND%20STATION%20INN&amp;destination=%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%B7%9D%E5%B4%8E%E5%8C%BA%E9%8B%BC%E7%AE%A1%E9%80%9A&amp;waypoints=%E3%81%95%E3%82%8F%E3%82%84%E3%81%8B%20%E5%BE%A1%E6%AE%BF%E5%A0%B4%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E5%BA%97%7C%E5%8D%81%E6%97%A5%E5%B8%82%E5%A0%B4%E9%A7%85%7C%E6%AD%A6%E8%94%B5%E6%96%B0%E5%9F%8E%E9%A7%85&amp;travelmode=driving" target="_blank" rel="noopener">DAY 2 MAP ↗</a></article></div></div></section>
+
+    <section class="guide-section" id="guide-rules"><div class="guide-shell"><div class="guide-heading"><div><p class="eyebrow">TRIP RULES</p><h2>旅のルール。</h2></div></div><div class="guide-rules"><article class="guide-rule" style="--rule-rotate:-1deg"><span>RULE 01</span><strong>無理な予定は削る。</strong></article><article class="guide-rule" style="--rule-rotate:1deg"><span>RULE 02</span><strong>木の花の湯は守る。</strong></article><article class="guide-rule" style="--rule-rotate:-.5deg"><span>RULE 03</span><strong>DAY2 09:00はさわやか。</strong></article><article class="guide-rule" style="--rule-rotate:1deg"><span>RULE 04</span><strong>眠い人を運転させない。</strong></article><article class="guide-rule" style="--rule-rotate:-1deg"><span>RULE 05</span><strong>帰るまでが旅行。</strong></article></div><div style="margin-top:45px"><p class="eyebrow">この旅になるまで</p><p>ほかにもこんな候補がありました。</p><div class="guide-other"><span>静岡・しきじ</span><span>熱海</span><span>山中湖</span><span>草津</span><span>静岡・焼津</span></div><button class="guide-deep-link" type="button" data-magazine-target="other-plans">旅マガジンで見る →</button></div></div></section>
+  </main>
+
+  <div id="magazine-view" data-view-panel hidden>
 
   <header class="hero" id="top">
     <div class="hero__media" aria-hidden="true">
@@ -584,13 +853,81 @@
     </div></div></section>
   </main>
 
-  <footer><div class="container footer-inner"><div><p class="footer-title">GOTEMBA ROAD TRIP / 2026.08.13—14</p><p>拾って、走って、整いに行く。／ 最終情報確認：2026年8月12日</p></div><p><a href="#top">PAGE TOP ↑</a></p></div></footer>
+  <footer><div class="container footer-inner"><div><p class="footer-title">TRIP MAGAZINE / GOTEMBA ROAD TRIP / 2026.08.13—14</p><p>拾って、走って、整いに行く。／ 最終情報確認：2026年8月12日</p></div><p><a href="#top">PAGE TOP ↑</a></p></div></footer>
+  </div>
 
   <script>
     (() => {
-      const overlay=document.getElementById('celebration'),closeButton=document.getElementById('close-celebration'),confetti=document.getElementById('confetti'),reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const tripData={start:'2026-08-13T07:30:00+09:00',end:'2026-08-15T00:00:00+09:00',hotelPrice:5500,saunaPrice:2200,studentSaunaPrice:1700,sawayakaReception:'09:00'};
+      const guideView=document.getElementById('guide-view'),magazineView=document.getElementById('magazine-view'),viewButtons=[...document.querySelectorAll('[data-view]')],skipLink=document.querySelector('.skip-link');
+      const requestedView=()=>new URLSearchParams(location.search).get('view')==='magazine'?'magazine':'guide';
+      const applyView=(view,{historyMode='none',target='',scroll=true}={})=>{
+        const nextView=view==='magazine'?'magazine':'guide';
+        document.documentElement.dataset.initialView=nextView;
+        document.body.dataset.view=nextView;
+        guideView.hidden=nextView!=='guide';
+        magazineView.hidden=nextView!=='magazine';
+        viewButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view===nextView)));
+        skipLink.href=nextView==='guide'?'#guide-overview':'#overview';
+        if(historyMode!=='none'){
+          const url=new URL(location.href);url.searchParams.set('view',nextView);url.hash=target?`#${target}`:'';
+          history[historyMode==='replace'?'replaceState':'pushState']({view:nextView,target},'',url);
+        }
+        const destination=target&&document.getElementById(target);
+        if(destination){requestAnimationFrame(()=>destination.scrollIntoView({behavior:'smooth',block:'start'}));}
+        else if(scroll){window.scrollTo({top:0,behavior:reduceMotion?'auto':'smooth'});}
+      };
+      const initialView=requestedView();applyView(initialView,{scroll:false});
+      viewButtons.forEach(button=>button.addEventListener('click',()=>{const view=button.dataset.view;if(view===document.body.dataset.view)return;applyView(view,{historyMode:'push'});}));
+      window.addEventListener('popstate',()=>{const view=requestedView(),target=location.hash.slice(1);applyView(view,{target,scroll:!target});});
+      document.querySelectorAll('[data-magazine-target]').forEach(button=>button.addEventListener('click',()=>applyView('magazine',{historyMode:'push',target:button.dataset.magazineTarget,scroll:false})));
+
+      const countdownLabel=document.getElementById('guide-countdown-label'),countdownValue=document.getElementById('guide-countdown'),nextLabel=document.getElementById('guide-next-label'),nextTime=document.getElementById('guide-next-time'),nextTitle=document.getElementById('guide-next-title'),nextCopy=document.getElementById('guide-next-copy');
+      const tripStart=new Date(tripData.start),tripEnd=new Date(tripData.end);
+      const schedule=[
+        {at:'2026-08-13T07:30:00+09:00',time:'07:30',title:'鋼管通 START',copy:'まず全員を揃えます。'},
+        {at:'2026-08-13T08:00:00+09:00',time:'08:00〜08:10',title:'新城エリア PICKUP',copy:'武蔵新城駅周辺の公開用MAPを使用。'},
+        {at:'2026-08-13T08:45:00+09:00',time:'08:45〜09:00',title:'十日市場エリア PICKUP',copy:'3人集合まであと1人。'},
+        {at:'2026-08-13T09:00:00+09:00',time:'09:00〜09:10',title:'3 PEOPLE READY',copy:'ここから本編。御殿場へ。'},
+        {at:'2026-08-13T11:30:00+09:00',time:'11:30〜13:00',title:'御殿場到着予定',copy:'到着時刻でFLEXIBLE PLANを選択。'},
+        {at:'2026-08-13T14:00:00+09:00',time:'14:00頃',title:'木の花の湯',copy:'今回のDAY1メイン。'},
+        {at:'2026-08-13T15:30:00+09:00',time:'15:30',title:'AUFGUSS TARGET',copy:'今回狙うアウフグース。'},
+        {at:'2026-08-13T18:15:00+09:00',time:'18:15頃',title:'ホテル CHECK-IN',copy:'HIGHLAND STATION INN。'},
+        {at:'2026-08-13T19:30:00+09:00',time:'19:30〜20:45',title:'FUJI-Q NIGHT',copy:'遅ければ短縮またはSKIP。'},
+        {at:'2026-08-14T07:45:00+09:00',time:'07:45',title:'HOTEL OUT',copy:'さわやか受付へ。'},
+        {at:'2026-08-14T09:00:00+09:00',time:'09:00',title:'SAWAYAKA ENTRY',copy:'LINEと位置情報ON。'},
+        {at:'2026-08-14T13:00:00+09:00',time:'食後',title:'GO HOME',copy:'十日市場 → 新城 → 鋼管通。'}
+      ].map(item=>({...item,date:new Date(item.at)}));
+      const updateGuideClock=()=>{
+        const now=new Date();
+        if(now<tripStart){const diff=tripStart-now;countdownLabel.textContent='出発まで';countdownValue.textContent=`${Math.floor(diff/3600000)}時間 ${Math.floor(diff%3600000/60000)}分`;}
+        else if(now<tripEnd){countdownLabel.textContent='ROAD TRIP IN PROGRESS 🚗';countdownValue.textContent='予定時刻とリアルタイムナビを確認';}
+        else{countdownLabel.textContent='おつかれさまでした 🎉';countdownValue.textContent='帰るまでが旅行。';}
+        const next=schedule.find(item=>item.date>now);
+        if(now>=tripEnd){nextLabel.textContent='TRIP COMPLETE';nextTime.textContent='FINISH';nextTitle.textContent='おつかれさまでした 🎉';nextCopy.textContent='写真は旅マガジンで振り返れます。';}
+        else if(next){nextLabel.textContent=now<tripStart?'NEXT / 予定時刻ベース':'NEXT / 予定時刻ベース';nextTime.textContent=next.time;nextTitle.textContent=next.title;nextCopy.textContent=next.copy;}
+        else{nextLabel.textContent='NOW / EXPECTED';nextTime.textContent='WAIT';nextTitle.textContent='さわやか呼出待ち';nextCopy.textContent='実際の呼出状況を最優先。';}
+      };
+      updateGuideClock();window.setInterval(updateGuideClock,60000);
+
+      const guideDayButtons=[...document.querySelectorAll('[data-guide-day]')],guideDayPanels={day1:document.getElementById('guide-day1-panel'),day2:document.getElementById('guide-day2-panel')};
+      const setGuideDay=day=>{const selected=day==='day2'?'day2':'day1';guideDayButtons.forEach(button=>button.setAttribute('aria-selected',String(button.dataset.guideDay===selected)));Object.entries(guideDayPanels).forEach(([key,panel])=>panel.hidden=key!==selected);};
+      const japanDate=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());setGuideDay(japanDate==='2026-08-14'?'day2':'day1');
+      guideDayButtons.forEach(button=>button.addEventListener('click',()=>setGuideDay(button.dataset.guideDay)));
+
+      const guideDelayButton=document.getElementById('guide-delay-toggle'),guideDelayTitle=document.getElementById('guide-delay-title'),guideDelayOutlet=document.getElementById('guide-delay-outlet'),guideDelaySauna=document.getElementById('guide-delay-sauna'),guideDelayFujiq=document.getElementById('guide-delay-fujiq');
+      guideDelayButton?.addEventListener('click',()=>{const late=guideDelayButton.getAttribute('aria-pressed')!=='true';guideDelayButton.setAttribute('aria-pressed',String(late));guideDelayTitle.textContent=late?'DELAY MODE':'NORMAL PLAN';guideDelayButton.textContent=late?'✓ DELAY MODE 発動中':'🚗 渋滞した！';guideDelayOutlet.textContent=late?'30〜45分':'60〜90分';guideDelaySauna.textContent=late?'優先':'約3時間';guideDelayFujiq.textContent=late?'短縮 / SKIP':'〜75分';});
+
+      const guideChecks=[...document.querySelectorAll('[data-guide-check]')],guideChecklistKey='gotemba-guide-checklist';
+      const saveGuideChecks=()=>{try{localStorage.setItem(guideChecklistKey,JSON.stringify(guideChecks.map(item=>item.checked)));}catch(_){/* Optional storage. */}};
+      try{const saved=JSON.parse(localStorage.getItem(guideChecklistKey)||'[]');guideChecks.forEach((box,index)=>{box.checked=Boolean(saved[index]);box.addEventListener('change',saveGuideChecks);});}catch(_){guideChecks.forEach(box=>box.addEventListener('change',saveGuideChecks));}
+      document.getElementById('guide-reset-checklist')?.addEventListener('click',()=>{guideChecks.forEach(box=>box.checked=false);saveGuideChecks();});
+      document.getElementById('guide-print')?.addEventListener('click',()=>window.print());
+
+      const overlay=document.getElementById('celebration'),closeButton=document.getElementById('close-celebration'),confetti=document.getElementById('confetti');
       let closeTimer;
-      const closeCelebration=()=>{if(!overlay||overlay.classList.contains('is-closing'))return;clearTimeout(closeTimer);overlay.classList.add('is-closing');document.body.classList.remove('overlay-open');window.setTimeout(()=>{overlay.hidden=true;document.querySelector('.hero .btn')?.focus({preventScroll:true});},reduceMotion?0:560);};
+      const closeCelebration=()=>{if(!overlay||overlay.classList.contains('is-closing'))return;clearTimeout(closeTimer);overlay.classList.add('is-closing');document.body.classList.remove('overlay-open');window.setTimeout(()=>{overlay.hidden=true;document.querySelector('[data-view][aria-pressed="true"]')?.focus({preventScroll:true});},reduceMotion?0:560);};
       if(!reduceMotion&&confetti){const colors=['#f0bd72','#b95138','#79a9c7','#dce9e3','#fff2d9'];for(let i=0;i<42;i+=1){const piece=document.createElement('span');piece.className='confetti-piece';piece.style.left=`${Math.random()*100}%`;piece.style.background=colors[i%colors.length];piece.style.setProperty('--duration',`${2.1+Math.random()*.9}s`);piece.style.setProperty('--delay',`${Math.random()*.8}s`);piece.style.setProperty('--drift',`${-80+Math.random()*160}px`);confetti.appendChild(piece);}}
       closeButton?.addEventListener('click',closeCelebration);document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!overlay?.hidden)closeCelebration();});closeTimer=window.setTimeout(closeCelebration,5000);
 
